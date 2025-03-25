@@ -15,7 +15,7 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 4. Stage and commit all or select changes
 5. <ins>Sync changes</ins> with the online repo
 
-## Releasing Update
+## Releasing an Update
 1. Navigate to the [Releases](https://github.com/RoarkCats/damodpack-1-islands/releases) tab in the online repo
 2. Click "Create a new release"
 3. Create and attach a zip file with the latest `overrides` folder, `manifest.json`, and `modlist.html`
