@@ -34,6 +34,6 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 ## Initializing this repository with VSCode
 1. Open VSCode, click source control ![source control 3 dots connected by lines](https://github.com/user-attachments/assets/460be682-14b6-4328-9e1f-a299009607ce)
  and install Git if its not installed
-    - If installing git, restart VSCode after, login when cloning repo in next step
+    - If installing git, restart VSCode after, login when cloning repo in next step and in console when committing
 3. Ctrl+Shift+P, search and run `clone` (git), enter `damodpack-1-islands` for the repository
 4. Choose a good location for the repository, when prompted make the current workspace the repository
