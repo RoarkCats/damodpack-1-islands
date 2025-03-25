@@ -2,9 +2,8 @@
 A large "Survival Islands" kitchen sink pack designed with a little something for everyone
 
 ## Using this repository
-- Only commit file changes
 - Do not commit all configs, only new/changed files
-- Do not commit mods
+- Do not commit mod jars
 - When updating the modlist, only commit `manifest.json` and `modlist.html` from the modpack export
 
 ## Committing Changes
