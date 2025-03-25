@@ -5,6 +5,7 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 - Do not commit all configs, only new/changed files
 - Do not commit mod jars
 - When updating the modlist, only commit `manifest.json` and `modlist.html` from the modpack export
+  - Be sure you're using the latest modlist before overwriting the file!
 
 ## Committing Changes
 0. Fetch and/or pull changes from repo before starting
