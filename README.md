@@ -27,7 +27,7 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 6. Set release description with changelog, this should document all commits since last release
 7. Check the "Set as pre-release" box if not ready for public
 8. Click "Generate release notes" which will generate from prior commit notes
-  - Modify this to look nice for easy copying to the CurseForge changelog
+   - Modify this to look nice for easy copying to the CurseForge changelog
 10. Publish release
 11. Upload the zip file from Step 3 to CurseForge
 
