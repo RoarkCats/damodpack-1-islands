@@ -1,0 +1,113 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "octagon"
+	filename: "making_matt_lowne_proud"
+	group: "5C4C328B5EBA006F"
+	icon: {
+		Count: 1
+		id: "ad_astra:space_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "0D08B507A860E2D3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5CBB3355E4BB02AA"]
+			id: "67016706EF4A8F4C"
+			tasks: [{
+				id: "1F048A553729D2FA"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "5CBB3355E4BB02AA"
+			tasks: [{
+				count: 2L
+				id: "33287197CF172286"
+				item: {
+					Count: 2
+					id: "ad_astra:gas_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67016706EF4A8F4C"]
+			id: "02CFD54EB8E2C16C"
+			tasks: [{
+				id: "050F52320E5B2DCC"
+				item: {
+					Count: 1
+					id: "ad_astra:space_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67016706EF4A8F4C"]
+			id: "75393EFD02A9AC06"
+			tasks: [{
+				id: "77F572594BB08E28"
+				item: {
+					Count: 1
+					id: "ad_astra:space_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67016706EF4A8F4C"]
+			id: "22B9F8B178E4902E"
+			tasks: [{
+				id: "1626324CAB08CF3B"
+				item: {
+					Count: 1
+					id: "ad_astra:space_pants"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67016706EF4A8F4C"]
+			id: "1082A7C5FE0924BD"
+			tasks: [{
+				id: "4E5A363750D979A7"
+				item: {
+					Count: 1
+					id: "ad_astra:space_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+	]
+	title: "A breath of fresh air"
+}

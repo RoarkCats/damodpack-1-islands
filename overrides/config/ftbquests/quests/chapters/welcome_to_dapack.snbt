@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_dapack"
+	group: ""
+	id: "6E4EC487AC87ECD6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Welcome To &d&lDaPack&l.&r"
+			""
+			"In this pack all mods were submitted in groups of 3 by my friends none of us know what mods are submitted other than our own. This pack is very cursed and crazy so i wish you all good luck in trying to discover everything thats added. Have fun &b-DaMaker&r"
+			"{image:pneumaticcraft:textures/particle/air_particle_2.png width:100 height:100 align:center}"
+		]
+		id: "15A9C7DD641D9B2F"
+		rewards: [{
+			id: "7D3341CEDD0184A8"
+			item: "minecraft:cake"
+			type: "item"
+		}]
+		tasks: [{
+			id: "381A67BF9C53D88B"
+			title: "Welcome"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Welcome To DaPack"
+}
