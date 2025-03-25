@@ -1,0 +1,29 @@
+{
+  "type": "pointblank:default",
+  "ingredients": [
+    {
+      "count": 18,
+      "tag": "forge:gems/lapis"
+    },
+    {
+      "count": 36,
+      "item": "pointblank:gunmetal_ingot"
+    },
+    {
+      "count": 10,
+      "item": "pointblank:guninternals"
+    },
+    {
+      "count": 3,
+      "tag": "forge:ingots/gold"
+    },
+    {
+      "count": 6,
+      "tag": "forge:ingots/iron"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "pointblank:hl_spas12"
+  }
+}

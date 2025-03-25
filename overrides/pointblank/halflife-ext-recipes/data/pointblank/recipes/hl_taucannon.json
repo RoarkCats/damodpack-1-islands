@@ -1,0 +1,33 @@
+{
+  "type": "pointblank:default",
+  "ingredients": [
+    {
+      "count": 4,
+      "item": "pointblank:doom_argent_compound"
+    },
+    {
+      "count": 4,
+      "item": "pointblank:processor"
+    },
+    {
+      "count": 26,
+      "item": "pointblank:gunmetal_ingot"
+    },
+    {
+      "count": 16,
+      "item": "pointblank:guninternals"
+    },
+    {
+      "count": 20,
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "count": 16,
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "pointblank:hl_taucannon"
+  }
+}

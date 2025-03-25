@@ -1,0 +1,33 @@
+{
+  "type": "pointblank:default",
+  "ingredients": [
+    {
+      "count": 2,
+      "tag": "forge:wires/steel"
+    },
+    {
+      "count": 8,
+      "tag": "forge:dusts/redstone"
+    },
+    {
+      "count": 36,
+      "item": "pointblank:gunmetal_ingot"
+    },
+    {
+      "count": 1,
+      "item": "pointblank:processor"
+    },
+    {
+      "count": 10,
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "count": 4,
+      "tag": "minecraft:planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "pointblank:hl_resistancecrossbow"
+  }
+}

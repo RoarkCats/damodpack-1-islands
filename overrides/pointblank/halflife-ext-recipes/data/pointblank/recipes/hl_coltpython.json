@@ -1,0 +1,25 @@
+{
+  "type": "pointblank:default",
+  "ingredients": [
+    {
+      "count": 14,
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "count": 20,
+      "item": "pointblank:gunmetal_ingot"
+    },
+    {
+      "count": 6,
+      "item": "pointblank:guninternals"
+    },
+    {
+      "count": 2,
+      "tag": "forge:leather"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "pointblank:hl_coltpython"
+  }
+}
