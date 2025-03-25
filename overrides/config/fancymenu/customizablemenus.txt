@@ -1,0 +1,11 @@
+type = customizablemenus
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
+}
+
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
