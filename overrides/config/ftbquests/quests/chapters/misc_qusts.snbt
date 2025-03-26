@@ -6,21 +6,51 @@
 	id: "4396D9BE1650E25B"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "6DD26686973597EE"
-		tasks: [{
-			id: "71B5400C21044D83"
-			item: {
-				Count: 1
-				id: "the_furry_mod:fursuit_helmet"
-				tag: {
-					Damage: 0
+	quests: [
+		{
+			id: "6DD26686973597EE"
+			tasks: [{
+				id: "71B5400C21044D83"
+				item: {
+					Count: 1
+					id: "the_furry_mod:fursuit_helmet"
+					tag: {
+						Damage: 0
+					}
 				}
-			}
-			type: "item"
-		}]
-		x: -0.5d
-		y: 0.0d
-	}]
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "35B22E57368C0E19"
+			tasks: [{
+				id: "20D8668FC42732C8"
+				item: {
+					Count: 1
+					id: "jecalculation:item_calculator_craft"
+					tag: {
+						jecalculation: {
+							craft: {
+								amount: ""
+								inventory: 0b
+								mode: "input"
+								overlayDepth: 0
+								overlayOpen: 0b
+								overlayPositionX: 0
+								overlayPositionY: 0
+								recents: [ ]
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "HERE IS YOUR DAMN CALCULATER ROARK"
+			x: -1.5d
+			y: 0.0d
+		}
+	]
 	title: "Misc Qusts"
 }

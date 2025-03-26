@@ -8,26 +8,30 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["Bringing the boom to minecraft with some heavy weaponry. Theres some modern armour to I guess..."]
 			id: "29777E3252D52788"
+			subtitle: "Lock and Load"
 			tasks: [{
 				id: "546A86DA37CB4738"
 				title: "Modern Solutions"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["29777E3252D52788"]
 			id: "686F9CB871597CE8"
 			tasks: [{
 				id: "08A56D913EC1C113"
 				title: "Hidden in plain sight"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["686F9CB871597CE8"]
 			id: "37CDFC8294683DBB"
 			tasks: [
 				{
@@ -75,10 +79,12 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			title: "Cherry Ghillie Suit"
+			x: -1.5d
 			y: -2.5d
 		}
 		{
+			dependencies: ["686F9CB871597CE8"]
 			id: "0E394AA489EFE88B"
 			tasks: [
 				{
@@ -126,10 +132,12 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -2.5d
+			title: "Dark Oak Ghillie Suit"
+			x: -2.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["686F9CB871597CE8"]
 			id: "67D28779547180E4"
 			tasks: [
 				{
@@ -177,10 +185,12 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -2.5d
+			title: "Mangrove Ghillie Suit"
+			x: -0.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["686F9CB871597CE8"]
 			id: "19C64F63853CB4D6"
 			tasks: [
 				{
@@ -228,8 +238,1006 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -2.5d
+			title: "Azalea Ghillie Suit"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["686F9CB871597CE8"]
+			id: "0333B7EAD5518AF1"
+			tasks: [
+				{
+					id: "641A2185BC55ADA0"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:oak_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CDF35A6ACBB1D66"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:oak_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31E7A1D6BD16468E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:oak_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "075C60CAF16E4B5E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:oak_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Oak Ghillie Suit"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["686F9CB871597CE8"]
+			id: "268BECD29B8ED3A8"
+			tasks: [
+				{
+					id: "1B6BA8656D1E9967"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:acacia_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DBD28782687D0E4"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:acacia_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FD491007E09DD23"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:acacia_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "050FABCA2316BDC7"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:acacia_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Acacia Ghillie Suit"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["686F9CB871597CE8"]
+			id: "08CE50CA84617C46"
+			tasks: [
+				{
+					id: "62EC339BA040E81D"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:spruce_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E1EF8C2E62326BC"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:spruce_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03E73507BF353136"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:spruce_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20902AFA51115C69"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:spruce_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Spruce Ghillie Suit"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["686F9CB871597CE8"]
+			id: "0C3DE30252745B8D"
+			tasks: [
+				{
+					id: "77DFB516CD4DC460"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:birch_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28B5777D6BF92F14"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:birch_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E78BBF358E18C7F"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:birch_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0DDEAE9B07CB629C"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:birch_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Birch Ghillie Suit"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["686F9CB871597CE8"]
+			id: "645D0D86B12A3A23"
+			tasks: [
+				{
+					id: "05D1F450D9B608AE"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:jungle_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D715D988D983C0B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:jungle_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "337DE38DE91E09E2"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:jungle_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3DAA17874A1D06B0"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:jungle_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Jungle Ghillie Suit"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "3DC3EC5E6BEA8F90"
+			tasks: [{
+				id: "28EF81321D503ED1"
+				item: "pointblank:printer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["258D6A522FD03B63"]
+			id: "101AD7DDB61F5907"
+			tasks: [
+				{
+					id: "5A92C821650CD6D9"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:un_military_beret"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0710D576E2019CDD"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:un_helmet_cm8m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D1083E684F91068"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:un_helmet_cm6m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12C66C5171C176F9"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:un_helmet_cm7m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39E7D09AE80EFD1F"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:un_combat_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "U.N. Soldier"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["719B9AE8DF6AA6EB"]
+			id: "34886A35C2A2370A"
+			tasks: [
+				{
+					id: "335879C2F4177EB2"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_juggernaut_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "215171CC17F45AB1"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_juggernaut_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "356E2B2C195E5961"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_juggernaut_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42DE5B2A9A989920"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_juggernaut_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["719B9AE8DF6AA6EB"]
+			id: "14F3194CC2DBEE5C"
+			tasks: [
+				{
+					id: "01799874C0AB9F83"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_juggernaut_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BE643087C155CDD"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_juggernaut_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D7F0F0599B9E85E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_juggernaut_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "709D5048C77EC466"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_juggernaut_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Black Juggernaut gear"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "258D6A522FD03B63"
+			tasks: [{
+				id: "2FB0E9A1125EC5EC"
+				title: "Juggernaut"
+				type: "checkmark"
+			}]
+			title: "Modern Military's"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "2E5FBF115FAC2880"
+			tasks: [
+				{
+					id: "5B2227EF3244EFB5"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:hazmat_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12527171F4394032"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:hazmat_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69D6FC29F4B33528"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:hazmat_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5EB8FDFD27EF0A2F"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:hazmat_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hazmat Suit"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["258D6A522FD03B63"]
+			id: "7495FE8CBE583FCC"
+			tasks: [
+				{
+					id: "75E5F008683BBB87"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:desert_military_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E0E49BC0D91E26B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:desert_military_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D5A35B6BB736A30"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:desert_military_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BCAEC52663C9F58"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:desert_military_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Desert Combat"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["258D6A522FD03B63"]
+			id: "097CB93A96139620"
+			tasks: [
+				{
+					id: "52A399ED921F5C68"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:winter_military_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07E922530224EA99"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:winter_military_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08774D7A4F3CE6C6"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:winter_military_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "526CE7B55DA6ED3E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:winter_military_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Winter Combat"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "27EC45B5C2926E78"
+			tasks: [
+				{
+					id: "3292BF33D255B001"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cm6m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54167647F10A007E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cm7m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C6D291CCD3E77A8"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cm8m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A950402D911DBB7"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:white_gp5_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0081E868AB170773"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_gp5_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gas Masks"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "129CA3C2A11344A5"
+			tasks: [
+				{
+					id: "12D9A7DC460E160A"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_military_beret"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "085E76F055BDCA9F"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:red_military_beret"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Berets"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["719B9AE8DF6AA6EB"]
+			id: "49E0AB1F77695AD7"
+			tasks: [
+				{
+					id: "0567B6ED02CC2E33"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:combat_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42C333DC57FE57F7"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:helmet_cm7m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "357C1C2B38225020"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:helmet_cm8m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "265FCC1323FBDB73"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:helmet_cm6m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "352ADE88F68E714A"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:black_plate_carrier_heavy"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Black Combat Gear"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["719B9AE8DF6AA6EB"]
+			id: "29D0DFC0838144CF"
+			tasks: [
+				{
+					id: "6727C42FB4F6EA58"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_combat_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B5DA34AE841BE4D"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_helmet_cm7m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "203DC64C2C5B5649"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_helmet_cm8m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2656F8176FBBDC7E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_helmet_cm6m_gas_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1980A2FC1ED37F3B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_plate_carrier_light"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17B1124158A23D25"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:olive_plate_carrier_heavy"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Olive Combat Gear"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["29777E3252D52788"]
+			id: "719B9AE8DF6AA6EB"
+			tasks: [{
+				id: "021A775187DF662A"
+				title: "Combat Gear"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["258D6A522FD03B63"]
+			id: "41F5F5BAB3BB44CD"
+			tasks: [
+				{
+					id: "54CF6FA54214338C"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:swat_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "381F0EBFE430147C"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:swat_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00CF0B82D2EC79F1"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:swat_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6669F3DA9B4DC62F"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:swat_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Swat Gear"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["258D6A522FD03B63"]
+			id: "23BEAAB69D60FDDD"
+			tasks: [
+				{
+					id: "6C6FAED90C5B59C8"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:riot_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D6538772548A308"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:riot_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AAF65AE03892178"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:riot_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "697BFF3CE8127274"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:riot_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Riot Gear"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3DC3EC5E6BEA8F90"]
+			id: "5CF1FE2695D77B35"
+			tasks: [
+				{
+					id: "5F6A0C86B561649D"
+					item: "pointblank:gunmetal_mesh"
+					type: "item"
+				}
+				{
+					id: "2022F146470C96D2"
+					item: "pointblank:gunmetal_ingot"
+					type: "item"
+				}
+			]
+			title: "Need a body of a gun somehow"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DC3EC5E6BEA8F90"]
+			id: "2E9CEF497263549A"
+			tasks: [{
+				id: "5BC68318D1682EFA"
+				title: "Ammo"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.0d
 		}
 	]
 	title: "Modern Problems"
