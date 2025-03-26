@@ -6,17 +6,263 @@
 	id: "75A35F7786921B9F"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		description: ["With a pack full of water there has to be some scuba suits"]
-		id: "3AA4DBBB43DADBB2"
-		tasks: [{
-			id: "39FB992DD3F37C07"
-			title: "BECOME THE SCUBA STEVE"
-			type: "checkmark"
-		}]
-		title: "BECOME SCUBA STEVE!"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: ["With a pack full of water there has to be some scuba suits"]
+			id: "3AA4DBBB43DADBB2"
+			subtitle: "Divin Time"
+			tasks: [{
+				id: "39FB992DD3F37C07"
+				title: "BECOME THE SCUBA STEVE"
+				type: "checkmark"
+			}]
+			title: "BECOME SCUBA STEVE!"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			id: "72E2B50719D66343"
+			tasks: [{
+				id: "40E3902E1999316B"
+				item: {
+					Count: 1
+					id: "create:copper_backtank"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["72E2B50719D66343"]
+			id: "5B300B598764BF9D"
+			tasks: [{
+				id: "7BD6BAEB355E1AEF"
+				item: {
+					Count: 1
+					id: "create:copper_diving_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72E2B50719D66343"]
+			id: "5AD1891E1610A238"
+			tasks: [{
+				id: "5D92AA5FB3EF3246"
+				item: {
+					Count: 1
+					id: "create:netherite_backtank"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5AD1891E1610A238"]
+			id: "16953345E5AEA349"
+			tasks: [{
+				id: "71BE3F18CDB6D429"
+				item: {
+					Count: 1
+					id: "creategoggles:goggle_netherite_diving_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5AD1891E1610A238"]
+			id: "220C79B2DDFBB974"
+			tasks: [{
+				id: "5E3D164459306A5E"
+				item: {
+					Count: 1
+					id: "create:netherite_diving_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72E2B50719D66343"]
+			id: "0D0B2494D1FF2243"
+			tasks: [{
+				id: "17688F465A50F815"
+				item: {
+					Count: 1
+					id: "creategoggles:goggle_diving_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72E2B50719D66343"]
+			id: "1E2562D0FA9D6065"
+			tasks: [{
+				id: "445A60FAA3F778D3"
+				item: {
+					Count: 1
+					id: "creategoggles:chainmail_backtank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			id: "7862FD61E13893D8"
+			subtitle: "Not the best but could be worse"
+			tasks: [
+				{
+					id: "72C9E8EC6139AA33"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B58CDD9CF5215B7"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E0DE7E0962051C3"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F20D1A400DD1B2B"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Alex's Caves Diving Suit"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			id: "1AFC91593F569492"
+			tasks: [
+				{
+					id: "22D61B75E7321070"
+					item: "mekanism:scuba_tank"
+					type: "item"
+				}
+				{
+					id: "33DB36B6954540B5"
+					item: "mekanism:scuba_mask"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AFC91593F569492"]
+			id: "4B7FC1407164CE5A"
+			tasks: [
+				{
+					count: 4L
+					id: "7D64E0FD75482E30"
+					item: { Count: 4, id: "mekanism:module_electrolytic_breathing_unit" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "56C2C26D7A19D669"
+					item: { Count: 4, id: "mekanism:module_hydrostatic_repulsor_unit" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "279D39DA89A4BC28"
+					item: { Count: 4, id: "mekanism:module_vision_enhancement_unit" }
+					type: "item"
+				}
+			]
+			title: "MekaSuit Upgrade"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "5B25094B1EEED4DE"
+			tasks: [
+				{
+					id: "4C89538AA5C0F0AB"
+					item: "pneumaticcraft:scuba_upgrade"
+					type: "item"
+				}
+				{
+					id: "59E9813778B605BD"
+					item: "pneumaticcraft:armor_upgrade"
+					type: "item"
+				}
+				{
+					id: "4602AAE2A9731035"
+					item: "pneumaticcraft:flippers_upgrade"
+					type: "item"
+				}
+				{
+					id: "2525377ED200312E"
+					item: "pneumaticcraft:night_vision_upgrade"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
 	title: "Scuba Steve"
 }
