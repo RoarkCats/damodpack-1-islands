@@ -1,0 +1,236 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_problems"
+	group: "3062C02D5C318117"
+	id: "50A00A2C4B42A929"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "29777E3252D52788"
+			tasks: [{
+				id: "546A86DA37CB4738"
+				title: "Modern Solutions"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "686F9CB871597CE8"
+			tasks: [{
+				id: "08A56D913EC1C113"
+				title: "Hidden in plain sight"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			id: "37CDFC8294683DBB"
+			tasks: [
+				{
+					id: "04AF97F3A458F241"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cherry_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C4DBCAF287E943E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cherry_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45DF9ED98C74B92B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cherry_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "223C2D4C9A0CE08C"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:cherry_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "0E394AA489EFE88B"
+			tasks: [
+				{
+					id: "183AF8203E36924B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:dark_oak_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75AAC2184049FDEE"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:dark_oak_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "043D688EED922CE4"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:dark_oak_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49ABCDEEFA943112"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:dark_oak_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "67D28779547180E4"
+			tasks: [
+				{
+					id: "3F8DAB6811E0683E"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:mangrove_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A8EA6F6709DB290"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:mangrove_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "539B0A7344912699"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:mangrove_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39993B25DAFDB0C9"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:mangrove_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "19C64F63853CB4D6"
+			tasks: [
+				{
+					id: "0D8C9026721A4AA8"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:azalea_ghillie_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F20C276A5B3059A"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:azalea_ghillie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "137038842D3AD50B"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:azalea_ghillie_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "199D4F6F72A055AE"
+					item: {
+						Count: 1
+						id: "marbledsarsenal:azalea_ghillie_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.5d
+		}
+	]
+	title: "Modern Problems"
+}

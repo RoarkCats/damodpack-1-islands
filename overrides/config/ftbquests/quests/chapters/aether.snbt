@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aether"
+	group: "7713A3BE5AE0B169"
+	id: "0EE3F3D84C9596C2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Aether"
+}

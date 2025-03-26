@@ -108,6 +108,77 @@
 			x: 3.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["75393EFD02A9AC06"]
+			dependency_requirement: "one_completed"
+			id: "5C9E44B984121051"
+			progression_mode: "linear"
+			tasks: [{
+				id: "41F026CC227E5868"
+				item: {
+					Count: 1
+					id: "ad_astra:netherite_space_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22B9F8B178E4902E"]
+			id: "66FB987BBE6DB02B"
+			tasks: [{
+				id: "1971CBDD8F285823"
+				item: {
+					Count: 1
+					id: "ad_astra:netherite_space_pants"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["02CFD54EB8E2C16C"]
+			id: "60417511F8E76C32"
+			progression_mode: "linear"
+			tasks: [{
+				id: "2FE85C35FFEADB2C"
+				item: {
+					Count: 1
+					id: "ad_astra:netherite_space_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1082A7C5FE0924BD"]
+			id: "0524E46911D7F9AD"
+			tasks: [{
+				id: "39C6A674CA5527C4"
+				item: {
+					Count: 1
+					id: "ad_astra:netherite_space_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
 	]
 	title: "A breath of fresh air"
 }

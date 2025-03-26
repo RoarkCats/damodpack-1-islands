@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "3062C02D5C318117"
+	id: "7C04A48F2DA5AA6D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "112E2601382F73A9"
+		tasks: [{
+			id: "334B525ACCE07EBC"
+			item: "botania:fertilizer"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Botania"
+}

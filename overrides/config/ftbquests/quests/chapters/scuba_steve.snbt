@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "scuba_steve"
+	group: "3062C02D5C318117"
+	id: "75A35F7786921B9F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: ["With a pack full of water there has to be some scuba suits"]
+		id: "3AA4DBBB43DADBB2"
+		tasks: [{
+			id: "39FB992DD3F37C07"
+			title: "BECOME THE SCUBA STEVE"
+			type: "checkmark"
+		}]
+		title: "BECOME SCUBA STEVE!"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Scuba Steve"
+}

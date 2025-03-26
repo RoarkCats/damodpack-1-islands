@@ -1,0 +1,72 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "monster_hunter_minecraft"
+	group: "3062C02D5C318117"
+	id: "336C2D372140D834"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5A63E4893296E76A"
+			tasks: [{
+				entity: "thalassophobia:alpha_reaverfish"
+				id: "05E481096EBC2A6E"
+				title: "Leviathan Class Lifeform"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4FB4B5C075AD0F83"
+			tasks: [{
+				entity: "thalassophobia:colossoteus"
+				id: "5B194EC696EAEEB2"
+				title: "The Bloop"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "0FFD10988338CFE5"
+			tasks: [{
+				entity: "thalassophobia:baby_colossoteus"
+				id: "61B8D62BED4FE670"
+				title: "Watch out for the mom"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "644B1EEBE09E3C4D"
+			tasks: [{
+				entity: "thalassophobia:reaverfish"
+				id: "2FA1F88D11F00136"
+				title: "Where is the pack leader"
+				type: "kill"
+				value: 100L
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "1BBAA61062A05857"
+			tasks: [{
+				entity: "thalassophobia:vertebrat"
+				id: "282498DF8AB9FAE0"
+				title: "Brat Summer"
+				type: "kill"
+				value: 6L
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Monster Hunter: Minecraft"
+}

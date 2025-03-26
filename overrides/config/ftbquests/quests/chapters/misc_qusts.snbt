@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "misc_qusts"
+	group: "3062C02D5C318117"
+	id: "4396D9BE1650E25B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "6DD26686973597EE"
+		tasks: [{
+			id: "71B5400C21044D83"
+			item: {
+				Count: 1
+				id: "the_furry_mod:fursuit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			type: "item"
+		}]
+		x: -0.5d
+		y: 0.0d
+	}]
+	title: "Misc Qusts"
+}
