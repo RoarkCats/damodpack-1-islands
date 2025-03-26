@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "monster_hunter_minecraft"
 	group: "3062C02D5C318117"
+	icon: "unusualprehistory:rex_head"
 	id: "336C2D372140D834"
 	order_index: 4
 	quest_links: [ ]

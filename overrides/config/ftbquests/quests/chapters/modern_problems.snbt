@@ -3,6 +3,13 @@
 	default_quest_shape: ""
 	filename: "modern_problems"
 	group: "3062C02D5C318117"
+	icon: {
+		Count: 1
+		id: "marbledsarsenal:olive_helmet_cm7m_gas_mask"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "50A00A2C4B42A929"
 	order_index: 3
 	quest_links: [ ]
@@ -16,7 +23,7 @@
 				title: "Modern Solutions"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -515,7 +522,7 @@
 				item: "pointblank:printer"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -1225,7 +1232,7 @@
 				}
 			]
 			title: "Need a body of a gun somehow"
-			x: 8.5d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
@@ -1239,8 +1246,8 @@
 				title: "Ammo"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5CF1FE2695D77B35"]
@@ -1262,8 +1269,8 @@
 				}
 			]
 			title: "Gun Parts"
-			x: 12.0d
-			y: -3.5d
+			x: 13.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6B209E216D659F87"]
@@ -2901,6 +2908,130 @@
 			y: 1.5d
 		}
 		{
+			can_repeat: true
+			dependencies: [
+				"72DFCC7DFA8C172A"
+				"7B475E4D8BDD17D2"
+				"12273E9CFF7E55CD"
+				"453C3B22FD9F4689"
+				"065D11FF919F4433"
+				"6C7A861944164B66"
+				"4202AEC162C34213"
+				"34886A35C2A2370A"
+				"56D17E9106170440"
+				"29777E3252D52788"
+				"1F257013C581A8AD"
+				"2C597288E482D14E"
+				"08BFBC20738BD20A"
+				"083EA5B23475A8D9"
+				"4CB952F0100A1562"
+				"08CE50CA84617C46"
+				"7810914D6F72E50B"
+				"6F99CE751CF7493E"
+				"577592F30169CAC6"
+				"2E9CEF497263549A"
+				"793FFEC5CC6605B0"
+				"04DC73809D82A5F2"
+				"2A2AEF1DE6A322B9"
+				"1E4F8AF734FD6974"
+				"5CF1FE2695D77B35"
+				"791E4E218935323C"
+				"14F3194CC2DBEE5C"
+				"41F5F5BAB3BB44CD"
+				"20D51554071ACCA1"
+				"73B4B13BD510F5A2"
+				"67D28779547180E4"
+				"443010C46436FDFD"
+				"49E0AB1F77695AD7"
+				"2F06878E928A7E40"
+				"112AFDD768737DCA"
+				"5E5F73C09560A1B8"
+				"60B9233D6A1BCDD7"
+				"19C64F63853CB4D6"
+				"12BAC894DCDB32BA"
+				"15537B29FF779042"
+				"589EBDE45BD258F8"
+				"28F960676343B18A"
+				"216067AA6F950905"
+				"29D0DFC0838144CF"
+				"2E5FBF115FAC2880"
+				"64A9C94A63CD144C"
+				"6F9C65B5A2A8CCE2"
+				"7185F6A255EC28AF"
+				"686F9CB871597CE8"
+				"6BFBDF41386107B2"
+				"240A5347C9FE74DA"
+				"258D6A522FD03B63"
+				"5E3133FFC67303D3"
+				"25D6FAF1C5C3C090"
+				"13D20C8B85A68C8B"
+				"097CB93A96139620"
+				"44DCB7BBFE6ED87E"
+				"0333B7EAD5518AF1"
+				"5602D2B3129ECA56"
+				"77023764A355F148"
+				"03D38CE739CCB485"
+				"2A949689C1913AF2"
+				"268BECD29B8ED3A8"
+				"6B79B15910F3D051"
+				"6AB1041611C4CDE5"
+				"57013105A9B33A31"
+				"6ABCB98338E8DC50"
+				"7495FE8CBE583FCC"
+				"6F2BD3B77ECFEEDC"
+				"512930BA557DB67D"
+				"5A100D334F98792F"
+				"5F5A6797240CAF57"
+				"1A24BFBC3A02660D"
+				"04DC58195DE1BEB3"
+				"473858CC07B72CDA"
+				"2E508EDED5430257"
+				"37CDFC8294683DBB"
+				"36464204661734C9"
+				"46020C858DC4ECDE"
+				"2A90C45D934C6323"
+				"79C812ECA1686DEB"
+				"670BD609D9B5021C"
+				"78CC2F2339D58491"
+				"1AF092E470A3D418"
+				"4B4C0E7D98791CFA"
+				"27EC45B5C2926E78"
+				"23BEAAB69D60FDDD"
+				"38445A4F9A33018E"
+				"7B69310F7DBB6267"
+				"1743F2240673C8A9"
+				"72244977D867998A"
+				"3C0CDD94F05A0A02"
+				"549D16B5BCE81902"
+				"206BF29BC1ADC09B"
+				"0C3DE30252745B8D"
+				"5DCC5788513B85B2"
+				"76B5A9B9B940E982"
+				"013A47BC460D0F5A"
+				"645D0D86B12A3A23"
+				"3241F2CD3D65123A"
+				"14EE911983515E73"
+				"433DB7EE8FF2A2F9"
+				"101AD7DDB61F5907"
+				"6B209E216D659F87"
+				"327AC2E5A920EF5C"
+				"1373B5EDB515BD6F"
+				"0A9DAC5AAC0AB628"
+				"3DC3EC5E6BEA8F90"
+				"18487F97DCB23985"
+				"129CA3C2A11344A5"
+				"3EF3D075E7B8FDD6"
+				"3B8709B78256948F"
+				"12DCE59E0AAB9604"
+				"52966040A5A72880"
+				"719B9AE8DF6AA6EB"
+				"3AFB16D231356DE9"
+				"4A9063E92B0FAF8E"
+				"0E394AA489EFE88B"
+				"6E4EBE31B0B74B35"
+			]
+			hide_dependency_lines: true
+			icon: "pointblank:m4a1_asiimov"
 			id: "43F11893C6064AD8"
 			rewards: [
 				{
@@ -2931,16 +3062,140 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "6F92345D1D239107"
 				title: "Finished everything"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
+			dependencies: [
+				"72DFCC7DFA8C172A"
+				"7B475E4D8BDD17D2"
+				"12273E9CFF7E55CD"
+				"453C3B22FD9F4689"
+				"065D11FF919F4433"
+				"6C7A861944164B66"
+				"4202AEC162C34213"
+				"34886A35C2A2370A"
+				"56D17E9106170440"
+				"29777E3252D52788"
+				"1F257013C581A8AD"
+				"2C597288E482D14E"
+				"08BFBC20738BD20A"
+				"083EA5B23475A8D9"
+				"4CB952F0100A1562"
+				"08CE50CA84617C46"
+				"7810914D6F72E50B"
+				"6F99CE751CF7493E"
+				"577592F30169CAC6"
+				"2E9CEF497263549A"
+				"793FFEC5CC6605B0"
+				"04DC73809D82A5F2"
+				"2A2AEF1DE6A322B9"
+				"1E4F8AF734FD6974"
+				"5CF1FE2695D77B35"
+				"791E4E218935323C"
+				"14F3194CC2DBEE5C"
+				"41F5F5BAB3BB44CD"
+				"20D51554071ACCA1"
+				"73B4B13BD510F5A2"
+				"67D28779547180E4"
+				"443010C46436FDFD"
+				"49E0AB1F77695AD7"
+				"2F06878E928A7E40"
+				"112AFDD768737DCA"
+				"5E5F73C09560A1B8"
+				"60B9233D6A1BCDD7"
+				"19C64F63853CB4D6"
+				"12BAC894DCDB32BA"
+				"15537B29FF779042"
+				"589EBDE45BD258F8"
+				"28F960676343B18A"
+				"216067AA6F950905"
+				"29D0DFC0838144CF"
+				"2E5FBF115FAC2880"
+				"64A9C94A63CD144C"
+				"6F9C65B5A2A8CCE2"
+				"7185F6A255EC28AF"
+				"686F9CB871597CE8"
+				"6BFBDF41386107B2"
+				"240A5347C9FE74DA"
+				"258D6A522FD03B63"
+				"5E3133FFC67303D3"
+				"25D6FAF1C5C3C090"
+				"13D20C8B85A68C8B"
+				"097CB93A96139620"
+				"44DCB7BBFE6ED87E"
+				"0333B7EAD5518AF1"
+				"5602D2B3129ECA56"
+				"77023764A355F148"
+				"03D38CE739CCB485"
+				"2A949689C1913AF2"
+				"268BECD29B8ED3A8"
+				"6B79B15910F3D051"
+				"6AB1041611C4CDE5"
+				"57013105A9B33A31"
+				"6ABCB98338E8DC50"
+				"7495FE8CBE583FCC"
+				"6F2BD3B77ECFEEDC"
+				"512930BA557DB67D"
+				"5A100D334F98792F"
+				"5F5A6797240CAF57"
+				"1A24BFBC3A02660D"
+				"04DC58195DE1BEB3"
+				"473858CC07B72CDA"
+				"2E508EDED5430257"
+				"37CDFC8294683DBB"
+				"36464204661734C9"
+				"46020C858DC4ECDE"
+				"2A90C45D934C6323"
+				"79C812ECA1686DEB"
+				"670BD609D9B5021C"
+				"78CC2F2339D58491"
+				"1AF092E470A3D418"
+				"4B4C0E7D98791CFA"
+				"27EC45B5C2926E78"
+				"23BEAAB69D60FDDD"
+				"38445A4F9A33018E"
+				"7B69310F7DBB6267"
+				"1743F2240673C8A9"
+				"72244977D867998A"
+				"3C0CDD94F05A0A02"
+				"549D16B5BCE81902"
+				"206BF29BC1ADC09B"
+				"0C3DE30252745B8D"
+				"5DCC5788513B85B2"
+				"76B5A9B9B940E982"
+				"013A47BC460D0F5A"
+				"645D0D86B12A3A23"
+				"3241F2CD3D65123A"
+				"14EE911983515E73"
+				"433DB7EE8FF2A2F9"
+				"101AD7DDB61F5907"
+				"6B209E216D659F87"
+				"327AC2E5A920EF5C"
+				"1373B5EDB515BD6F"
+				"0A9DAC5AAC0AB628"
+				"3DC3EC5E6BEA8F90"
+				"18487F97DCB23985"
+				"129CA3C2A11344A5"
+				"3EF3D075E7B8FDD6"
+				"3B8709B78256948F"
+				"12DCE59E0AAB9604"
+				"52966040A5A72880"
+				"719B9AE8DF6AA6EB"
+				"3AFB16D231356DE9"
+				"4A9063E92B0FAF8E"
+				"0E394AA489EFE88B"
+				"6E4EBE31B0B74B35"
+			]
+			hide_dependency_lines: true
 			icon: "pointblank:ammocreative"
 			id: "45C6A0CC997354D0"
 			rewards: [{
@@ -2949,13 +3204,331 @@
 				item: "pointblank:ammocreative"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "6C1687CF3990E13F"
 				type: "checkmark"
 			}]
 			title: "INFINITE AMMO"
-			x: 5.0d
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "2BE35DC23BDDA1AC"
+			tasks: [{
+				id: "15881421FDB4E624"
+				item: "pointblank:ammo556"
+				type: "item"
+			}]
+			x: 7.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "46741F590534300E"
+			tasks: [{
+				id: "12906520E9A97085"
+				item: "pointblank:ammo9mm"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "1230913921BF3ED2"
+			tasks: [{
+				id: "6244E3D383898680"
+				item: "pointblank:ammo762"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "79F57288A47B5401"
+			tasks: [{
+				id: "57CE756F22ED75D5"
+				item: "pointblank:ammo545"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "1C98600CBC4B4636"
+			tasks: [{
+				id: "54FAF12D6F8AE931"
+				item: "pointblank:ammo46"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "6474067051681F17"
+			tasks: [{
+				id: "46E6E9E6FB2F0FE1"
+				item: "pointblank:ammo50ae"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "0777FAD35587E758"
+			tasks: [{
+				id: "68158209E0054F36"
+				item: "pointblank:ammo357"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "76411D9B011E6FD5"
+			tasks: [{
+				id: "3B1581DC18989882"
+				item: "pointblank:ammo57"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "7082017865438DE1"
+			tasks: [{
+				id: "494C654D6095F4D5"
+				item: "pointblank:ammo45acp"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "11F3C9F26FD0C3B1"
+			tasks: [{
+				id: "32B99C6301B7400A"
+				item: {
+					Count: 1
+					id: "pointblank:grenade"
+					tag: {
+						GeckoLibID: 22L
+						lid: -8069150047867000650L
+						mid: 6533810778883245233L
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "1BA645085A3AD3DB"
+			tasks: [{
+				id: "2F7EF610C1818B7F"
+				item: "pointblank:ammo12gauge"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "070C1F0DD67C2C8F"
+			tasks: [{
+				id: "353ACEE5CFF8D77F"
+				item: "pointblank:ammo50bmg"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "4758301511C061EA"
+			tasks: [{
+				id: "6F26B6329A3B80F5"
+				item: "pointblank:ammo338lapua"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "6FC9A2568BE79AEF"
+			tasks: [{
+				id: "33CA40D05A0B2743"
+				item: "pointblank:ammo762x51"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "31E2B6EE0E4E0F5B"
+			tasks: [{
+				id: "204FA4C9E6ED5527"
+				item: "pointblank:ammo68"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "27B15ED46377DEBA"
+			tasks: [{
+				id: "3EEF35C4B9F1FC3C"
+				item: "pointblank:ammolasercharge"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "7290F122F582BDCE"
+			tasks: [{
+				id: "641C03AB8B78F0FE"
+				item: "pointblank:smaw_rocket"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "0BC047A99F691E11"
+			tasks: [{
+				id: "6A04DD8DA4A0D9F8"
+				item: "pointblank:at4_rocket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "4B19A950EBE47402"
+			tasks: [{
+				id: "48ACED543A15D33B"
+				item: "pointblank:grenade40mm"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "0D73F27C04CDD44D"
+			tasks: [{
+				id: "6293228F3BF96AD7"
+				item: "pointblank:javelin_rocket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "06F18CC55A399C52"
+			tasks: [{
+				id: "22C0BAA04649890E"
+				item: "pointblank:grenade20mm"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "08132ABBD2D58344"
+			tasks: [{
+				id: "72F64697D88A45D5"
+				item: "pointblank:doom_argentrocket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "754A0D8BF56097AC"
+			tasks: [{
+				id: "05C6391244440A0A"
+				item: "pointblank:hl_rebar"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "716C15C7F94B0B39"
+			tasks: [{
+				id: "5BC6692D689EB8CE"
+				item: "pointblank:doom_argentblastcharge"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "3F5AE375122D0665"
+			tasks: [{
+				id: "35DAB0305CD58C42"
+				item: "pointblank:doom_plasmacell"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "0218C63B10AB6820"
+			tasks: [{
+				id: "6BA5A8D534DCE968"
+				item: "pointblank:doom_50calrifle"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "217D62B5BC8D85E1"
+			tasks: [{
+				id: "7F6C0BA545EEAB1E"
+				item: "pointblank:doom_50calpistol"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E9CEF497263549A"]
+			id: "0E41521A467E1AE1"
+			tasks: [{
+				id: "787AEA1E96D78C0E"
+				item: "pointblank:doom_steelflechette"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.0d
 		}
 	]
 	title: "Modern Problems"
