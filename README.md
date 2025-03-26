@@ -26,10 +26,11 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 5. Set release title (Ex `DaModpack 1.0.0`)
 6. Set release description with changelog, this should document all commits since last release
 7. Check the "Set as pre-release" box if not ready for public
-8. Click "Generate release notes" which will generate from prior commit notes
-   - Modify this to look nice for easy copying to the CurseForge changelog
-10. Publish release
-11. Upload the zip file from Step 3 to CurseForge
+8. Click "Generate release notes" which will give you a link to compare the previous version with the new one
+   - Use this to help you write a complete changelog for easy copying into the CurseForge release, see previous changelogs for reference
+   - In order to view the [comparison](https://github.com/RoarkCats/damodpack-1-islands/compare/) before publishing the release, [change the new tag](https://github.com/user-attachments/assets/608c54a0-f9a4-4622-864b-f32cfe1593a4) in the comparison "compare" field to `main`
+9. Publish release
+10. Upload the zip file from Step 3 to CurseForge with the changelog from Step 8
 
 ## Initializing this repository with VSCode
 1. Open VSCode, click source control ![source control 3 dots connected by lines](https://github.com/user-attachments/assets/460be682-14b6-4328-9e1f-a299009607ce)
