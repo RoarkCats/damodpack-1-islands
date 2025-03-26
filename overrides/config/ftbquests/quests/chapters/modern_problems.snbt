@@ -515,7 +515,7 @@
 				item: "pointblank:printer"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -1225,19 +1225,1737 @@
 				}
 			]
 			title: "Need a body of a gun somehow"
-			x: 4.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3DC3EC5E6BEA8F90"]
+			dependencies: [
+				"3DC3EC5E6BEA8F90"
+				"5CF1FE2695D77B35"
+			]
 			id: "2E9CEF497263549A"
 			tasks: [{
 				id: "5BC68318D1682EFA"
 				title: "Ammo"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5CF1FE2695D77B35"]
+			id: "577592F30169CAC6"
+			tasks: [
+				{
+					id: "09281707C226B676"
+					item: "pointblank:guninternals"
+					type: "item"
+				}
+				{
+					id: "75A3CFFBDB89D7B7"
+					item: {
+						Count: 1
+						id: "pointblank:processor"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Gun Parts"
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6B209E216D659F87"]
+			id: "3C0CDD94F05A0A02"
+			tasks: [{
+				id: "00A4456C7F7E90A7"
+				title: "Doom Weaponry"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B209E216D659F87"]
+			id: "6ABCB98338E8DC50"
+			tasks: [{
+				id: "77870D55CB20BA97"
+				title: "Half Life Weaponry"
+				type: "checkmark"
+			}]
+			title: "Half Life Weaponry"
+			x: 21.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["577592F30169CAC6"]
+			id: "1373B5EDB515BD6F"
+			tasks: [{
+				id: "2A726905EAFA1EA0"
+				title: "Pistols"
+				type: "checkmark"
+			}]
+			title: "Pistols"
+			x: 14.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"5CF1FE2695D77B35"
+				"3DC3EC5E6BEA8F90"
+			]
+			description: ["Make sure that the mod is compatable with your gun before making it ;)"]
+			id: "512930BA557DB67D"
+			subtitle: "Mod that S$*%"
+			tasks: [{
+				id: "5DD161466483F4AF"
+				title: "Attachments"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["577592F30169CAC6"]
+			id: "77023764A355F148"
+			tasks: [{
+				id: "1F268445C17E8E55"
+				title: "Snipers"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["577592F30169CAC6"]
+			id: "14EE911983515E73"
+			tasks: [{
+				id: "5251AE6D6F6AC6B9"
+				title: "Assault Rifles"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["577592F30169CAC6"]
+			id: "112AFDD768737DCA"
+			tasks: [{
+				id: "6D437CD4FEE3082A"
+				title: "Heavy Weaponry"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["577592F30169CAC6"]
+			id: "6B209E216D659F87"
+			tasks: [
+				{
+					id: "588260B1BD4D4A42"
+					item: "pointblank:doom_argent_compound"
+					type: "item"
+				}
+				{
+					id: "56ACD3531B0D57E9"
+					item: "pointblank:doom_argent_ingot"
+					type: "item"
+				}
+			]
+			title: "Special Gun Parts"
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "4CB952F0100A1562"
+			tasks: [{
+				id: "2E0C69440FCAB7BE"
+				item: {
+					Count: 1
+					id: "pointblank:hl_coltpython"
+					tag: {
+						GeckoLibID: 1L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1531952241
+							-1703398661
+							-1810506769
+							694527277
+						]
+						lid: -6172461713266549438L
+						mid: -1796985860900042106L
+						sa: {
+							scope: "/"
+						}
+						seed: -5644248223849189974L
+					}
+				}
+				type: "item"
+			}]
+			x: 23.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "6AB1041611C4CDE5"
+			tasks: [{
+				id: "5893AE1236E59C15"
+				item: {
+					Count: 1
+					id: "pointblank:hl_mp5"
+					tag: {
+						GeckoLibID: 7L
+						aim: 0b
+						ammo: 30
+						ammox: { }
+						as: [{
+							id: "pointblank:smg_suppressor"
+							rmv: 1b
+						}]
+						fmid: [I;
+							1802952539
+							-1082640472
+							-1676700150
+							2013276562
+						]
+						lid: -8216812208732150254L
+						mid: 4875442700197317565L
+						sa: {
+							scope: "/"
+						}
+						seed: -4636111348715345667L
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "38445A4F9A33018E"
+			tasks: [{
+				id: "21B931D0645279BC"
+				item: {
+					Count: 1
+					id: "pointblank:hl_crowbar"
+					tag: {
+						GeckoLibID: 9L
+						aim: 0b
+						ammo: 2147483647
+						ammox: { }
+						fmid: [I;
+							-535382745
+							1824077109
+							-1430868265
+							1857613139
+						]
+						lid: -8722032012448143015L
+						mid: 9101486668077875535L
+						seed: -4039785309533645584L
+					}
+				}
+				type: "item"
+			}]
+			x: 21.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "36464204661734C9"
+			tasks: [{
+				id: "09F253D5477C2B61"
+				item: {
+					Count: 1
+					id: "pointblank:hl_mp7"
+					tag: {
+						GeckoLibID: 8L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						as: [{
+							id: "pointblank:hl_omegasight"
+							rmv: 1b
+						}]
+						fmid: [I;
+							1528831669
+							-468569971
+							-1271418764
+							-2122748132
+						]
+						lid: -8095024833232640248L
+						mid: -5952580211445248299L
+						sa: {
+							scope: "//hl_omegasight"
+						}
+						seed: -5825422074338234485L
+					}
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "3AFB16D231356DE9"
+			tasks: [{
+				id: "57507739424693B5"
+				item: {
+					Count: 1
+					id: "pointblank:hl_uspmatch"
+					tag: {
+						GeckoLibID: 4L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						as: [{
+							id: "pointblank:p30l_compensator"
+							rmv: 1b
+						}]
+						fmid: [I;
+							122927849
+							22429297
+							-1284337557
+							234478623
+						]
+						lid: -7226526355251407378L
+						mid: -8990884139830063912L
+						sa: {
+							scope: "/"
+						}
+						seed: -4698004277703488645L
+					}
+				}
+				type: "item"
+			}]
+			x: 22.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "13D20C8B85A68C8B"
+			tasks: [{
+				id: "3385F82DB9EDEC1D"
+				item: {
+					Count: 1
+					id: "pointblank:hl_spas12"
+					tag: {
+						GeckoLibID: 2L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							1361056025
+							1313158288
+							-1445717326
+							2144688394
+						]
+						lid: -7434899234572743579L
+						mid: 6213143408172091037L
+						sa: {
+							scope: "/"
+						}
+						seed: 5359228441749966302L
+					}
+				}
+				type: "item"
+			}]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "0A9DAC5AAC0AB628"
+			tasks: [{
+				id: "666E22EEC11353FA"
+				item: {
+					Count: 1
+					id: "pointblank:hl_resistancecrossbow"
+					tag: {
+						GeckoLibID: 5L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						as: [{
+							id: "pointblank:hl_resistancescope"
+							rmv: 1b
+						}]
+						fmid: [I;
+							1364437570
+							-1169801913
+							-1724034117
+							1418603001
+						]
+						lid: -6196654648092265346L
+						mid: -3079473994682972677L
+						sa: {
+							scope: "//hl_resistancescope"
+						}
+						seed: 6989681459470716939L
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "2A90C45D934C6323"
+			tasks: [{
+				id: "7BA8E66AF8222DB6"
+				item: {
+					Count: 1
+					id: "pointblank:hl_pulserifle"
+					tag: {
+						GeckoLibID: 6L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							1292741973
+							-1030277664
+							-1511557347
+							-1906654260
+						]
+						lid: -5573803973125207815L
+						mid: -4207943102988398758L
+						seed: 2798477548139660547L
+					}
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6ABCB98338E8DC50"]
+			id: "7B475E4D8BDD17D2"
+			tasks: [{
+				id: "776738603795009A"
+				item: {
+					Count: 1
+					id: "pointblank:hl_taucannon"
+					tag: {
+						GeckoLibID: 3L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							1496648276
+							1669019356
+							-1143734728
+							-1626438288
+						]
+						lid: -8684604560763628683L
+						mid: -6875869601999338559L
+						seed: -521048872767195423L
+					}
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "12DCE59E0AAB9604"
+			tasks: [{
+				id: "234A8B04E3F3FDA8"
+				item: {
+					Count: 1
+					id: "pointblank:doom_plasmagun"
+					tag: {
+						GeckoLibID: 14L
+						aim: 0b
+						ammo: 100
+						ammox: { }
+						fmid: [I;
+							-7919997
+							-1556267027
+							-2105191448
+							-235528467
+						]
+						lid: -7838212657046609004L
+						mid: 457673449702310937L
+						seed: -7883361282822577515L
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "4202AEC162C34213"
+			tasks: [{
+				id: "4F5F0CB4236196E0"
+				item: {
+					Count: 1
+					id: "pointblank:doom_plasmachaingun"
+					tag: {
+						GeckoLibID: 13L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-26990626
+							779891721
+							-1463176620
+							-911015113
+						]
+						lid: -6336169469431283156L
+						mid: 4443862306593983550L
+						seed: 6747137763584099744L
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "013A47BC460D0F5A"
+			tasks: [{
+				id: "029F6C894B7917BB"
+				item: {
+					Count: 1
+					id: "pointblank:doom_plasmapistol"
+					tag: {
+						GeckoLibID: 16L
+						aim: 0b
+						ammo: 2147483647
+						ammox: { }
+						fmid: [I;
+							-756758649
+							-653707956
+							-1868707693
+							-1202976019
+						]
+						lid: -5449145174519794146L
+						mid: -8518896517603244475L
+						seed: 7361910091572716513L
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "56D17E9106170440"
+			tasks: [{
+				id: "6D6709CF422BCCDC"
+				item: {
+					Count: 1
+					id: "pointblank:doom_gausscannon"
+					tag: {
+						GeckoLibID: 12L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1073149605
+							-969327768
+							-1465952531
+							-1406944168
+						]
+						lid: -6036663277105025960L
+						mid: -6305804850339167542L
+						sa: { }
+						seed: -5471684090861979739L
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "12273E9CFF7E55CD"
+			tasks: [{
+				id: "456349E3BF8451A7"
+				item: {
+					Count: 1
+					id: "pointblank:doom_heavycannon"
+					tag: {
+						GeckoLibID: 11L
+						aim: 0b
+						ammo: 80
+						ammox: { }
+						fmid: [I;
+							-745418456
+							579287357
+							-1872234143
+							-678303590
+						]
+						lid: -5738049679094234381L
+						mid: 4801160228661642872L
+						seed: -9005479352767437011L
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "52966040A5A72880"
+			tasks: [{
+				id: "1B426DAC3648D527"
+				item: {
+					Count: 1
+					id: "pointblank:doom_handgun"
+					tag: {
+						GeckoLibID: 10L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							1134729741
+							749548669
+							-1228086506
+							-113344782
+						]
+						lid: -5882542330456808233L
+						mid: 2810991090248729946L
+						seed: -1883424889373706386L
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "73B4B13BD510F5A2"
+			tasks: [{
+				id: "0984A6872EC4C555"
+				item: {
+					Count: 1
+					id: "pointblank:doom_shotgun"
+					tag: {
+						GeckoLibID: 18L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1554927304
+							1055405703
+							-1393550836
+							717351153
+						]
+						lid: -6127265248342678236L
+						mid: -7910397158453129262L
+						seed: -447016969022600032L
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "5DCC5788513B85B2"
+			tasks: [{
+				id: "578C8F227EEE991F"
+				item: {
+					Count: 1
+					id: "pointblank:doom_bfg9000"
+					tag: {
+						GeckoLibID: 19L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1234627443
+							-540463003
+							-1114839945
+							-1246097003
+						]
+						lid: -5253328504330090941L
+						mid: 3546629667910930050L
+						seed: -3463228533004282306L
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "327AC2E5A920EF5C"
+			tasks: [{
+				id: "6F60A91968D15C9B"
+				item: {
+					Count: 1
+					id: "pointblank:doom_supershotgun"
+					tag: {
+						GeckoLibID: 20L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1014005577
+							1415655704
+							-2058484550
+							-777084452
+						]
+						lid: -8929628742903878002L
+						mid: 5424821924274455021L
+						seed: 8975015327046332715L
+					}
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "4B4C0E7D98791CFA"
+			tasks: [{
+				id: "335692C6F554E90E"
+				item: {
+					Count: 1
+					id: "pointblank:doom_rocketlauncher"
+					tag: {
+						GeckoLibID: 17L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-140656117
+							725106242
+							-1792993729
+							693242935
+						]
+						lid: -6845798520530281341L
+						mid: -936346918188662242L
+						seed: 4068484540856887169L
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "12BAC894DCDB32BA"
+			tasks: [{
+				id: "7373E30214442A57"
+				item: {
+					Count: 1
+					id: "pointblank:doom_combatshotgun"
+					tag: {
+						GeckoLibID: 15L
+						aim: 0b
+						ammo: 0
+						ammox: { }
+						fmid: [I;
+							-1031537130
+							-1593689758
+							-1077945833
+							-1112731113
+						]
+						lid: -9093710940109849564L
+						mid: -3967706250598334003L
+						sa: { }
+						seed: 6526216723505812781L
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["512930BA557DB67D"]
+			id: "60B9233D6A1BCDD7"
+			subtitle: "Make sure you hit your target"
+			tasks: [{
+				id: "3EAADC5CB26F7EFE"
+				title: "Sights"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "03D38CE739CCB485"
+			tasks: [{
+				id: "4E9754C853AE71A8"
+				item: {
+					Count: 1
+					id: "pointblank:aimpoint"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "6B79B15910F3D051"
+			tasks: [{
+				id: "4327673BBF1FB494"
+				item: {
+					Count: 1
+					id: "pointblank:holographic558"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "7185F6A255EC28AF"
+			tasks: [{
+				id: "4130B0C6A3BEFB1C"
+				item: {
+					Count: 1
+					id: "pointblank:holographic_em"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "6F99CE751CF7493E"
+			tasks: [{
+				id: "72D9534B0E523878"
+				item: {
+					Count: 1
+					id: "pointblank:holographic"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "1F257013C581A8AD"
+			tasks: [{
+				id: "7C26067FD4E07674"
+				item: {
+					Count: 1
+					id: "pointblank:operatorreflex"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "25D6FAF1C5C3C090"
+			tasks: [{
+				id: "46964AC199CD1C9D"
+				item: {
+					Count: 1
+					id: "pointblank:moa_hg"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "28F960676343B18A"
+			tasks: [{
+				id: "73BB2AFC47844B53"
+				item: {
+					Count: 1
+					id: "pointblank:delta"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "3241F2CD3D65123A"
+			tasks: [{
+				id: "36D995928C127081"
+				item: {
+					Count: 1
+					id: "pointblank:moa"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "7B69310F7DBB6267"
+			tasks: [{
+				id: "44CF20B82A7808F1"
+				item: {
+					Count: 1
+					id: "pointblank:hl_omegasight"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "216067AA6F950905"
+			tasks: [{
+				id: "623B2507D86CD7F4"
+				item: {
+					Count: 1
+					id: "pointblank:hl_resistancescope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "5E5F73C09560A1B8"
+			tasks: [{
+				id: "6C73330AEFC970CD"
+				item: {
+					Count: 1
+					id: "pointblank:hl_pythonlaser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "7810914D6F72E50B"
+			tasks: [{
+				id: "5E52FEDF2D8F86B1"
+				item: {
+					Count: 1
+					id: "pointblank:precision_scope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "433DB7EE8FF2A2F9"
+			tasks: [{
+				id: "784B6D6874F7EC03"
+				item: {
+					Count: 1
+					id: "pointblank:drake_scope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "791E4E218935323C"
+			tasks: [{
+				id: "57C988A3D450161B"
+				item: {
+					Count: 1
+					id: "pointblank:wolf_scope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "5A100D334F98792F"
+			tasks: [{
+				id: "58D21FB540F76D20"
+				item: {
+					Count: 1
+					id: "pointblank:spearblack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "6F2BD3B77ECFEEDC"
+			tasks: [{
+				id: "7AFC401BD8E99C55"
+				item: {
+					Count: 1
+					id: "pointblank:hawk_scope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "1A24BFBC3A02660D"
+			tasks: [{
+				id: "0915A429E6111904"
+				item: {
+					Count: 1
+					id: "pointblank:spear"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "443010C46436FDFD"
+			tasks: [{
+				id: "276F46595A8BC0EE"
+				item: {
+					Count: 1
+					id: "pointblank:eaglescope"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "20D51554071ACCA1"
+			tasks: [{
+				id: "212046D8283C75C1"
+				item: {
+					Count: 1
+					id: "pointblank:hi_red_zoom"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "670BD609D9B5021C"
+			tasks: [{
+				id: "4082D8EC99E46A4A"
+				item: {
+					Count: 1
+					id: "pointblank:hi_red"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "206BF29BC1ADC09B"
+			tasks: [{
+				id: "18B4F7F69941CD28"
+				item: {
+					Count: 1
+					id: "pointblank:hamr"
+					tag: {
+						as: [{
+							id: "pointblank:delta"
+							rmv: 1b
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "6C7A861944164B66"
+			tasks: [{
+				id: "2300E8B0BB61EAC2"
+				item: {
+					Count: 1
+					id: "pointblank:specter"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "2F06878E928A7E40"
+			tasks: [{
+				id: "3189F54D31610586"
+				item: {
+					Count: 1
+					id: "pointblank:acog"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "72244977D867998A"
+			tasks: [{
+				id: "628141C2176EF4DE"
+				item: {
+					Count: 1
+					id: "pointblank:rspec"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "18487F97DCB23985"
+			tasks: [{
+				id: "56C862384ABCC2AE"
+				item: {
+					Count: 1
+					id: "pointblank:srs"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "04DC58195DE1BEB3"
+			tasks: [{
+				id: "1F61518AF5BE1AD5"
+				item: {
+					Count: 1
+					id: "pointblank:aimpoint_t2"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "4A9063E92B0FAF8E"
+			tasks: [{
+				id: "27D411C96B892911"
+				item: {
+					Count: 1
+					id: "pointblank:doom_launcher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0CDD94F05A0A02"]
+			id: "083EA5B23475A8D9"
+			tasks: [{
+				id: "22DC2108408271EE"
+				item: {
+					Count: 1
+					id: "pointblank:doom_precisionbolt"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B9233D6A1BCDD7"]
+			id: "793FFEC5CC6605B0"
+			tasks: [{
+				id: "6677376595B1A71C"
+				item: {
+					Count: 1
+					id: "pointblank:cantedrail"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["512930BA557DB67D"]
+			id: "453C3B22FD9F4689"
+			tasks: [{
+				id: "6DF5E55213696F01"
+				title: "Suppressors and Muzzles"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "5F5A6797240CAF57"
+			tasks: [{
+				id: "1047FBFCC6E80447"
+				item: {
+					Count: 1
+					id: "pointblank:ar_suppressor_tan"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "3B8709B78256948F"
+			tasks: [{
+				id: "2113B6429CDE398F"
+				item: {
+					Count: 1
+					id: "pointblank:xm7_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "1AF092E470A3D418"
+			tasks: [{
+				id: "55C523C73F256CC9"
+				item: {
+					Count: 1
+					id: "pointblank:ak_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "76B5A9B9B940E982"
+			tasks: [{
+				id: "1C7F84A4F8C8AE53"
+				item: {
+					Count: 1
+					id: "pointblank:smg_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "5E3133FFC67303D3"
+			tasks: [{
+				id: "03BC16DC08CB0EE6"
+				item: {
+					Count: 1
+					id: "pointblank:rf_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "5602D2B3129ECA56"
+			tasks: [{
+				id: "64D8DB87C189DB4F"
+				item: {
+					Count: 1
+					id: "pointblank:hp_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "2A949689C1913AF2"
+			tasks: [{
+				id: "198355AB4EED5B02"
+				item: {
+					Count: 1
+					id: "pointblank:sg_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "3EF3D075E7B8FDD6"
+			tasks: [{
+				id: "1A13A7E31A752C7B"
+				item: {
+					Count: 1
+					id: "pointblank:ar_muzzlebrake"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "08BFBC20738BD20A"
+			tasks: [{
+				id: "75F376111E079990"
+				item: {
+					Count: 1
+					id: "pointblank:smg_muzzlebrake"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "065D11FF919F4433"
+			tasks: [{
+				id: "68996D8E9855E7BA"
+				item: {
+					Count: 1
+					id: "pointblank:p30l_compensator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["453C3B22FD9F4689"]
+			id: "6BFBDF41386107B2"
+			tasks: [{
+				id: "089FD8F4CE00DDC5"
+				item: {
+					Count: 1
+					id: "pointblank:ar_suppressor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["512930BA557DB67D"]
+			id: "6E4EBE31B0B74B35"
+			tasks: [{
+				id: "2D953430B0D77A0E"
+				title: "Underbarrel"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["512930BA557DB67D"]
+			id: "46020C858DC4ECDE"
+			tasks: [{
+				id: "3445677207F85235"
+				title: "Grip"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "589EBDE45BD258F8"
+			tasks: [{
+				id: "539C5AE7461FBCA9"
+				item: {
+					Count: 1
+					id: "pointblank:ak_romgrip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "15537B29FF779042"
+			tasks: [{
+				id: "0414A4717519A9FD"
+				item: {
+					Count: 1
+					id: "pointblank:heragrip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "79C812ECA1686DEB"
+			tasks: [{
+				id: "51F25D985C67D4DF"
+				item: {
+					Count: 1
+					id: "pointblank:stubbygrip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "04DC73809D82A5F2"
+			tasks: [{
+				id: "078CF1ADCA7CF4E3"
+				item: {
+					Count: 1
+					id: "pointblank:stubbygriptan"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "240A5347C9FE74DA"
+			tasks: [{
+				id: "00CD8111F59B0BED"
+				item: {
+					Count: 1
+					id: "pointblank:shortgrip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "57013105A9B33A31"
+			tasks: [{
+				id: "20C2DCCBF289567F"
+				item: {
+					Count: 1
+					id: "pointblank:foregrip_tan"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["46020C858DC4ECDE"]
+			id: "549D16B5BCE81902"
+			tasks: [{
+				id: "0E226C61B0AD9A03"
+				item: {
+					Count: 1
+					id: "pointblank:foregrip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E4EBE31B0B74B35"]
+			id: "2E508EDED5430257"
+			tasks: [{
+				id: "2600CF15648E77C9"
+				item: {
+					Count: 1
+					id: "pointblank:ulg99cannon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6E4EBE31B0B74B35"]
+			id: "72DFCC7DFA8C172A"
+			tasks: [{
+				id: "644CAD5B0C6810C7"
+				item: {
+					Count: 1
+					id: "pointblank:m203launcher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6E4EBE31B0B74B35"]
+			id: "2A2AEF1DE6A322B9"
+			tasks: [{
+				id: "3A9D55DA82D3B945"
+				item: {
+					Count: 1
+					id: "pointblank:m870modshotgun"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6E4EBE31B0B74B35"]
+			id: "6F9C65B5A2A8CCE2"
+			tasks: [{
+				id: "496CB2E9C0BA6A2F"
+				item: {
+					Count: 1
+					id: "pointblank:fn40"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6E4EBE31B0B74B35"]
+			id: "473858CC07B72CDA"
+			tasks: [{
+				id: "110366EF02031075"
+				item: {
+					Count: 1
+					id: "pointblank:gp25"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["512930BA557DB67D"]
+			id: "2C597288E482D14E"
+			tasks: [{
+				id: "13048B93FA1112D3"
+				title: "Kits"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C597288E482D14E"]
+			id: "44DCB7BBFE6ED87E"
+			tasks: [{
+				id: "3D3D89BE7A9DB193"
+				item: {
+					Count: 1
+					id: "pointblank:m9_stock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C597288E482D14E"]
+			id: "1E4F8AF734FD6974"
+			tasks: [{
+				id: "251B207DB11C53DC"
+				item: {
+					Count: 1
+					id: "pointblank:glockstock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C597288E482D14E"]
+			id: "64A9C94A63CD144C"
+			tasks: [{
+				id: "479665C6B2019AF9"
+				item: {
+					Count: 1
+					id: "pointblank:m16a3kit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C597288E482D14E"]
+			id: "1743F2240673C8A9"
+			tasks: [{
+				id: "41DDE72E4AE82A52"
+				item: {
+					Count: 1
+					id: "pointblank:star15mod3receiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C597288E482D14E"]
+			id: "78CC2F2339D58491"
+			tasks: [{
+				id: "484AAAAB63E3A610"
+				item: {
+					Count: 1
+					id: "pointblank:scarl_iss"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			id: "43F11893C6064AD8"
+			rewards: [
+				{
+					id: "273A8CB16D63EDBF"
+					item: {
+						Count: 1
+						id: "pointblank:l96a1_hyperbeast"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0CAFF58BDEE5C8A2"
+					item: {
+						Count: 1
+						id: "pointblank:m4a1_asiimov"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0BAB9F45921E713D"
+					item: {
+						Count: 1
+						id: "pointblank:m4sopmodii_bartender"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6F92345D1D239107"
+				title: "Finished everything"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: "pointblank:ammocreative"
+			id: "45C6A0CC997354D0"
+			rewards: [{
+				count: 64
+				id: "5CC29877A9E7FAE1"
+				item: "pointblank:ammocreative"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C1687CF3990E13F"
+				type: "checkmark"
+			}]
+			title: "INFINITE AMMO"
+			x: 5.0d
+			y: -3.0d
 		}
 	]
 	title: "Modern Problems"
