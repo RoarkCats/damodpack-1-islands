@@ -237,7 +237,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["3AA4DBBB43DADBB2"]
 			id: "5B25094B1EEED4DE"
+			subtitle: "Might want to make more armour upgrades"
 			tasks: [
 				{
 					id: "4C89538AA5C0F0AB"
@@ -260,6 +262,7 @@
 					type: "item"
 				}
 			]
+			title: "Pnumatic Craft"
 			x: -3.0d
 			y: 0.0d
 		}

@@ -9,64 +9,222 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: "unusualfishmod:ripper_bucket"
 			id: "5A63E4893296E76A"
 			tasks: [{
 				entity: "thalassophobia:alpha_reaverfish"
+				icon: "thalassophobia:alpha_reaverfish_spawn_egg"
 				id: "05E481096EBC2A6E"
-				title: "Leviathan Class Lifeform"
+				title: "Kill a Alpha Reaverfish"
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
-			y: 0.0d
+			title: "A Leviathan Class Lifeform"
+			x: 1.5d
+			y: 0.5d
 		}
 		{
+			icon: "alexsmobs:medium_catfish_bucket"
 			id: "4FB4B5C075AD0F83"
 			tasks: [{
 				entity: "thalassophobia:colossoteus"
+				icon: "thalassophobia:colossoteus_spawn_egg"
 				id: "5B194EC696EAEEB2"
-				title: "The Bloop"
+				title: "Kill a Adult Colossoteus"
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.5d
-			y: 0.0d
+			title: "The Bloop"
+			x: 2.5d
+			y: 0.5d
 		}
 		{
+			icon: "alexsmobs:small_catfish_bucket"
 			id: "0FFD10988338CFE5"
 			tasks: [{
 				entity: "thalassophobia:baby_colossoteus"
+				icon: "thalassophobia:baby_colossoteus_spawn_egg"
 				id: "61B8D62BED4FE670"
-				title: "Watch out for the mom"
+				title: "Kill a Baby Colossoteus"
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
+			title: "Watch out for the mom"
+			x: 2.0d
 			y: 1.5d
 		}
 		{
+			icon: "minecraft:salmon_bucket"
 			id: "644B1EEBE09E3C4D"
 			tasks: [{
 				entity: "thalassophobia:reaverfish"
+				icon: "thalassophobia:reaverfish_spawn_egg"
 				id: "2FA1F88D11F00136"
-				title: "Where is the pack leader"
+				title: "Kill a Reaverfish"
 				type: "kill"
-				value: 100L
+				value: 1L
 			}]
-			x: 1.5d
+			title: "Where is the pack leader"
+			x: 1.0d
 			y: 1.5d
 		}
 		{
+			icon: "aquaculture:brown_trout_bucket"
 			id: "1BBAA61062A05857"
 			tasks: [{
 				entity: "thalassophobia:vertebrat"
+				icon: "thalassophobia:vertebrat_spawn_egg"
 				id: "282498DF8AB9FAE0"
-				title: "Brat Summer"
+				title: "Kill some Vertebrat"
 				type: "kill"
 				value: 6L
 			}]
+			title: "Brat Summer"
 			x: 3.0d
-			y: 0.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "duckensinvasion:rex_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "31E22199163DFE24"
+			tasks: [{
+				entity: "duckensinvasion:duck_rex"
+				id: "6628DFBE0C76A6C9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "duckensinvasion:plasma_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "49720CD4485F8897"
+			tasks: [{
+				entity: "duckensinvasion:quackenator"
+				id: "0C3871022C23377E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "duckensinvasion:wyvern_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "25D731A3DB11CF0E"
+			tasks: [{
+				entity: "duckensinvasion:dragon_duck_flying"
+				id: "6875263490B4732C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			icon: "duckensinvasion:ward"
+			id: "6389E053D734F544"
+			tasks: [{
+				entity: "duckensinvasion:commander_duck"
+				id: "361162B46C52EF23"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			id: "533618D0E85FE154"
+			tasks: [{
+				entity: "darkwaters:aberration"
+				id: "26E880B49F594418"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "7CCF974214A2FF46"
+			tasks: [{
+				entity: "darkwaters:manaraw"
+				id: "40AC504F978F62D3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "6D08EE7873280B11"
+			tasks: [{
+				entity: "darkwaters:mohast"
+				id: "2E8F5FF20E8D4BB6"
+				type: "kill"
+				value: 5L
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			id: "40358010FB70FEB5"
+			tasks: [{
+				entity: "darkwaters:sight_hunter"
+				id: "3B7FE129418DC7F1"
+				type: "kill"
+				value: 3L
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			id: "1AA8005F29423A8F"
+			tasks: [{
+				entity: "darkwaters:craeken"
+				id: "68705852897BB59B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			id: "1BD804470E7E7370"
+			tasks: [{
+				entity: "darkwaters:miraid"
+				id: "7001C110D287B9CF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			id: "01D520B09CAA4211"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "0E27D15B2AD7DE1D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: -1.0d
 		}
 	]
 	title: "Monster Hunter: Minecraft"

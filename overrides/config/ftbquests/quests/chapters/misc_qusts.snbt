@@ -51,6 +51,32 @@
 			x: -1.5d
 			y: 0.0d
 		}
+		{
+			description: ["Use this to make custom paintings inside of minecraft!"]
+			id: "025A876491329A9D"
+			subtitle: "Time to make your own painting"
+			tasks: [{
+				id: "6EFA7912482C9F63"
+				item: "xercapaint:item_easel"
+				type: "item"
+			}]
+			title: "Bob Ross"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: ["Use this to control screens to watch videos from the internet in minecraft. Be careful with how many you WaterFrames Screens you place as they can start to cause lag in a large amount"]
+			id: "08AB5601635C6C30"
+			subtitle: "I'm With the Science Team!"
+			tasks: [{
+				id: "717D6FD57D0ACE73"
+				item: "waterframes:remote"
+				type: "item"
+			}]
+			title: "Videos in Minecraft?"
+			x: -2.5d
+			y: 0.0d
+		}
 	]
 	title: "Misc Qusts"
 }
