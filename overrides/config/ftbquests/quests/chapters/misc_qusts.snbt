@@ -8,73 +8,137 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "6DD26686973597EE"
-			tasks: [{
-				id: "71B5400C21044D83"
-				item: {
-					Count: 1
-					id: "the_furry_mod:fursuit_helmet"
-					tag: {
-						Damage: 0
-					}
+			icon: {
+				Count: 1
+				id: "the_furry_mod:fursuit_helmet"
+				tag: {
+					Damage: 0
 				}
+			}
+			id: "6DD26686973597EE"
+			rewards: [{
+				count: 4
+				id: "7F09768D6C3B1481"
+				item: "minecraft:bone"
 				type: "item"
 			}]
+			subtitle: "Good boy~"
+			tasks: [
+				{
+					id: "71B5400C21044D83"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "the_furry_mod:.*helmet"
+						}
+					}
+					title: "Fursuit Head"
+					type: "item"
+				}
+				{
+					id: "151FA96F2F85B3A7"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "the_furry_mod:.*chestplate"
+						}
+					}
+					title: "Fursuit Body"
+					type: "item"
+				}
+				{
+					id: "14B81312453162AE"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "the_furry_mod:.*leggings"
+						}
+					}
+					title: "Fursuit Pants"
+					type: "item"
+				}
+				{
+					id: "05DD371A62658F86"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "the_furry_mod:.*boots"
+						}
+					}
+					title: "Fursuit Feet Paws"
+					type: "item"
+				}
+			]
+			title: "Your Own Fursona!"
 			x: -0.5d
 			y: 0.0d
 		}
 		{
+			description: [
+				"&lTip&r: Shift-Right-Click the calculator to switch modes"
+				""
+				"Many great tutorials can be found online covering how this items works, however,"
+				"the gist of it boils down to this:"
+				""
+				"&71.&r Place an item in the top left slot"
+				"&72.&r View the recipe in JEI of any derivative items below for which you'd like to know the cost"
+				"&73.&r Press the &oMove Items&r \"&l+&r\" in JEI"
+				"&74.&r Press the blue &oSave&r icon in the calculator to add the recipe for all future calculations"
+				""
+				"You can view, modify, or remove all added recipes from the &oSearch recipe&r button in the top right"
+				""
+				"Click the &oHelp&r manual in the bottom right or view the mod page for more info"
+			]
+			icon: {
+				Count: 1
+				id: "jecalculation:item_calculator_craft"
+				tag: {
+					jecalculation: {
+						craft: {
+							amount: ""
+							inventory: 0b
+							mode: "input"
+							overlayDepth: 0
+							overlayOpen: 0b
+							overlayPositionX: 0
+							overlayPositionY: 0
+							recents: [{
+								content: {
+									amount: 1L
+									item: "ftbfiltersystem:smart_filter"
+								}
+								type: "itemStack"
+							}]
+						}
+					}
+				}
+			}
 			id: "35B22E57368C0E19"
+			rewards: [{
+				id: "093DA695C5C8D2DD"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "rsquare"
+			subtitle: "See? Wasn't that hard..."
 			tasks: [{
 				id: "20D8668FC42732C8"
 				item: {
 					Count: 1
-					id: "jecalculation:item_calculator_craft"
+					id: "itemfilters:mod"
 					tag: {
-						jecalculation: {
-							craft: {
-								amount: ""
-								inventory: 0b
-								mode: "input"
-								overlayDepth: 0
-								overlayOpen: 0b
-								overlayPositionX: 0
-								overlayPositionY: 0
-								recents: [ ]
-							}
-						}
+						value: "jecalculation"
 					}
 				}
+				title: "Calculator"
 				type: "item"
 			}]
 			title: "HERE IS YOUR DAMN CALCULATER ROARK"
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			description: ["Use this to make custom paintings inside of minecraft!"]
-			id: "025A876491329A9D"
-			subtitle: "Time to make your own painting"
-			tasks: [{
-				id: "6EFA7912482C9F63"
-				item: "xercapaint:item_easel"
-				type: "item"
-			}]
-			title: "Bob Ross"
-			x: 0.5d
-			y: 0.0d
-		}
-		{
-			description: ["Use this to control screens to watch videos from the internet in minecraft. Be careful with how many you WaterFrames Screens you place as they can start to cause lag in a large amount"]
-			id: "08AB5601635C6C30"
-			subtitle: "I'm With the Science Team!"
-			tasks: [{
-				id: "717D6FD57D0ACE73"
-				item: "waterframes:remote"
-				type: "item"
-			}]
-			title: "Videos in Minecraft?"
-			x: -2.5d
+			x: -2.0d
 			y: 0.0d
 		}
 	]

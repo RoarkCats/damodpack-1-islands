@@ -4,7 +4,7 @@
 <tag:items:dapack:backtanks_pre_diamond>.addId(<resource:creategoggles:golden_backtank>);
 <tag:items:dapack:backtanks_pre_diamond>.addId(<resource:creategoggles:iron_backtank>);
 <tag:items:dapack:backtanks_pre_diamond>.addId(<resource:creategoggles:leather_backtank>);
-
+//note following tag unused
 <tag:items:dapack:backtanks>.add(<tag:items:dapack:backtanks_pre_diamond>);
 <tag:items:dapack:backtanks>.addId(<resource:creategoggles:diamond_backtank>);
 <tag:items:dapack:backtanks>.addId(<resource:create:netherite_backtank>);

@@ -22,15 +22,18 @@
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "create:copper_backtank"
+				tag: { }
+			}
 			id: "72E2B50719D66343"
 			tasks: [{
-				id: "40E3902E1999316B"
+				id: "47D3C58DB0C8D5AE"
 				item: {
 					Count: 1
 					id: "create:copper_backtank"
-					tag: {
-						Air: 900
-					}
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -62,9 +65,7 @@
 				item: {
 					Count: 1
 					id: "create:netherite_backtank"
-					tag: {
-						Air: 900
-					}
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -129,9 +130,38 @@
 				id: "445A60FAA3F778D3"
 				item: {
 					Count: 1
-					id: "creategoggles:chainmail_backtank"
-					tag: { }
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "creategoggles:leather_backtank"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "creategoggles:chainmail_backtank"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "creategoggles:iron_backtank"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "creategoggles:golden_backtank"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "creategoggles:diamond_backtank"
+								tag: { }
+							}
+						]
+					}
 				}
+				title: "Armored Backtank"
 				type: "item"
 			}]
 			x: 0.0d
@@ -139,6 +169,13 @@
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "alexscaves:diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7862FD61E13893D8"
 			subtitle: "Not the best but could be worse"
 			tasks: [
@@ -237,9 +274,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["3AA4DBBB43DADBB2"]
 			id: "5B25094B1EEED4DE"
-			subtitle: "Might want to make more armour upgrades"
 			tasks: [
 				{
 					id: "4C89538AA5C0F0AB"
@@ -262,7 +297,6 @@
 					type: "item"
 				}
 			]
-			title: "Pneumatic Craft"
 			x: -3.0d
 			y: 0.0d
 		}
