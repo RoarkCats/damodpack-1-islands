@@ -3,7 +3,7 @@ craftingTable.addShaped("steel_engine", <item:ad_astra:steel_engine>, [
     [<item:minecraft:netherite_ingot>, <item:minecraft:netherite_ingot>, <item:minecraft:netherite_ingot>], 
     [<item:immersiveengineering:plate_steel>, <item:ad_astra:engine_frame>, <item:immersiveengineering:plate_steel>], 
     [<item:minecraft:air>, <item:ad_astra:fan>, <item:minecraft:air>]]);
-  craftingTable.addShaped("steel_engine", <item:ad_astra:fan>, [
+  craftingTable.addShaped("graphite_fan", <item:ad_astra:fan>, [
     [<item:immersiveengineering:ingot_hop_graphite>, <item:minecraft:air>, <item:immersiveengineering:ingot_hop_graphite>], 
     [<item:minecraft:air>, <item:immersiveengineering:graphite_electrode>.withTag({graphDmg: 0}), <item:minecraft:air>], 
     [<item:immersiveengineering:ingot_hop_graphite>, <item:minecraft:air>, <item:immersiveengineering:ingot_hop_graphite>]]);
