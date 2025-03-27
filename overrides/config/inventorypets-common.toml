@@ -230,7 +230,7 @@
 	#Disable the Mooshroom pet (default:false)
 	disableMooshroom = false
 	#Disable the Nether Portal pet (default:false)
-	disableNetherPortal = false
+	disableNetherPortal = true
 	#Disable the Ocelot pet (default:false)
 	disableOcelot = false
 	#Disable the PacMan pet (default:false)

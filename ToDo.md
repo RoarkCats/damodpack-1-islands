@@ -5,6 +5,7 @@
 - Mobtimizations config
 - Get rid of crafting recipies for limited barrels from sophisticated storage
 - Remove poision potato named "Petey" from player inventory's
+- Edit Squid Pet Recipe
 
 # Mod List and if they have quests or not yet
 - Mystical Agriculter ~ no
