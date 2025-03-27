@@ -482,6 +482,10 @@
 			y: -3.5d
 		}
 		{
+			dependencies: [
+				"72BD6A0503DF7330"
+				"498A333ADBF745DC"
+			]
 			description: ["Go to the end with a runic tablet and start exploring. After a while it will change into a new item"]
 			id: "669819D58158C9EC"
 			subtitle: "Subject Contained"
@@ -490,12 +494,16 @@
 				item: "simplyswords:contained_remnant"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -4.5d
+			x: -5.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["669819D58158C9EC"]
-			description: ["Congratulations you are one step away from some new unique weapons. Head back to the Overworld and get ready to explore the Deep Dark"]
+			description: [
+				"Congratulations you are one step away from some new unique weapons. Now just keep this in your inventory and wait for a new base weapon &ounless you are unlucky&r."
+				""
+				"If you follow the quest line after this one you will be able to make some new unique weapons!"
+			]
 			id: "41FAF7D4FBA16AD2"
 			subtitle: "Whats happening"
 			tasks: [{
@@ -503,8 +511,8 @@
 				item: "simplyswords:tampered_remnant"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.0d
+			x: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["15949DD3202F6FF9"]
@@ -525,7 +533,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["15949DD3202F6FF9"]
@@ -546,7 +554,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["15949DD3202F6FF9"]
@@ -567,7 +575,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["41FAF7D4FBA16AD2"]
@@ -586,7 +594,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["41FAF7D4FBA16AD2"]
@@ -604,8 +612,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -6.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["41FAF7D4FBA16AD2"]
@@ -623,8 +631,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -8.0d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["41FAF7D4FBA16AD2"]
@@ -642,8 +650,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -7.0d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2ABA69960829114B"]
@@ -653,7 +661,7 @@
 				item: "simplyswords:empowered_remnant"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: -5.0d
 		}
 		{
@@ -664,8 +672,224 @@
 				item: "simplyswords:runic_tablet"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2E88E56721E4E9B5"]
+			id: "37120550AFF33621"
+			tasks: [{
+				id: "33EDDF5E9988E05F"
+				item: {
+					Count: 1
+					id: "simplymore:ascended_idol"
+					tag: {
+						Damage: 0
+						nether_power: "socket_empty"
+						runic_power: "socket_empty"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2E88E56721E4E9B5"]
+			id: "166A4CED45A8E55B"
+			tasks: [{
+				id: "665F0FE01CAD318C"
+				item: {
+					Count: 1
+					id: "simplymore:holylight"
+					tag: {
+						Damage: 0
+						nether_power: "socket_empty"
+						runic_power: "socket_empty"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["2E88E56721E4E9B5"]
+			id: "009B7CF0C1D2D30C"
+			tasks: [{
+				id: "3159B23CDD2335CD"
+				item: {
+					Count: 1
+					id: "simplymore:tarnished_idol"
+					tag: {
+						Damage: 0
+						nether_power: "no_socket"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2E88E56721E4E9B5"]
+			id: "35822F4A3C213656"
+			tasks: [{
+				id: "7B51836D3101CCC2"
+				item: {
+					Count: 1
+					id: "simplymore:darksent"
+					tag: {
+						Damage: 0
+						nether_power: "socket_empty"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["24A89C87541B54DE"]
+			id: "0AFA7410DA64A1EB"
+			tasks: [{
+				id: "6CBF2876BDBCA4C0"
+				item: {
+					Count: 1
+					id: "simplyswords:righteous_relic"
+					tag: {
+						Damage: 0
+						nether_power: "no_socket"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["24A89C87541B54DE"]
+			id: "1A7B4ACD35FB3383"
+			tasks: [{
+				id: "4999C50EAB19D8F9"
+				item: {
+					Count: 1
+					id: "simplyswords:sunfire"
+					tag: {
+						Damage: 0
+						nether_power: "no_socket"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["24A89C87541B54DE"]
+			id: "223C482B892EEDD2"
+			tasks: [{
+				id: "42AEE63CA7588CC6"
+				item: {
+					Count: 1
+					id: "simplyswords:tainted_relic"
+					tag: {
+						Damage: 0
+						nether_power: "no_socket"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["24A89C87541B54DE"]
+			id: "0F90BC8523B8C342"
+			tasks: [{
+				id: "094D7DCFEE07E1F5"
+				item: {
+					Count: 1
+					id: "simplyswords:harbinger"
+					tag: {
+						Damage: 0
+						nether_power: "no_socket"
+						runic_power: "no_socket"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["498A333ADBF745DC"]
+			id: "61B839862F0F3078"
+			subtitle: "Just read the item description"
+			tasks: [{
+				id: "1DA6CAE972F958CB"
+				item: "simplymore:netherfused_carver"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["498A333ADBF745DC"]
+			id: "68E0AFDC3A9243DC"
+			subtitle: "Just read the item description"
+			tasks: [{
+				id: "659DD38B4E222551"
+				item: "simplymore:runefused_carver"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"72BD6A0503DF7330"
+				"498A333ADBF745DC"
+			]
+			description: ["&oRead the description of the item.&r After identifing you will be able to apply it to a appropriate item"]
+			id: "7B43733911E5E640"
+			subtitle: "Special Runic Power"
+			tasks: [{
+				id: "0E9A252D2762911E"
+				item: {
+					Count: 1
+					id: "simplyswords:runefused_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"72BD6A0503DF7330"
+				"498A333ADBF745DC"
+			]
+			description: ["&oRead the description of the item.&r After identifing you will be able to apply it to a appropriate item"]
+			id: "095C1AC7312576E6"
+			subtitle: "Special Nether Power"
+			tasks: [{
+				id: "0E387EF56F777C76"
+				item: {
+					Count: 1
+					id: "simplyswords:netherfused_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
 		}
 	]
 	title: "Simply Swords"
