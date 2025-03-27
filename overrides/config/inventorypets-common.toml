@@ -212,7 +212,7 @@
 	#Disable the Jukebox pet (default:false)
 	disableJukebox = false
 	#Disable the Lead pet (default:false)
-	disableLead = false
+	disableLead = true
 	#Disable the Loot pet (default:false)
 	disableLoot = false
 	#Disable the Magma Cube pet (default:false)
