@@ -4,7 +4,7 @@
 	filename: "botania"
 	group: "3062C02D5C318117"
 	id: "7C04A48F2DA5AA6D"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [{
 		id: "112E2601382F73A9"

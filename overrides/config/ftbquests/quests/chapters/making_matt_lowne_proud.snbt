@@ -179,6 +179,74 @@
 			x: 4.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["60417511F8E76C32"]
+			id: "6B88B87DB7775835"
+			tasks: [{
+				id: "1DC14D87F4006A3B"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C9E44B984121051"]
+			id: "4B4FD61D58163516"
+			tasks: [{
+				id: "4AC34932DA343666"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66FB987BBE6DB02B"]
+			id: "6B9AB05982081906"
+			tasks: [{
+				id: "204F9E3DC2530C7C"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit_pants"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0524E46911D7F9AD"]
+			id: "0FB228B0AF00252C"
+			tasks: [{
+				id: "138092FAA30FC3E5"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
 	]
 	title: "A breath of fresh air"
 }

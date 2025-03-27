@@ -2,9 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "scuba_steve"
-	group: "3062C02D5C318117"
+	group: "3659D078EFE63307"
+	icon: {
+		Count: 1
+		id: "alexscaves:diving_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "75A35F7786921B9F"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -5,7 +5,7 @@
 	group: "3062C02D5C318117"
 	icon: "unusualprehistory:rex_head"
 	id: "336C2D372140D834"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -219,12 +219,107 @@
 			id: "01D520B09CAA4211"
 			tasks: [{
 				entity: "minecraft:wither"
+				icon: "minecraft:nether_star"
 				id: "0E27D15B2AD7DE1D"
 				type: "kill"
 				value: 1L
 			}]
 			x: 2.0d
 			y: -1.0d
+		}
+		{
+			id: "0292FCB8DD0A0B0F"
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				icon: "cataclysm:void_core"
+				id: "26E2AB5DBF262FA7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "74ECB487004F9A7A"
+			tasks: [{
+				entity: "alexsmobs:mungus"
+				icon: "alexsmobs:spawn_egg_mungus"
+				id: "65C6CB473F959E44"
+				title: "Kill a Mungus"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sus"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			id: "342B834693C7787B"
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: "alexsmobs:void_worm_mandible"
+				id: "1442CDDFFCC143C7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			id: "7A16E1E6EA47B951"
+			tasks: [{
+				entity: "alexsmobs:cachalot_whale"
+				icon: "alexsmobs:ambergris"
+				id: "7F8408F548BE65C5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mobydick"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			id: "478AF0242E342B91"
+			tasks: [{
+				entity: "alexsmobs:giant_squid"
+				icon: "miners_delight:squid"
+				id: "534B2C7582E05FC6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kraken"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			id: "69DB9BC3DD429971"
+			tasks: [{
+				entity: "alexsmobs:farseer"
+				icon: "alexsmobs:transmutation_table"
+				id: "7ED9A18A27E9B500"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			id: "208606316457CF57"
+			tasks: [{
+				entity: "alexsmobs:skelewag"
+				icon: {
+					Count: 1
+					id: "alexsmobs:skelewag_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0D1D8E44F8309ABE"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 2.5d
 		}
 	]
 	title: "Monster Hunter: Minecraft"

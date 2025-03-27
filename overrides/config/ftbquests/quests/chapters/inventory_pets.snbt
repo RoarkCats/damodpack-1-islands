@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "inventory_pets"
+	group: "3659D078EFE63307"
+	icon: {
+		Count: 1
+		id: "inventorypets:pet_meta"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "30AF568B9ACDD2CB"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Inventory Pets"
+}

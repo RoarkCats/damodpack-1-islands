@@ -55,3 +55,6 @@
 - ars nouveau
 - neapolitan
 - [lets do]
+- ~~joy of painting~~
+- ~~waterframes~~
+- ~~Simply Swords~~

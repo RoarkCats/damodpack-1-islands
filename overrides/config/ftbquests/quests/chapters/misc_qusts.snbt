@@ -141,6 +141,51 @@
 			x: -2.0d
 			y: 0.0d
 		}
+		{
+			description: ["Using WaterFrames you can play media from the internet inside of Minecraft. Be careful with how many are in use at once as to much and they will start to lag your game"]
+			id: "73CDD449BC176275"
+			subtitle: "Or just almost any media"
+			tasks: [{
+				id: "03F4502A2AAFBA97"
+				item: "waterframes:remote"
+				type: "item"
+			}]
+			title: "Youtube in my minecraft server?"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: ["Combine your pallet with some dye and get to painting all in minecraft!"]
+			id: "587033611550E909"
+			subtitle: "MS Paint!"
+			tasks: [
+				{
+					id: "4DBB9AF0962463E3"
+					item: "xercapaint:item_easel"
+					type: "item"
+				}
+				{
+					id: "6006ACC78D26A827"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "xercapaint:item_canvas"
+						}
+					}
+					title: "Canvas"
+					type: "item"
+				}
+				{
+					id: "7C0F3F890C59E06B"
+					item: "xercapaint:item_palette"
+					type: "item"
+				}
+			]
+			title: "Bob Ross"
+			x: -0.5d
+			y: 1.5d
+		}
 	]
 	title: "Misc Qusts"
 }
