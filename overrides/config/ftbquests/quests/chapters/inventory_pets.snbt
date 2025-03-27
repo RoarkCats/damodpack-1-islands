@@ -164,8 +164,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -181,8 +181,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -198,8 +198,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -215,8 +215,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.5d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -232,8 +232,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -249,8 +249,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.5d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2F4C97943967717F"]
@@ -266,8 +266,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3D956C37D4304B7E"]
@@ -497,8 +497,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["118DAEA738F52142"]
@@ -514,8 +514,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4C1B3EDC4DA0FE14"]
@@ -633,8 +633,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -4.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["118DAEA738F52142"]
@@ -650,8 +650,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -3.0d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["579F57829C6EDC79"]
@@ -667,8 +667,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["579F57829C6EDC79"]
@@ -684,8 +684,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["579F57829C6EDC79"]
@@ -701,8 +701,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
-			y: 1.0d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["579F57829C6EDC79"]
@@ -718,8 +718,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["579F57829C6EDC79"]
@@ -735,8 +735,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -752,8 +752,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 1.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -769,8 +769,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 1.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -786,8 +786,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 2.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -803,8 +803,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -820,8 +820,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 0.0d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["40E7C454F15CC2F7"]
@@ -837,8 +837,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["747E3D1A3181F10B"]
@@ -848,8 +848,8 @@
 				item: "inventorypets:pet_menorah"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 0.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["747E3D1A3181F10B"]
@@ -865,8 +865,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: 1.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["747E3D1A3181F10B"]
@@ -882,8 +882,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: 0.0d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["747E3D1A3181F10B"]
@@ -899,8 +899,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: 1.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["747E3D1A3181F10B"]
@@ -916,8 +916,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 0.0d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4B23CD96E4F4ADA8"]
@@ -1007,8 +1007,8 @@
 				title: "Holiday"
 				type: "checkmark"
 			}]
-			x: 15.5d
-			y: 1.5d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			id: "579F57829C6EDC79"
@@ -1017,8 +1017,8 @@
 				title: "Legendary"
 				type: "checkmark"
 			}]
-			x: 14.0d
-			y: 1.5d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			id: "3D956C37D4304B7E"
@@ -1037,8 +1037,8 @@
 				title: "Youtuber"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -4.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			id: "40E7C454F15CC2F7"
@@ -1047,8 +1047,8 @@
 				title: "Fan-Suggested"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: 1.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			id: "2F4C97943967717F"
@@ -1057,8 +1057,8 @@
 				title: "Peaceful"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: 3.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [

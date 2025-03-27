@@ -9,7 +9,7 @@
 
 # Mod List and if they have quests or not yet
 - Mystical Agriculter ~ no
-- Inventory Pets ~ no
+- ~~Inventory Pets ~ yes~~
 - Flux Networks ~ no
 - Storage Drawers ~ no
 - RFTools ~ no
@@ -21,41 +21,41 @@
 - Twilight Forest ~ no
 - Immersive aircrafts ~ no
 - Relics and Artifacts ~ no
-- ~~Macaw ~ no~~
+- ~~Macaw ~ not doing~~
 - ~~Dungeons and taverns ~ not doing~~
 - Create ~ Started
 - ~~Alex's Mobs ~ yes~~
 - Productive bees
-- ~~handcrafted~~
+- ~~handcrafted - not doing~~
 - ad astra ~ mostly
 - Farmers Delight
-- ~~supplementaries~~
+- ~~supplementaries - not doing~~
 - mekanism
 - ice and fire
-- ~~point blank~~
-- ~~Marbled Arsenal~~
+- ~~point blank - yes~~
+- ~~Marbled Arsenal - yes~~
 - Alex's Caves
-- ~~The furry mod~~
+- ~~The furry mod - yes~~
 - aquaculture
 - backpack
-- ~~Tarot~~
+- ~~Tarot - yes~~
 - Bumblezone
-- ~~dark waters~~
+- ~~dark waters - yes~~
 - aquamirae
 - upgrade aquatic
-- ~~thalassophobia~~
+- ~~thalassophobia - yes~~
 - unusual fish
 - sea dwellers
 - prehistory
-- ~~Immersive Engineering~~
+- ~~Immersive Engineering - yes?~~
 - Occultism
 - ender io
-- ~~quackening~~
+- ~~quackening - yes~~
 - vampirism
 - mana and artifice
 - ars nouveau
 - neapolitan
 - [lets do]
-- ~~joy of painting~~
-- ~~waterframes~~
-- ~~Simply Swords~~
+- ~~joy of painting - yes~~
+- ~~waterframes - yes~~
+- ~~Simply Swords - yes~~
