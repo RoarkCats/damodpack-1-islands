@@ -6,3 +6,55 @@
 -~~ Alter/Replace backtank recipes with a new backtank tag and transmute to keep data to allow for crafting between items ~~
 - Change recipie of immersive_aircraft:engine to include either netherite or ancient debrie for slower progression into flight
 - Mobtimizations config
+- Get rid of crafting recipies for limited barrels from sophisticated storage
+- Remove poision potato named "Petey" from player inventory's
+
+# Mod List and if they have quests or not yet
+- Mystical Agriculter ~ no
+- Inventory Pets ~ no
+- Flux Networks ~ no
+- Storage Drawers ~ no
+- RFTools ~ no
+- Deep Void ~ no
+- Sophisticated Storage ~ no
+- Alchemistry ~ no
+- Pneumatic Craft ~ no
+- Aether ~ no
+- Twilight Forest ~ no
+- Immersive aircrafts ~ no
+- Relics and Artifacts ~ no
+- ~~Macaw ~ no~~
+- ~~Dungeons and taverns ~ not doing~~
+- Create ~ Started
+- ~~Alex's Mobs ~ yes~~
+- Productive bees
+- ~~handcrafted~~
+- ad astra ~ mostly
+- Farmers Delight
+- ~~supplementaries~~
+- mekanism
+- ice and fire
+- ~~point blank~~
+- ~~Marbled Arsenal~~
+- Alex's Caves
+- ~~The furry mod~~
+- aquaculture
+- backpack
+- ~~Tarot~~
+- Bumblezone
+- ~~dark waters~~
+- aquamirae
+- upgrade aquatic
+- ~~thalassophobia~~
+- unusual fish
+- sea dwellers
+- prehistory
+- ~~Immersive Engineering~~
+- Occultism
+- ender io
+- ~~quackening~~
+- vampirism
+- mana and artifice
+- ars nouveau
+- neapolitan
+- [lets do]
