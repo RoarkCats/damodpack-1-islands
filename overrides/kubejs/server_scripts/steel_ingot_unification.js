@@ -121,11 +121,13 @@
 
         event.remove({id: "inventorypets:illuminati_pet"})
 
+        event.remove({id: "create:crushing/compat/immersiveengineering/coal_coke"})
 
+        event.remove({id: "createaddtion:compat/immersiveengineering/crushing/coal_coke"})
 
+        event.remove({id: "create:crushing/compat/immersiveengineering/coke_block"})
 
-
-
+        event.remove({id: "createaddtion:compat/immersiveengineering/crushing/coal_coke"})
 
 
 
