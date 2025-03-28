@@ -35,7 +35,7 @@ craftingTable.addShaped("engine", <item:immersive_aircraft:engine>, [
 
 craftingTable.addShaped("gyrodyne", <item:immersive_aircraft:gyrodyne>, [
     [<item:immersiveengineering:plate_steel>, <item:immersive_aircraft:sail>, <item:immersiveengineering:plate_steel>], 
-    [<item:immersive_aircraft:hull>, <item:minecraft:immersive_aircraft:propeller>, <item:immersive_aircraft:hull>], 
+    [<item:immersive_aircraft:hull>, <item:immersive_aircraft:propeller>, <item:immersive_aircraft:hull>], 
     [<item:immersiveengineering:plate_steel>, <item:immersive_aircraft:sail>, <item:immersiveengineering:plate_steel>]]);
 
 craftingTable.addShaped("propeller", <item:immersive_aircraft:propeller>, [
