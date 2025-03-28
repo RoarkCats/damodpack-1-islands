@@ -15,9 +15,9 @@
 	#Turn off all dungeons (default:false)
 	disableAllDungeons = false
 	#Turn off Nether dungeons (default:false)
-	disableNetherDungeons = false
+	disableNetherDungeons = true
 	#Turn off Space dungeons (default:false)
-	disableSpaceDungeons = false
+	disableSpaceDungeons = true
 	#Turn off Underground dungeons (default:false)
 	disableUndergroundDungeons = false
 	#Turn off Sea Cave dungeons (default:false)

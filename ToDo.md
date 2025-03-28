@@ -7,6 +7,7 @@
 - Remove poision potato named "Petey" from player inventory's
 - Edit Squid Pet Recipe
 
+
 # Mod List and if they have quests or not yet
 - Mystical Agriculter ~ no
 - ~~Inventory Pets ~ yes~~
@@ -59,3 +60,5 @@
 - ~~joy of painting - yes~~
 - ~~waterframes - yes~~
 - ~~Simply Swords - yes~~
+- botania
+- totemic
