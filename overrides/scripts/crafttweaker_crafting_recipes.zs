@@ -28,3 +28,17 @@ craftingTable.addShaped("bill_cipher_pet", <item:inventorypets:pet_illuminati>, 
     [<item:mekanism:pellet_polonium>, <item:minecraft:nether_star>, <item:mekanism:pellet_polonium>], 
     [<item:minecraft:emerald_block>, <item:mekanism:pellet_polonium>, <item:minecraft:emerald_block>]]);
 
+craftingTable.addShaped("engine", <item:immersive_aircraft:engine>, [
+    [<item:minecraft:netherite_scrap>, <item:immersiveengineering:plate_steel>, <item:minecraft:netherite_scrap>], 
+    [<item:minecraft:piston>, <item:minecraft:blast_furnace>, <item:minecraft:piston>], 
+    [<item:immersiveengineering:plate_steel>, <item:immersive_aircraft:boiler>, <item:immersiveengineering:plate_steel>]]);
+
+craftingTable.addShaped("gyrodyne", <item:immersive_aircraft:gyrodyne>, [
+    [<item:immersiveengineering:plate_steel>, <item:immersive_aircraft:sail>, <item:immersiveengineering:plate_steel>], 
+    [<item:immersive_aircraft:hull>, <item:minecraft:immersive_aircraft:propeller>, <item:immersive_aircraft:hull>], 
+    [<item:immersiveengineering:plate_steel>, <item:immersive_aircraft:sail>, <item:immersiveengineering:plate_steel>]]);
+
+craftingTable.addShaped("propeller", <item:immersive_aircraft:propeller>, [
+    [<item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>]]);

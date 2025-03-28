@@ -15,7 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Bringing the boom to minecraft with some heavy weaponry. Theres some modern armour to I guess..."]
+			description: ["We bring The BOOM to Minecraft with some heavy weaponry. Theres some modern armour to I guess..."]
 			id: "29777E3252D52788"
 			subtitle: "Lock and Load"
 			tasks: [{

@@ -1133,11 +1133,138 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "2A3D2D55AC76BD3B"
-			rewards: [{
-				id: "6C145686AEECEB95"
-				item: "inventorypets:easter_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6C145686AEECEB95"
+					item: "inventorypets:easter_egg"
+					type: "item"
+				}
+				{
+					id: "20F9983036C37612"
+					item: {
+						Count: 1
+						id: "inventorypets:solstice_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:respiration"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:aqua_affinity"
+									lvl: 1s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C9A3FC7DA2C82BD"
+					item: {
+						Count: 1
+						id: "inventorypets:solstice_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:fire_protection"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:projectile_protection"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:thorns"
+									lvl: 3s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C9087BA22418887"
+					item: {
+						Count: 1
+						id: "inventorypets:solstice_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:blast_protection"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:protection"
+									lvl: 4s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71F96C52BA44F183"
+					item: {
+						Count: 1
+						id: "inventorypets:solstice_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:fire_protection"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:feather_falling"
+									lvl: 4s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B1B8F7AA0E15D57"
+					item: {
+						Count: 1
+						id: "inventorypets:solstice_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:sharpness"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:smite"
+									lvl: 3s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "12432F2CD422FC32"
 				title: "The CEO"

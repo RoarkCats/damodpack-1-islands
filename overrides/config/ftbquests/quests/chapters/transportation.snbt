@@ -1,0 +1,145 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "transportation"
+	group: "3062C02D5C318117"
+	id: "4C8FB56D0E35B11B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0DB96C61CC8CF73B"]
+			description: ["The Cog is a medieval trade ship used in cold water biomes. It offers 108 item slots and can mount up to 4 cannons for defense. It can accommodate up to 5 passengers, including the captain. Although its maneuverability may not be the best, it is an excellent trading vessel with a top speed of 40 km/h and a sturdy hull strength of 300 hp."]
+			id: "5939A319820908AA"
+			subtitle: "Small but strong"
+			tasks: [{
+				id: "0DD89664B1F2B85A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "smallships:cogs"
+					}
+				}
+				type: "item"
+			}]
+			title: "Cog"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"So many ships to choose from but how does everything work?"
+				""
+				"&lShip performance:&r"
+				"&7In terms of ship performance, cold-water ships will be 10% faster in cold water biomes but 10% slower in warm water biomes. Conversely, warm-water ships will be 10% faster in warm water biomes but 10% slower in cold water biomes. It's important to note that the speed of the ships will also be affected by the number of cannons on board, reducing speed by 2.5% per cannon. Additionally, cargo on board can decrease the ship's speed by up to 10%.&r"
+				" "
+				"&lSail coloring:&r"
+				"&7You can customize sails by coloring them with dye items. Simply right-click the ship with the dye in your hand.&r"
+				""
+				"&lShip repairing:&r"
+				"&7You can repair your ship with iron nuggets and planks. Simply right-click the ship with the iron nuggets in your hand, you need to have a good supply of planks in your inventory.&r"
+				""
+				"&lShip naming: &r"
+				"&7You can name your ship with a name-tag. Simply right-click the ship with the name-tag in your hand.&r"
+				""
+				"&lLeashing: &r"
+				"&7Leashing allows players to tether ships. Leashed ships cannot be directly controlled, and only ships without a player on the controller seat can be leashed.&r"
+			]
+			id: "0DB96C61CC8CF73B"
+			subtitle: "Boats!"
+			tasks: [{
+				id: "58C124FE20FBA0C6"
+				item: "smallships:sail"
+				type: "item"
+			}]
+			title: "Move through the ocean"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0DB96C61CC8CF73B"]
+			description: ["The Brigg is another medieval two-masted trade ship designed for cold water biomes. It provides 162 item slots and can mount up to 6 cannons for defense. With space for up to 11 passengers, including the captain, it excels in both trading and naval battles. The Brig has a top speed of 45 km/h, good maneuverability, and a hull strength of 400 hp."]
+			id: "5E1A30171D281D64"
+			subtitle: "So Spacious"
+			tasks: [{
+				id: "34A3BB4A1673678D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "smallships:briggs"
+					}
+				}
+				type: "item"
+			}]
+			title: "Brigg"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DB96C61CC8CF73B"]
+			description: ["The Galley is specifically designed for warm water environments and naval warfare. It has 54 slots for items, exceptional maneuverability, and a top speed of 40 km/h. With seating for 9 passengers, including the captain and hull strength of 200 hp, it proves to be a promising vessel in various situations."]
+			id: "5C4E91D906628C96"
+			subtitle: "I am speed"
+			tasks: [{
+				id: "23DE4F9687D1B0CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "smallships:galleys"
+					}
+				}
+				type: "item"
+			}]
+			title: "Gally"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DB96C61CC8CF73B"]
+			description: ["The Drakkar is specifically designed for cold water environments. It has 54 slots for items, exceptional maneuverability, and a top speed of 30 km/h. With seating for 11 passengers, including the captain and hull strength of 200 hp. Shields, also with banner patterns, can be attatched to grand additional defense. With its ice breaker abbility, it proves to be a promising vessel in cold and icy oceans."]
+			id: "51BE72B2E1E0AB34"
+			subtitle: "WAR"
+			tasks: [{
+				id: "47C045AF5ADB64BA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "smallships:drakkars"
+					}
+				}
+				type: "item"
+			}]
+			title: "Drakkar"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DB96C61CC8CF73B"]
+			id: "610352625DCF3C5F"
+			tasks: [{
+				id: "070074274EB47716"
+				item: "smallships:cannon"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["610352625DCF3C5F"]
+			id: "2DE5B7074F8FBE1C"
+			tasks: [{
+				count: 8L
+				id: "329A233397A42CF2"
+				item: { Count: 8, id: "smallships:cannon_ball" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+	]
+	title: "Transportation"
+}
