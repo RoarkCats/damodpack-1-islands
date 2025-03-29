@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "3062C02D5C318117"
+	icon: "integratedterminals:part_terminal_storage"
+	id: "61679442473341D7"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Storage"
+}

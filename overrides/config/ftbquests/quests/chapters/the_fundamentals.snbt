@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "the_fundamentals"
 	group: "3B005356C363A3AB"
+	icon: "create:wrench"
 	id: "45EECD823F1ECC05"
 	order_index: 0
 	quest_links: [ ]

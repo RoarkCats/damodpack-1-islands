@@ -135,7 +135,7 @@
         
         event.remove({id: "immersive_aircraft:engine"})
 
-
+        event.remove({id: "inventorypets:pet_squid"})
 
 
 

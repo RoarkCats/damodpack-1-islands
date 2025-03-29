@@ -1,8 +1,6 @@
 # ToDo List - Mark when Done
-- Change recipie of immersive_aircraft:engine to include either netherite or ancient debrie for slower progression into flight
 - Mobtimizations config
 - Get rid of crafting recipies for limited barrels from sophisticated storage
-- Edit Squid Pet Recipe
 
 
 # Mod List and if they have quests or not yet
@@ -15,7 +13,7 @@
 - Sophisticated Storage ~ no
 - Alchemistry ~ no
 - Pneumatic Craft ~ no
-- Aether ~ no
+- ~~Aether ~ Yes~~
 - Twilight Forest ~ no
 - Immersive aircrafts ~ no
 - Relics and Artifacts ~ no

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "aether"
 	group: "7713A3BE5AE0B169"
+	icon: "aether:aether_portal_frame"
 	id: "0EE3F3D84C9596C2"
 	order_index: 1
 	quest_links: [ ]
@@ -10,6 +11,11 @@
 		{
 			icon: "aether:aether_portal_frame"
 			id: "2191827205FCFD0B"
+			rewards: [{
+				id: "5AAF99EF802600DC"
+				item: "aether:book_of_lore"
+				type: "item"
+			}]
 			subtitle: "After years of failures it finally worked"
 			tasks: [
 				{
@@ -900,6 +906,60 @@
 			}]
 			x: 1.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["153E2FDD16D21299"]
+			description: ["Stand in water well wearing your phoenix gear"]
+			id: "390A43907546493F"
+			subtitle: "Hard as a rock"
+			tasks: [
+				{
+					id: "03E725E7C4A71DD5"
+					item: {
+						Count: 1
+						id: "aether:obsidian_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C96BC95815A2060"
+					item: {
+						Count: 1
+						id: "aether:obsidian_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "648C3B367E1FBE4F"
+					item: {
+						Count: 1
+						id: "aether:obsidian_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4493EDCAB5FC99C9"
+					item: {
+						Count: 1
+						id: "aether:obsidian_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.5d
 		}
 	]
 	title: "Aether"

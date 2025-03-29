@@ -42,3 +42,8 @@ craftingTable.addShaped("propeller", <item:immersive_aircraft:propeller>, [
     [<item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>]]);
+
+    craftingTable.addShaped("pet_squid", <item:inventorypets:pet_squid>, [
+    [<item:inventorypets:nugget_lapis>, <item:minecraft:netherite_scrap>, <item:inventorypets:nugget_lapis>], 
+    [<item:inventorypets:nugget_lapis>, <item:minecraft:diamond>, <item:inventorypets:nugget_lapis>], 
+    [<item:inventorypets:nugget_lapis>, <item:minecraft:netherite_scrap>, <item:inventorypets:nugget_lapis>]]);
