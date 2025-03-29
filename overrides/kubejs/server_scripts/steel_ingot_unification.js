@@ -127,7 +127,15 @@
 
         event.remove({id: "create:crushing/compat/immersiveengineering/coke_block"})
 
-        event.remove({id: "createaddtion:compat/immersiveengineering/crushing/coal_coke"})
+        event.remove({id: "createaddtion:compat/immersiveengineering/crushing/coke_block"})
+
+        event.remove({id: "immersive_aircraft:gyrodyne"})
+
+        event.remove({id: "immersive_aircraft:propeller"})
+        
+        event.remove({id: "immersive_aircraft:engine"})
+
+
 
 
 
