@@ -2,11 +2,6 @@
 - Mobtimizations config
 - Get rid of crafting recipies for limited barrels from sophisticated storage
 
--Upload shaders
--Distant Horizons config
--Auto HUD Config
-
-
 # Mod List and if they have quests or not yet
 - Mystical Agriculter ~ no
 - ~~Inventory Pets ~ yes~~
