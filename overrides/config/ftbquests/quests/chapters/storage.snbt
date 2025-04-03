@@ -5,7 +5,7 @@
 	group: "3062C02D5C318117"
 	icon: "integratedterminals:part_terminal_storage"
 	id: "61679442473341D7"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -464,6 +464,17 @@
 			}]
 			x: 8.0d
 			y: 12.5d
+		}
+		{
+			dependencies: ["4C38A20706E6306C"]
+			id: "1284D1EDA7EAC22F"
+			tasks: [{
+				id: "658DE3D5B72D5FFC"
+				item: "sophisticatedbackpacks:stonecutter_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.0d
 		}
 	]
 	title: "Storage"

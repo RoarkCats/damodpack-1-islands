@@ -3,8 +3,9 @@
 	default_quest_shape: ""
 	filename: "transportation"
 	group: "3062C02D5C318117"
+	icon: "smallships:oak_cog"
 	id: "4C8FB56D0E35B11B"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

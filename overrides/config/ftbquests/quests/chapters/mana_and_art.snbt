@@ -1,11 +1,11 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "bumblezone"
-	group: "7713A3BE5AE0B169"
-	id: "2F67425D0A2A95FA"
+	filename: "mana_and_art"
+	group: "0CAA3D5E912D0208"
+	id: "57F1FA0A7EA1FC94"
 	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
-	title: "Bumblezone"
+	title: "Mana And Art"
 }

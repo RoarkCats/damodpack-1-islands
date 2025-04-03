@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "productive_bees"
+	group: "3062C02D5C318117"
+	icon: "simplehats:bee_on_head"
+	id: "5744769CA3EB0B99"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "0E0F57D300AA920B"
+		rewards: [{
+			id: "391187DC24268091"
+			item: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "productivebees:guide"
+				}
+			}
+			type: "item"
+		}]
+		tasks: [{
+			id: "427BEA36AFB6A359"
+			title: "Time to comb out"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Productive Bees"
+}

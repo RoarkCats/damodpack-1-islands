@@ -142,8 +142,9 @@
 			y: 0.0d
 		}
 		{
-			description: ["Using WaterFrames you can play media from the internet inside of Minecraft. Be careful with how many are in use at once as to much and they will start to lag your game"]
+			description: ["Using WaterFrames you can play media from the internet inside of Minecraft! Be careful with how many are in use at once, however, too many may start to lag your game..."]
 			id: "73CDD449BC176275"
+			shape: "rsquare"
 			subtitle: "Or just almost any media"
 			tasks: [{
 				id: "03F4502A2AAFBA97"
@@ -151,11 +152,11 @@
 				type: "item"
 			}]
 			title: "Youtube in my minecraft server?"
-			x: -2.0d
-			y: 1.5d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
-			description: ["Combine your pallet with some dye and get to painting all in minecraft!"]
+			description: ["Combine your pallet with some dye and get to painting all in Minecraft!"]
 			id: "587033611550E909"
 			subtitle: "MS Paint!"
 			tasks: [
@@ -186,6 +187,27 @@
 			x: -0.5d
 			y: 1.5d
 		}
+		{
+			description: [
+				"Craft this nifty compass to help you locate almost any biome in this watery world!"
+				""
+				"Disclaimer: May not work with all biomes!"
+				"     &7&o*cough* *cough* Alex's Caves&r"
+			]
+			id: "482F41DC0FE63555"
+			subtitle: "Where my biomes at?!"
+			tasks: [{
+				id: "1F54629B1AC1D224"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
 	]
-	title: "Misc Qusts"
+	title: "Misc Additions"
 }

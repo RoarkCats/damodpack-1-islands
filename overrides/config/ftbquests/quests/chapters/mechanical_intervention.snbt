@@ -27,6 +27,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["523491198734ACA0"]
 			id: "7CA066A73F0968B3"
 			tasks: [{
 				id: "090E36937312A65C"
@@ -37,6 +38,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["636B6BC7173DAC8F"]
 			id: "65B37CA33F5E05AE"
 			tasks: [{
 				id: "6A5C2814654871C1"
@@ -53,6 +55,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["65B37CA33F5E05AE"]
 			id: "474CC88488B69E1C"
 			tasks: [
 				{
@@ -75,6 +78,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["636B6BC7173DAC8F"]
 			id: "523491198734ACA0"
 			tasks: [
 				{
@@ -94,6 +98,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["7B9EEC90D5056023"]
 			id: "2BBE77D3700B0E7E"
 			tasks: [{
 				advancement: "immersiveengineering:multiblocks/mb_squeezer"
@@ -106,6 +111,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"474CC88488B69E1C"
+				"7CA066A73F0968B3"
+			]
 			id: "05E3115F565A5C6E"
 			tasks: [{
 				advancement: "immersiveengineering:multiblocks/mb_crusher"
@@ -118,6 +127,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["05E3115F565A5C6E"]
 			id: "7B9EEC90D5056023"
 			tasks: [{
 				id: "6DD7B98FF26D480C"
@@ -128,6 +138,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2BBE77D3700B0E7E"]
 			id: "5DD055476F471B5D"
 			tasks: [{
 				id: "4167144E4BEF1E85"
@@ -138,6 +149,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2BBE77D3700B0E7E"]
 			id: "7BC6A48F4F537552"
 			tasks: [{
 				id: "659CEED0AA8C3A71"
