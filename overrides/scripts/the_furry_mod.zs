@@ -34,7 +34,7 @@ craftingTable.addShaped("light_gray_fursuit_head", <item:the_furry_mod:gray_furs
 
 craftingTable.addShaped("gray_fursuit_head", <item:the_furry_mod:actually_gray_fursuit_helmet>, [
     [<item:minecraft:gray_wool>, <item:minecraft:gray_wool>, <item:minecraft:gray_wool>],
-    [<item:minecraft:gray_wool>>, <item:minecraft:air>, <item:minecraft:gray_wool>>], 
+    [<item:minecraft:gray_wool>, <item:minecraft:air>, <item:minecraft:gray_wool>], 
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
 
 craftingTable.addShaped("black_fursuit_head", <item:the_furry_mod:black_helmet>, [
@@ -74,7 +74,7 @@ craftingTable.addShaped("green_fursuit_head", <item:the_furry_mod:green_helmet>,
 
 craftingTable.addShaped("cyan_fursuit_head", <item:the_furry_mod:cyan_helmet>, [
     [<item:minecraft:cyan_wool>, <item:minecraft:cyan_wool>, <item:minecraft:cyan_wool>],
-    [<item:minecraft:cyan_wooll>, <item:minecraft:air>, <item:minecraft:cyan_wool>], 
+    [<item:minecraft:cyan_wool>, <item:minecraft:air>, <item:minecraft:cyan_wool>], 
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
 
 craftingTable.addShaped("light_blue_fursuit_head", <item:the_furry_mod:light_blue_helmet>, [
