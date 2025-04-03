@@ -8,17 +8,29 @@
 	quest_links: [ ]
 	quests: [{
 		description: [
-			"Welcome To &d&lDaPack&l.&r"
+			"Welcome To: "
+			"&d&l[REDEACTED] 1: Islands, AKA DaModPack&l.&r"
 			""
-			"In this pack all mods were submitted in groups of 3 by my friends none of us know what mods are submitted other than our own. This pack is very cursed and crazy so i wish you all good luck in trying to discover everything thats added. Have fun &b-DaMaker&r"
+			"&7All the mods included in this pack were submitted anonymously by our discord server, and various rules for mod selection were created, like where if two people chose the same mod &o(without knowing of course)&r, &7the mod was removed from the list. Because of this, the pack is worse then your typical kitchen sink and has no set theme, but somehow manages to mesh extremely well in our opinion. This iteration of the pack tries to keep players building on the same main island, with extremely deep oceans, and a custom made water pressure depth system. Have fun out there, try not to drown!&r &r"
+			"&b-Group Lawyer&r"
 			"{image:pneumaticcraft:textures/particle/air_particle_2.png width:100 height:100 align:center}"
 		]
 		id: "15A9C7DD641D9B2F"
 		rewards: [{
-			id: "7D3341CEDD0184A8"
-			item: "minecraft:cake"
+			id: "704E82B2238738A0"
+			item: {
+				Count: 1
+				id: "farmersdelight:cake_slice"
+				tag: {
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"Thanks for Playing!\"}"
+					}
+				}
+			}
 			type: "item"
 		}]
+		subtitle: "The adventure begins"
 		tasks: [{
 			id: "381A67BF9C53D88B"
 			title: "Welcome"

@@ -34,7 +34,7 @@
 			tasks: [{
 				count: 6L
 				id: "079C2E35A640B802"
-				item: { Count: 6, id: "immersiveengineering:storage_steel" }
+				item: "immersiveengineering:storage_steel"
 				type: "item"
 			}]
 			x: -1.0d
@@ -46,7 +46,7 @@
 			tasks: [{
 				count: 4L
 				id: "22F7585AE9210C4B"
-				item: { Count: 4, id: "ad_astra:rocket_fin" }
+				item: "ad_astra:rocket_fin"
 				type: "item"
 			}]
 			x: 0.0d

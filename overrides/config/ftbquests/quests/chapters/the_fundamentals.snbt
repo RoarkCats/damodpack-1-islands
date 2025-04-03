@@ -31,7 +31,7 @@
 			tasks: [{
 				count: 16L
 				id: "0EB2E968EFAF423C"
-				item: { Count: 16, id: "create:shaft" }
+				item: "create:shaft"
 				type: "item"
 			}]
 			title: "The start of something"
@@ -54,7 +54,7 @@
 			tasks: [{
 				count: 2L
 				id: "2D1D6D9BE629610F"
-				item: { Count: 2, id: "create:crushing_wheel" }
+				item: "create:crushing_wheel"
 				type: "item"
 			}]
 			title: "Crushing it"
@@ -114,7 +114,7 @@
 			tasks: [{
 				count: 16L
 				id: "0DB6416C4C33D878"
-				item: { Count: 16, id: "create:white_sail" }
+				item: "create:white_sail"
 				type: "item"
 			}]
 			x: 2.5d

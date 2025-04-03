@@ -333,6 +333,39 @@
 			x: 3.0d
 			y: -1.0d
 		}
+		{
+			id: "6736C8A2174DA7B8"
+			subtitle: "MURDER THEM FOR ME PLEASE -Maximum"
+			tasks: [{
+				entity: "subnautica_flow:skyray"
+				icon: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "04B73CDFA07451B5"
+				type: "kill"
+				value: 16L
+			}]
+			title: "THEY ARE SO LOUD"
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			id: "25F0E050E788E012"
+			tasks: [{
+				entity: "subnautica_flow:reefback"
+				icon: "beachparty:floaty"
+				id: "5F97D383B70C8CEC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gentle Giant"
+			x: -7.5d
+			y: 0.5d
+		}
 	]
 	title: "Monster Hunter: Minecraft"
 }

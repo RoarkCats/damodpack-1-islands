@@ -260,19 +260,19 @@
 				{
 					count: 4L
 					id: "7D64E0FD75482E30"
-					item: { Count: 4, id: "mekanism:module_electrolytic_breathing_unit" }
+					item: "mekanism:module_electrolytic_breathing_unit"
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "56C2C26D7A19D669"
-					item: { Count: 4, id: "mekanism:module_hydrostatic_repulsor_unit" }
+					item: "mekanism:module_hydrostatic_repulsor_unit"
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "279D39DA89A4BC28"
-					item: { Count: 4, id: "mekanism:module_vision_enhancement_unit" }
+					item: "mekanism:module_vision_enhancement_unit"
 					type: "item"
 				}
 			]
