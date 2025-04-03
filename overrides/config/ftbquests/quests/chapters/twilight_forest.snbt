@@ -3,9 +3,21 @@
 	default_quest_shape: ""
 	filename: "twilight_forest"
 	group: "7713A3BE5AE0B169"
+	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "66BF08AEA5D5D239"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "64F1D030AF519184"
+		tasks: [{
+			dimension: "twilightforest:twilight_forest"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "569BA4A4F4068A8F"
+			title: "Visit the Twilight Forest"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Twilight Forest"
 }

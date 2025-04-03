@@ -208,6 +208,19 @@
 			x: -0.5d
 			y: -1.5d
 		}
+		{
+			description: ["&7&o               Hobble bobble"]
+			id: "65082565E5A999AC"
+			subtitle: "Become penguin :>"
+			tasks: [{
+				id: "5FB73DC093C74998"
+				item: "subnautica_flow:spy_pengling"
+				type: "item"
+			}]
+			title: "I found this :)"
+			x: -2.0d
+			y: 1.5d
+		}
 	]
 	title: "Misc Additions"
 }
