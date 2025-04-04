@@ -15,13 +15,16 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["With a pack full of water there has to be some scuba suits"]
+			description: ["With a world full of water there has to be some scuba suits!"]
 			id: "3AA4DBBB43DADBB2"
 			subtitle: "Divin Time"
 			tasks: [{
-				id: "39FB992DD3F37C07"
-				title: "BECOME THE SCUBA STEVE"
-				type: "checkmark"
+				icon: "simplehats:swimmer"
+				id: "014306962F19CE1A"
+				stat: "minecraft:swim_one_cm"
+				title: "Take a swim"
+				type: "stat"
+				value: 1
 			}]
 			title: "BECOME SCUBA STEVE!"
 			x: -1.0d
@@ -44,8 +47,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["72E2B50719D66343"]
@@ -61,8 +64,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["72E2B50719D66343"]
@@ -76,8 +79,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5AD1891E1610A238"]
@@ -93,8 +96,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5AD1891E1610A238"]
@@ -110,8 +113,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["72E2B50719D66343"]
@@ -127,8 +130,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["72E2B50719D66343"]
@@ -171,8 +174,8 @@
 				title: "Armored Backtank"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -231,13 +234,14 @@
 					type: "item"
 				}
 			]
-			title: "Alex's Caves Diving Suit"
-			x: 1.0d
-			y: 0.0d
+			title: "Alex's Diving Suit"
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
 			id: "1AFC91593F569492"
+			subtitle: "Oxygen Not Included"
 			tasks: [
 				{
 					id: "22D61B75E7321070"
@@ -251,11 +255,12 @@
 				}
 			]
 			x: -1.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1AFC91593F569492"]
 			id: "4B7FC1407164CE5A"
+			subtitle: "IP69 Rated"
 			tasks: [
 				{
 					count: 4L
@@ -283,15 +288,11 @@
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
 			id: "5B25094B1EEED4DE"
+			subtitle: "Better suit up!"
 			tasks: [
 				{
 					id: "4C89538AA5C0F0AB"
 					item: "pneumaticcraft:scuba_upgrade"
-					type: "item"
-				}
-				{
-					id: "59E9813778B605BD"
-					item: "pneumaticcraft:armor_upgrade"
 					type: "item"
 				}
 				{
@@ -304,9 +305,751 @@
 					item: "pneumaticcraft:night_vision_upgrade"
 					type: "item"
 				}
+				{
+					id: "58EFDF55B899EA66"
+					item: "pneumaticcraft:armor_upgrade"
+					type: "item"
+				}
 			]
-			x: -3.0d
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			id: "3A1CDAE3C15EACF2"
+			rewards: [{
+				id: "705E2093774843EC"
+				item: "beachparty:icecream_coconut"
+				type: "item"
+			}]
+			subtitle: "Let's go swimming!"
+			tasks: [
+				{
+					id: "2107149D8A6E3BF8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "beachparty:sunglasses"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:beach_hat"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Swimwear Helmet"
+					type: "item"
+				}
+				{
+					id: "74A4551D90307BB8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "beachparty:swim_wings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:rubber_ring_blue"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:rubber_ring_pink"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:rubber_ring_stripped"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:rubber_ring_axolotl"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:rubber_ring_pelican"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Swimwear Breastplate"
+					type: "item"
+				}
+				{
+					id: "3EF30E3398640674"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "beachparty:bikini"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "beachparty:trunks"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Swimwear Leggings"
+					type: "item"
+				}
+				{
+					id: "3B3FC48E30DF5684"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [{
+								Count: 1b
+								id: "beachparty:crocs"
+								tag: {
+									Damage: 0
+								}
+							}]
+						}
+					}
+					title: "Swimwear Boots"
+					type: "item"
+				}
+			]
+			title: "Beach Party!!!"
+			x: -3.5d
 			y: 0.0d
+		}
+		{
+			description: [
+				"     Customizable Water Pressure!"
+				"     &8(see website for more details)"
+				""
+				"{\"text\":\"            > Water Pressure <\",\"color\":\"dark_aqua\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"Water Pressure\",\"color\":\"dark_aqua\"}},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://modrinth.com/datapack/water-pressure\"}}"
+				"                &9By RoarkCats"
+			]
+			id: "4B62ABD2E56124D3"
+			invisible: true
+			rewards: [{
+				id: "1BEC76D746CE1AA8"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "octagon"
+			subtitle: "Better bring some armor..."
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "aether:neptune_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "17E12CBA9F73944C"
+				title: "Pressure Damage"
+				type: "custom"
+			}]
+			title: "Dangerous Depths"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7862FD61E13893D8"]
+			id: "4F4F6C6A85266961"
+			subtitle: "We all live in a copper submarine"
+			tasks: [{
+				id: "65A2A32213A19F36"
+				item: "alexscaves:submarine"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "seadwellers:depth_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "66D898F6CF26C6D5"
+			subtitle: "Dwellers of the deep"
+			tasks: [
+				{
+					id: "7EE4A7190C6C526D"
+					item: {
+						Count: 1
+						id: "seadwellers:depth_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07906CF62C6D26CB"
+					item: {
+						Count: 1
+						id: "seadwellers:depth_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F7E3FB1E1436BF8"
+					item: {
+						Count: 1
+						id: "seadwellers:depth_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5DA0C840A83337E1"
+					item: {
+						Count: 1
+						id: "seadwellers:depth_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Depth Armor"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "aquamirae:three_bolt_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "750504A8BCEB64D0"
+			subtitle: "Seek the ice-clad ship's Shell Horn"
+			tasks: [
+				{
+					id: "6B56A4A50F567119"
+					item: {
+						Count: 1
+						id: "aquamirae:three_bolt_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C6D3C20680E86A1"
+					item: {
+						Count: 1
+						id: "aquamirae:three_bolt_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28DB6AEBEECC56EB"
+					item: {
+						Count: 1
+						id: "aquamirae:three_bolt_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AFCFF35D79F5934"
+					item: {
+						Count: 1
+						id: "aquamirae:three_bolt_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Three-Bolt Suit"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "aquaculture:neptunium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06D2F01C3AC247C7"
+			subtitle: "Luck of the Sea"
+			tasks: [
+				{
+					id: "4C33F1937DF2CEE7"
+					item: {
+						Count: 1
+						id: "aquaculture:neptunium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78DF3638ED631BDA"
+					item: {
+						Count: 1
+						id: "aquaculture:neptunium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FCF8EEABC9916A0"
+					item: {
+						Count: 1
+						id: "aquaculture:neptunium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03C80E894CB937E0"
+					item: {
+						Count: 1
+						id: "aquaculture:neptunium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Neptunium Armor"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "ars_elemental:aqua_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "65B76FA89BA6FD19"
+			subtitle: "The last waterbender"
+			tasks: [
+				{
+					id: "59F342C92F4B3B2B"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EB2DC9E639B2E81"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BD2368219B63EB8"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D5926360DFC0FA3"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aquamancer's Robes"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "iceandfire:tide_blue_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4482E9C792A4E987"
+			subtitle: "Serpent slayer"
+			tasks: [
+				{
+					id: "60AC45139E687AB9"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^iceandfire:tide_.+_helmet"
+						}
+					}
+					title: "Tide Helmet"
+					type: "item"
+				}
+				{
+					id: "6BB6C13F9C9E67AD"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^iceandfire:tide_.+_chestplate"
+						}
+					}
+					title: "Tide Chestplate"
+					type: "item"
+				}
+				{
+					id: "26F94F00C112B228"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^iceandfire:tide_.+_leggings"
+						}
+					}
+					title: "Tide Leggings"
+					type: "item"
+				}
+				{
+					id: "32379D5A06A70022"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^iceandfire:tide_.+_boots"
+						}
+					}
+					title: "Tide Boots"
+					type: "item"
+				}
+			]
+			title: "Tide Armor"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B62ABD2E56124D3"]
+			id: "74F9D02442089ABB"
+			invisible: true
+			rewards: [{
+				id: "7F5FC748241E3B82"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "octagon"
+			subtitle: "Limit testing"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "mekanismtools:lapis_lazuli_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "15FDCA6E96622B03"
+				title: "Pressure Damage Max"
+				type: "custom"
+			}]
+			title: "Pressure Endurant"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "jellyfishing:air_suit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "369719C94948E3BB"
+			subtitle: "YEEEEE-HAW!!!!!"
+			tasks: [
+				{
+					id: "737224B10461CD0B"
+					item: {
+						Count: 1
+						id: "jellyfishing:air_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B89A86FEBA0C117"
+					item: {
+						Count: 1
+						id: "jellyfishing:air_suit_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3042AD0A68D4FFB3"
+					item: {
+						Count: 1
+						id: "jellyfishing:air_suit_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B658C35D6ED4BFA"
+					item: {
+						Count: 1
+						id: "jellyfishing:air_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Air Suit"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1C85643C628DB7CF"
+			subtitle: "Guess water works too"
+			tasks: [
+				{
+					id: "2B778F7212192B0D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:jet_suit_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Space Helmet"
+					type: "item"
+				}
+				{
+					id: "5C10E64E890FD78E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_suit"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_suit"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:jet_suit"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Space Suit"
+					type: "item"
+				}
+				{
+					id: "2499609D4B77CE29"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:jet_suit_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Space Pants"
+					type: "item"
+				}
+				{
+					id: "0B07234322DA22E8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:jet_suit_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Space Boots"
+					type: "item"
+				}
+			]
+			title: "Space Suit"
+			x: -3.0d
+			y: 1.0d
 		}
 	]
 	title: "Scuba Steve"

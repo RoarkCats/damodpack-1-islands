@@ -5,6 +5,14 @@
 	group: "7713A3BE5AE0B169"
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "66BF08AEA5D5D239"
+	images: [{
+		height: 2.0d
+		image: "pneumaticcraft:item/wip"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.0d
+		y: 0.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [{

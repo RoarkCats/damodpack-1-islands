@@ -1,19 +1,19 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "end"
+	filename: "nether"
 	group: "7713A3BE5AE0B169"
-	id: "39B346A9B1A0E558"
+	id: "61AB956F33ED6A1C"
 	images: [{
 		height: 2.0d
 		image: "pneumaticcraft:item/wip"
 		rotation: 0.0d
 		width: 2.0d
-		x: 0.5d
+		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [ ]
-	title: "End"
+	title: "Nether"
 }

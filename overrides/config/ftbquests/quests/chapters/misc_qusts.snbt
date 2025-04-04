@@ -221,6 +221,110 @@
 			x: -2.0d
 			y: 1.5d
 		}
+		{
+			description: ["         &7Shift-Left-Click to destroy"]
+			id: "03DA45BE07D88B14"
+			subtitle: "DPS go brrr"
+			tasks: [{
+				id: "5DBFE25BEAA0ACC9"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Craft an Atlas from an opened Map and supply it with Paper in a Cartography Table for your own minimap!"
+				""
+				"Equippable in a Curios slot"
+				""
+				"Increase your Map scale with 8 Paper before crafting the Atlas to get a more zoomed out Atlas, lower resolution but less Paper usage"
+			]
+			id: "7E5044A437EB4C6C"
+			rewards: [{
+				count: 8
+				id: "6C7ED7BA4268E1CE"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			subtitle: "Mapping? For Free?!"
+			tasks: [{
+				id: "0E56BB1AAFD27E1F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							maps: [I; ]
+						}
+					}
+					id: "map_atlases:atlas"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&bFraming Saw:&r Crafts framed blocks"
+				"&bHammer:&r Modifies framed blocks"
+				"&bWrench:&r Rotates all/framed blocks"
+				"&bScrewdriver:&r Rotates camo blocks"
+				"&bKey:&r Locks framed block states"
+				"&bBlueprint:&r Saves/Places framed blocks"
+			]
+			icon: "framedblocks:framing_saw"
+			id: "3ABDE39BC0A0C7CC"
+			rewards: [{
+				count: 8
+				id: "121EBD3457437295"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			subtitle: "Framed blocks galore"
+			tasks: [
+				{
+					id: "2F548F0C5F113BE2"
+					item: "framedblocks:framing_saw"
+					type: "item"
+				}
+				{
+					id: "5CEDC4037D0CCAA9"
+					item: "framedblocks:framed_hammer"
+					type: "item"
+				}
+				{
+					id: "301B8D27E1D33DB3"
+					item: "framedblocks:framed_wrench"
+					type: "item"
+				}
+				{
+					id: "0ECDABCBC0F593FC"
+					item: "framedblocks:framed_screwdriver"
+					type: "item"
+				}
+				{
+					id: "61B3A211151E9E5A"
+					item: "framedblocks:framed_key"
+					type: "item"
+				}
+				{
+					id: "4DEBA3C793A25C91"
+					item: {
+						Count: 1
+						id: "framedblocks:framed_blueprint"
+						tag: {
+							blueprint_data: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "It was a setup!"
+			x: -2.0d
+			y: -1.5d
+		}
 	]
 	title: "Misc Additions"
 }

@@ -5,6 +5,14 @@
 	group: "3B005356C363A3AB"
 	icon: "create:wrench"
 	id: "45EECD823F1ECC05"
+	images: [{
+		height: 2.0d
+		image: "pneumaticcraft:item/wip"
+		rotation: 0.0d
+		width: 2.0d
+		x: 3.5d
+		y: 0.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

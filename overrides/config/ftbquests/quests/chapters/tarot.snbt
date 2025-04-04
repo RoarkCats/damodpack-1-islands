@@ -9,9 +9,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Use this to store your cards so they don't take up your whole inventory. Card effects work from the tarot holder"]
+			description: ["Use this to store your cards so they don't take crowd up your inventory. Tarot Cards still function from within the Tarot Deck"]
 			id: "12EBE67566A93D98"
-			subtitle: "Card Storage"
+			subtitle: "Card storage"
 			tasks: [{
 				id: "7F0606166F3AFC04"
 				item: {
@@ -26,7 +26,7 @@
 				}
 				type: "item"
 			}]
-			title: "Gotta collect them all"
+			title: "Gotta find 'em all"
 			x: 0.5d
 			y: 0.5d
 		}
@@ -361,5 +361,5 @@
 			y: 0.5d
 		}
 	]
-	title: "Reading Fortunes"
+	title: "Fortune Reading"
 }

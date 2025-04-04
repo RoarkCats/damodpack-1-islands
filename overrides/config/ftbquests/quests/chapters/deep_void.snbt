@@ -18,7 +18,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Be it through The End, the hole at 0,0 in the Overworld, or the cracks in the crumbling bedrock -  &oit calls out..."]
+			description: ["Be it through The End, the hole at 0,0 in the Overworld, the cracks in the crumbling bedrock, or the embrace of the Abductor -  &oit calls out..."]
 			icon: "the_deep_void:lurker_head"
 			id: "11BFFABF07B3D6C2"
 			rewards: [{

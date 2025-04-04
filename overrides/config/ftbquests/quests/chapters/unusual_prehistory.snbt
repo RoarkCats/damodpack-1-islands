@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "unusual_prehistory"
+	group: "6E87FB03A99D56AA"
+	id: "6834DD74DA050450"
+	images: [{
+		height: 2.0d
+		image: "pneumaticcraft:item/wip"
+		rotation: 0.0d
+		width: 2.0d
+		x: 1.5d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "75589BC9AD9698F4"
+		tasks: [{
+			id: "07D6DA7842DF3636"
+			item: "unusualprehistory:encyclopedia"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Unusual Prehistory"
+}

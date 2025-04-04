@@ -5,6 +5,14 @@
 	group: "7713A3BE5AE0B169"
 	icon: "minecraft:bee_nest"
 	id: "2F67425D0A2A95FA"
+	images: [{
+		height: 2.0d
+		image: "pneumaticcraft:item/wip"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.0d
+		y: 0.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
