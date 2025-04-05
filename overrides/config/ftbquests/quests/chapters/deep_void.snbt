@@ -21,12 +21,33 @@
 			description: ["Be it through The End, the hole at 0,0 in the Overworld, the cracks in the crumbling bedrock, or the embrace of the Abductor -  &oit calls out..."]
 			icon: "the_deep_void:lurker_head"
 			id: "11BFFABF07B3D6C2"
-			rewards: [{
-				count: 8
-				id: "3DFE8B454385C09E"
-				item: "minecraft:torch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "3DFE8B454385C09E"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "28E3208145A7A500"
+					item: {
+						Count: 1
+						id: "minecraft:paper"
+						tag: {
+							display: {
+								Lore: [
+									"{\"text\":\"Options > Distant Horizons (top left) > Rendering\",\"color\":\"gray\"}"
+									"\"\""
+									"{\"text\":\"Alternatively lower the Distant Horizons brightness\",\"color\":\"gray\"}"
+									"{\"text\":\"> D.H. > Advanced > Graphics > Quality > Brightness 0.5\",\"color\":\"gray\"}"
+								]
+								Name: "\"Disable Distant Horizons for full immersion\""
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Jump. Embrace the void."
 			tasks: [{
 				dimension: "the_deep_void:deep_void"
@@ -53,6 +74,43 @@
 				type: "item"
 			}]
 			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["11BFFABF07B3D6C2"]
+			description: [
+				"Distant Horizons chunks are too bright, disable them for full dark immersion"
+				"&7Options > Distant Horizons (top left) > Rendering > '&ofalse'&r"
+				""
+				"Alternatively, you can lower the Distant Horizons brightness for a balance"
+				"&7Options > D.H. > Advanced > Graphics > Quality > Brightness Mult. > &o'0.5'&r"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:paper"
+			id: "275D918295A4BF9E"
+			rewards: [
+				{
+					description: ""
+					exclude_from_claim_all: true
+					id: "6FCBF79BC134B57E"
+					title: "Immersion Up!"
+					type: "toast"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25CFE4FCCA10BE5C"
+					item: "bakery:strawberry_cake_slice"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Immersion ruined"
+			tasks: [{
+				id: "5B08A6E2493E61B1"
+				type: "checkmark"
+			}]
+			title: "Disable Distant Horizons"
+			x: -1.5d
 			y: 0.5d
 		}
 	]
