@@ -144,7 +144,7 @@ _version = 3
 				beaconRenderHeight = 6000
 				#
 				# If true LOD clouds will be rendered.
-				enableCloudRendering = true
+				enableCloudRendering = false
 				#
 				# Can be disabled to use much slower but more compatible direct rendering. 
 				# Disabling this can be used to fix some crashes on Mac.
