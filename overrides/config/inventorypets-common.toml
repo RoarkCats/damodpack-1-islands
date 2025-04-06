@@ -170,7 +170,7 @@
 	#Disable the Cloud pet (default:false)
 	disableCloud = false
 	#Disable the Cobblestone pet (default:false)
-	disableCobblestone = false
+	disableCobblestone = true
 	#Disable the Cow pet (default:false)
 	disableCow = false
 	#Disable the Crafting Table pet (default:false)
@@ -178,7 +178,7 @@
 	#Disable the Creeper pet (default:false)
 	disableCreeper = false
 	#Disable the Dirt pet (default:false)
-	disableDirt = false
+	disableDirt = true
 	#Disable the Double Chest pet (default:false)
 	disableDoubleChest = false
 	#Disable the Dubstep pet (default:false)
