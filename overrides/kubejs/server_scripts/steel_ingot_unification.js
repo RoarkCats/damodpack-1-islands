@@ -119,8 +119,6 @@
 
         event.remove({id: "enderio:smelting/ad_astra/smelting/calorite_ingot_from_smelting_deepslate_calorite_ore"})
 
-        event.remove({id: "inventorypets:illuminati_pet"})
-
         event.remove({id: "create:crushing/compat/immersiveengineering/coal_coke"})
 
         event.remove({id: "createaddtion:compat/immersiveengineering/crushing/coal_coke"})
@@ -134,8 +132,6 @@
         event.remove({id: "immersive_aircraft:propeller"})
         
         event.remove({id: "immersive_aircraft:engine"})
-
-        event.remove({id: "inventorypets:pet_squid"})
 
 
 

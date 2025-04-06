@@ -160,7 +160,7 @@
 	#Disable the (default:false)
 	disableBrewingStand = false
 	#Disable the Blaze pet (default:false)
-	disableCheetah = true
+	disableCheetah = false
 	#Disable the Chest pet (default:false)
 	disableChest = false
 	#Disable the Chicken pet (default:false)
