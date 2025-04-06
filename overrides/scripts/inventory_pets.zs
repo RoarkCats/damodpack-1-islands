@@ -1,8 +1,8 @@
 // Feed Bag
 craftingTable.addShaped("feed_bag", <item:inventorypets:feed_bag>, [
-    [<tag:forge:leather>, <item:minecraft:string>, <tag:forge:leather>], 
-    [<tag:forge:leather>, <item:minecraft:diamond>, <tag:forge:leather>], 
-    [<tag:forge:leather>, <tag:forge:chests/wooden>, <tag:forge:leather>]]);
+    [<tag:items:forge:leather>, <item:minecraft:string>, <tag:items:forge:leather>], 
+    [<tag:items:forge:leather>, <item:minecraft:diamond>, <tag:items:forge:leather>], 
+    [<tag:items:forge:leather>, <tag:items:forge:chests/wooden>, <tag:items:forge:leather>]]);
 
 
 // Pets
@@ -19,7 +19,7 @@ craftingTable.addShaped("squid_pet", <item:inventorypets:pet_squid>, [
     [<item:inventorypets:nugget_lapis>, <item:minecraft:netherite_scrap>, <item:inventorypets:nugget_lapis>]]);
 
 craftingTable.removeByName("inventorypets:anvil_pet");
-craftingTable.addShaped("anvil_pet", <item:inventorypets:anvil_pet>, [
+craftingTable.addShaped("anvil_pet", <item:inventorypets:pet_anvil>, [
     [<item:minecraft:iron_ingot>, <item:minecraft:diamond>, <item:minecraft:iron_ingot>], 
     [<item:minecraft:iron_ingot>, <item:minecraft:anvil>, <item:minecraft:iron_ingot>], 
     [<item:minecraft:iron_block>, <item:minecraft:gold_block>, <item:minecraft:iron_block>]]);
