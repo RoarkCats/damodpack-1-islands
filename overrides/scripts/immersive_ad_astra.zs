@@ -7,15 +7,6 @@ craftingTable.addShaped("steel_engine", <item:ad_astra:steel_engine>, [
     [<item:immersiveengineering:ingot_hop_graphite>, <item:minecraft:air>, <item:immersiveengineering:ingot_hop_graphite>], 
     [<item:minecraft:air>, <item:immersiveengineering:graphite_electrode>.withTag({graphDmg: 0}), <item:minecraft:air>], 
     [<item:immersiveengineering:ingot_hop_graphite>, <item:minecraft:air>, <item:immersiveengineering:ingot_hop_graphite>]]);
-
-  // Define a shapeless recipe with 5 ingredients
-  craftingTable.addShapeless("steel_to_plate_hammer", <item:immersiveengineering:plate_steel>, [
-      <item:immersiveengineering:hammer>,
-      <item:immersiveengineering:ingot_steel>,
-      <item:immersiveengineering:ingot_steel>,
-      <item:immersiveengineering:ingot_steel>,
-      <item:immersiveengineering:ingot_steel>
-  ]);
 craftingTable.addShaped("fuel_refinery", <item:ad_astra:fuel_refinery>, [
     [<item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>], 
     [<item:ad_astra:oil_bucket>, <item:immersiveengineering:heavy_engineering>, <item:ad_astra:oil_bucket>], 
@@ -35,3 +26,17 @@ craftingTable.addShaped("propeller", <item:immersive_aircraft:propeller>, [
     [<item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:immersiveengineering:plate_steel>, <item:immersiveengineering:plate_steel>]]);
+
+  // Plates
+craftingTable.addShapeless("steel_to_plate_hammer", <item:immersiveengineering:plate_steel>, [
+    <item:immersiveengineering:hammer>.anyDamage(),
+    <item:immersiveengineering:ingot_steel>,
+    <item:immersiveengineering:ingot_steel>,
+    <item:immersiveengineering:ingot_steel>,
+    <item:immersiveengineering:ingot_steel>
+]);
+
+craftingTable.addShapeless("zinc_to_plate_hammer", <item:immersivegeology:plate_zinc>, [
+    <item:immersiveengineering:hammer>.anyDamage(),
+    <tag:items:forge:ingots/zinc>
+]);

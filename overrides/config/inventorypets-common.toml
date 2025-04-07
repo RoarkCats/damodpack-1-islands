@@ -75,7 +75,7 @@
 	#Allow Petrifier to make legendary pets (default:false)
 	allowPetrifierLegendaries = false
 	#Disable the Petrifier (default:false)
-	disablePetrifier = false
+	disablePetrifier = true
 	#Disable random TNT in Tree Top chests (default:false)
 	disableTreeTopTNT = false
 	#Enable Loot Pet with FTBUltimine installed (default:false)
