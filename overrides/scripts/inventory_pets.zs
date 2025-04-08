@@ -49,10 +49,16 @@ craftingTable.addShaped("iron_golem_pet", <item:inventorypets:pet_iron_golem>, [
     [<item:minecraft:iron_block>, <item:minecraft:golden_apple>, <item:minecraft:iron_block>], 
     [<item:minecraft:poppy>, <item:minecraft:iron_block>, <item:minecraft:poppy>]]);
 
-// Note: destroys items?
+// Note: destroys items, uses ForgeCaps so can't set with NBT
+// import crafttweaker.api.item.IItemStack;
+// (output as IItemStack, inputs as IItemStack[][]) => {return <item:inventorypets:pet_double_chest>.withTag({Inventory:{Size:54,Items: inputs[0][1].tag["Inventory"]["Items"] }});}
 craftingTable.removeByName("inventorypets:double_chest_pet");
 craftingTable.addShaped("double_chest_pet", <item:inventorypets:pet_double_chest>, [
     [<tag:items:minecraft:planks>, <item:inventorypets:pet_chest>, <tag:items:minecraft:planks>], 
+    [<tag:items:minecraft:planks>, <item:minecraft:diamond>, <tag:items:minecraft:planks>], 
+    [<tag:items:minecraft:planks>, <item:minecraft:gold_ingot>, <tag:items:minecraft:planks>]]);
+craftingTable.addShaped("sated_double_chest_pet", <item:inventorypets:pet_sated_double_chest>, [
+    [<tag:items:minecraft:planks>, <item:inventorypets:pet_sated_chest>, <tag:items:minecraft:planks>], 
     [<tag:items:minecraft:planks>, <item:minecraft:diamond>, <tag:items:minecraft:planks>], 
     [<tag:items:minecraft:planks>, <item:minecraft:gold_ingot>, <tag:items:minecraft:planks>]]);
 
