@@ -67,7 +67,7 @@
 	#Disable all holiday pets (default:false)
 	disableHolidayPets = false
 	#Disable the April Fool pet and messages (default:false)
-	disableAprilFoolHoliday = false
+	disableAprilFoolHoliday = true
 	#Allow April Fool all year round (default:false)
 	yearroundAprilFool = false
 	#Allow more grieflike April Fools pranks (default:false)
