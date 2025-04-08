@@ -28,7 +28,7 @@ craftingTable.addShaped("anvil_pet", <item:inventorypets:pet_anvil>, [
 craftingTable.removeByName("inventorypets:slime_pet");
 craftingTable.addShaped("slime_pet", <item:inventorypets:pet_slime>, [
     [<item:minecraft:emerald>, <item:minecraft:enchanted_golden_apple>, <item:minecraft:emerald>], 
-    [<item:minecraft:totem_of_undying>, <tag:items:forge:blocks/slime/storage>, <item:minecraft:totem_of_undying>], 
+    [<item:minecraft:totem_of_undying>, <item:minecraft:slime_block>, <item:minecraft:totem_of_undying>], 
     [<item:minecraft:emerald>, <item:minecraft:nether_star>, <item:minecraft:emerald>]]);
 
 craftingTable.removeByName("inventorypets:pingot_pet");
