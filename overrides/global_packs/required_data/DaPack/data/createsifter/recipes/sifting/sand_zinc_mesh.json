@@ -1,0 +1,30 @@
+{
+  "type": "createsifter:sifting",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "createsifter:zinc_mesh"
+    }
+  ],
+  "processingTime": 500,
+  "results": [
+    {
+      "chance": 0.15,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "chance": 0.02,
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "chance": 0.1,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

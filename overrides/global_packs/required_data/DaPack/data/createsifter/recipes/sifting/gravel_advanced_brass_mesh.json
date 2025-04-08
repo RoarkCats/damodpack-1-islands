@@ -1,0 +1,46 @@
+{
+  "type": "createsifter:sifting",
+  "ingredients": [
+    {
+      "item": "createsifter:advanced_brass_mesh"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ],
+  "processingTime": 500,
+  "results": [
+    {
+      "chance": 0.2,
+      "item": "create:copper_nugget"
+    },
+    {
+      "chance": 0.1,
+      "item": "create:zinc_nugget"
+    },
+    {
+      "chance": 0.15,
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.15,
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.005,
+      "item": "minecraft:diamond"
+    },
+    {
+      "chance": 0.002,
+      "item": "minecraft:emerald"
+    },
+    {
+      "chance": 0.1,
+      "item": "create:experience_nugget"
+    }
+  ]
+}
