@@ -14,15 +14,35 @@
 	}]
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "75589BC9AD9698F4"
-		tasks: [{
-			id: "07D6DA7842DF3636"
-			item: "unusualprehistory:encyclopedia"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["169B8CAAA201F64F"]
+			id: "75589BC9AD9698F4"
+			tasks: [{
+				id: "07D6DA7842DF3636"
+				item: "unusualprehistory:encyclopedia"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "169B8CAAA201F64F"
+			tasks: [{
+				id: "0C609D1EFB732E5E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "unusualprehistory:fossils"
+					}
+				}
+				type: "item"
+			}]
+			title: "Fossil"
+			x: 0.0d
+			y: -0.5d
+		}
+	]
 	title: "Unusual Prehistory"
 }

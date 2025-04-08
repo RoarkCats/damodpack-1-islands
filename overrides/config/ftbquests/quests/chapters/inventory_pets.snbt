@@ -484,40 +484,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["118DAEA738F52142"]
-			id: "4BE2FB0A7857B965"
-			tasks: [{
-				id: "2B601A1B3EAD72DF"
-				item: {
-					Count: 1
-					id: "inventorypets:pet_dirt"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["118DAEA738F52142"]
-			id: "25CB3D49BD80E1F4"
-			tasks: [{
-				id: "375C293298949AF7"
-				item: {
-					Count: 1
-					id: "inventorypets:pet_cobblestone"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["4C1B3EDC4DA0FE14"]
 			id: "5FFF61941E04219C"
 			tasks: [{
@@ -633,7 +599,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: 2.5d
 		}
 		{
@@ -650,7 +616,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: 3.5d
 		}
 		{
@@ -1107,7 +1073,6 @@
 				"3641CCF37D72F497"
 				"0BD616FCA712FF61"
 				"1712AB35DEE81396"
-				"4BE2FB0A7857B965"
 				"7A78F3704E11BA43"
 				"108DFFC0CD378F20"
 				"3BB903D3755AA16D"
@@ -1125,7 +1090,6 @@
 				"5FFF61941E04219C"
 				"4C1B3EDC4DA0FE14"
 				"5B53E8F0F91E91C8"
-				"25CB3D49BD80E1F4"
 				"4F999A3BD8A6E0FD"
 				"360D7D4639DA28EA"
 				"6F44F71CBADC857A"
@@ -1271,6 +1235,23 @@
 				type: "checkmark"
 			}]
 			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40E7C454F15CC2F7"]
+			id: "514FCC1EEA7DD411"
+			tasks: [{
+				id: "0BA68E84A67519FD"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_cheetah"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
 			y: 0.0d
 		}
 	]

@@ -140,8 +140,14 @@
 		{
 			icon: "duckensinvasion:ward"
 			id: "6389E053D734F544"
+			rewards: [{
+				id: "5A2775B7E33FFDBE"
+				item: "duckensinvasion:ward"
+				type: "item"
+			}]
 			tasks: [{
-				entity: "duckensinvasion:commander_duck"
+				entity: "duckensinvasion:commaner_duckfighting"
+				icon: "duckensinvasion:ward"
 				id: "361162B46C52EF23"
 				type: "kill"
 				value: 1L
@@ -157,7 +163,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
@@ -168,7 +174,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 0.5d
 		}
 		{
@@ -179,7 +185,8 @@
 				type: "kill"
 				value: 5L
 			}]
-			x: 6.5d
+			title: "Land Shark!"
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -190,7 +197,7 @@
 				type: "kill"
 				value: 3L
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -201,7 +208,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: 0.5d
 		}
 		{
@@ -212,7 +219,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 0.5d
 		}
 		{
@@ -224,7 +231,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
@@ -330,7 +337,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -365,6 +372,73 @@
 			title: "Gentle Giant"
 			x: -7.5d
 			y: 0.5d
+		}
+		{
+			icon: "collectorsreap:chieftain_claw"
+			id: "09838A6D8D92AB8C"
+			tasks: [{
+				entity: "subnautica_flow:reaper"
+				icon: "collectorsreap:chieftain_claw"
+				id: "54ABB36DB42FF67D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Guardian of the wastelands"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			id: "2F0511F7DD8B1617"
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				icon: "iceandfire:sea_serpent_scales_deepblue"
+				id: "221C1645F3138BA8"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Anaconda Killer"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			icon: "upgrade_aquatic:lionfish"
+			id: "4E4426D232AE1466"
+			tasks: [{
+				entity: "subnautica_flow:chelicerate"
+				icon: "upgrade_aquatic:lionfish"
+				id: "0E8AE0019EE8FA78"
+				title: "I hate you red thang"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			icon: "cataclysm:lionfish"
+			id: "3A8301BA0921D434"
+			tasks: [{
+				entity: "subnautica_flow:void_chelicerate"
+				icon: "cataclysm:lionfish"
+				id: "52AFB760A9CA1620"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			id: "74008BDFFF12B9E6"
+			tasks: [{
+				entity: "subnautica_flow:sea_dragon"
+				icon: "simplehats:dragonskull"
+				id: "73C539F1A1C0C2E1"
+				title: "From the depths"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.5d
+			y: 2.5d
 		}
 	]
 	title: "Monster Hunter: Minecraft"

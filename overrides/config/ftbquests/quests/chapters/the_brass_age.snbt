@@ -1,0 +1,49 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_brass_age"
+	group: "3B005356C363A3AB"
+	id: "7CF6EDBED23884CC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["With the new automation we are going to do with brass your going to need to transport the items"]
+			id: "7DB5DB28A73236E2"
+			tasks: [{
+				count: 16L
+				id: "53F49F71B47DF8C3"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "Finally, a use for kelp."
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			id: "06100322EAD8948A"
+			tasks: [{
+				count: 8L
+				id: "440893B0E1B8AE86"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Brass Building Blocks"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "6F38A8EE18E09D89"
+			tasks: [{
+				count: 21L
+				id: "00B8CF4EB68B8386"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Crafting Time"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "The Brass Age"
+}

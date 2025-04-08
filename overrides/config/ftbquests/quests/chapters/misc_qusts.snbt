@@ -325,6 +325,23 @@
 			x: -2.0d
 			y: -1.5d
 		}
+		{
+			id: "1A0E71E2778A69AB"
+			rewards: [{
+				id: "21B051FA99345592"
+				item: "iceandfire:weezer_blue_album"
+				type: "item"
+			}]
+			subtitle: "Better Get Exploring"
+			tasks: [{
+				id: "610CA33E532B6A74"
+				item: "lootr:trophy"
+				type: "item"
+			}]
+			title: "100 Loot Chests!"
+			x: 2.0d
+			y: 1.0d
+		}
 	]
 	title: "Misc Additions"
 }

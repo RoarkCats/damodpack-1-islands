@@ -36,26 +36,23 @@
 		{
 			dependencies: ["4410727199C4CDFF"]
 			id: "6142C2AD23BE2C94"
-			tasks: [{
-				count: 16L
-				id: "0EB2E968EFAF423C"
-				item: "create:shaft"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 16L
+					id: "0EB2E968EFAF423C"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "384E618270FEA78F"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
 			title: "The start of something"
 			x: 1.5d
 			y: 0.0d
-		}
-		{
-			id: "48C5C710F6E41A3C"
-			tasks: [{
-				id: "6C99E6B29C1AF376"
-				item: "create:belt_connector"
-				type: "item"
-			}]
-			title: "Finally, a use for Kelp"
-			x: -2.0d
-			y: 0.5d
 		}
 		{
 			id: "2511DC108CF6F8F1"
@@ -151,7 +148,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["06E27CDBE5AE3EA5"]
+			dependencies: ["10C334B19B5B3946"]
 			id: "320B5D81EBA00F27"
 			tasks: [
 				{
@@ -165,8 +162,102 @@
 					type: "item"
 				}
 			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E27CDBE5AE3EA5"]
+			description: ["You can use a depot in your factory line to hold onto a stack of items well something in your factory changes it"]
+			id: "4E06A808D43EFDCC"
+			subtitle: "Prosess it all"
+			tasks: [{
+				id: "3291E016A13A5C69"
+				item: "create:depot"
+				type: "item"
+			}]
+			title: "Small Storage"
 			x: 2.5d
-			y: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06E27CDBE5AE3EA5"]
+			description: ["The wrench allows you to quickly break factory blocks, shift + rclick. It also allows you to rotate your factory blocks with a rclick"]
+			id: "10C334B19B5B3946"
+			subtitle: "Deconstruct and edit"
+			tasks: [{
+				id: "5F6B8831E24CE067"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Wrenchin it"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E27CDBE5AE3EA5"]
+			id: "4589673144C94BB6"
+			tasks: [{
+				id: "44BB8DC56866D356"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4589673144C94BB6"
+				"10C334B19B5B3946"
+			]
+			id: "5B708382A5D2E2EC"
+			tasks: [{
+				id: "471834899F4D28FC"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["320B5D81EBA00F27"]
+			description: ["Time to go to. Wait for it. &lTHE NETHER&r. Find a fortress and rclick one of the blazes there and trap them to work for you"]
+			id: "3322286AA6125C01"
+			tasks: [
+				{
+					id: "54FD0FCF61641BC6"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "347AB0D6125DBB14"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Blaze Power"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3322286AA6125C01"]
+			id: "2A6F99FD10FB75EC"
+			tasks: [
+				{
+					count: 8L
+					id: "5F25DB61CD1A9D9D"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7C7984135BBBBD68"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			title: "The next step"
+			x: 6.5d
+			y: 3.0d
 		}
 	]
 	title: "The Fundamentals"

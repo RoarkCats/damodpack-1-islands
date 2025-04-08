@@ -14,21 +14,63 @@
 	}]
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "07868CE7AA797831"
-		tasks: [{
-			id: "256BF85A26D27563"
-			item: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "mysticalagriculture:guide"
+	quests: [
+		{
+			id: "07868CE7AA797831"
+			tasks: [{
+				id: "256BF85A26D27563"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "mysticalagriculture:guide"
+					}
 				}
-			}
-			type: "item"
-		}]
-		x: 9.5d
-		y: 1.0d
-	}]
+				match_nbt: true
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07868CE7AA797831"]
+			id: "7099D0AAFEFB74F6"
+			tasks: [{
+				count: 16L
+				id: "61CC80C5147D7786"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			title: "The essence of life"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07868CE7AA797831"]
+			id: "03A623F4B3818BBD"
+			tasks: [{
+				id: "6DCCD40514769606"
+				item: "mysticalagriculture:prosperity_seed_base"
+				type: "item"
+			}]
+			title: "Time to make some seeds"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7099D0AAFEFB74F6"
+				"03A623F4B3818BBD"
+			]
+			id: "153C19B5A224C51D"
+			tasks: [{
+				id: "496DF84FB926C665"
+				item: "mysticalagriculture:inferium_seeds"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+	]
 	title: "Mystical Agriculture"
 }

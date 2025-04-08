@@ -22,7 +22,7 @@
 			tasks: [
 				{
 					id: "33676C0464592442"
-					item: "mna:vinteum_ore"
+					item: "mna:raw_vinteum"
 					type: "item"
 				}
 				{
