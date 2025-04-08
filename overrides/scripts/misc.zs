@@ -8,3 +8,5 @@ craftingTable.addShaped("menril_sapling_renewal", <item:integrateddynamics:menri
 craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
     [<item:minecraft:string>], 
     [<tag:items:forge:leather>]]);
+
+recipes.removeByName("immersiveengineering:alloysmelter/brass"); // balances out create again
