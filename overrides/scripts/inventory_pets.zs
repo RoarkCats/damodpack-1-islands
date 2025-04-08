@@ -70,7 +70,7 @@ craftingTable.addShaped("enchanting_table_pet", <item:inventorypets:pet_enchanti
 
 craftingTable.removeByName("inventorypets:mickerson_pet");
 craftingTable.addShaped("mickerson_pet", <item:inventorypets:pet_mickerson>, [
-    [<item:minecraft:lapis_lazuli>, <item:minecraft:netherite_ingot>, <item:minecraft:lapis_lazuli>], 
+    [<item:minecraft:lapis_lazuli>, <item:minecraft:dragon_head>, <item:minecraft:lapis_lazuli>], 
     [<item:minecraft:netherite_ingot>, <item:minecraft:nether_star>, <item:minecraft:netherite_ingot>], 
     [<item:minecraft:lapis_lazuli>, <item:minecraft:netherite_ingot>, <item:minecraft:lapis_lazuli>]]);
 
