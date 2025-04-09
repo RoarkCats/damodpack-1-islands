@@ -104,6 +104,12 @@ craftingTable.addShaped("loot_pet", <item:inventorypets:pet_loot>, [
     [<item:minecraft:gold_block>, <item:minecraft:diamond_block>, <item:minecraft:gold_block>], 
     [<item:minecraft:netherite_scrap>, <item:minecraft:emerald_block>, <item:minecraft:netherite_scrap>]]);
 
+craftingTable.removeByName("inventorypets:magma_cube_pet");
+craftingTable.addShaped("magma_cube_pet", <item:inventorypets:pet_magma_cube>, [
+    [<item:minecraft:magma_cream>, <item:minecraft:netherite_scrap>, <item:minecraft:magma_cream>], 
+    [<item:alexsmobs:lava_bottle>, <item:botania:blaze_block>, <item:alexsmobs:lava_bottle>], 
+    [<item:minecraft:magma_cream>, <item:minecraft:netherite_scrap>, <item:minecraft:magma_cream>]]);
+
 // Disabled Pets
 craftingTable.removeByName("inventorypets:petrifier"); // turns stuff into pets for free
 craftingTable.removeByName("inventorypets:lead_pet");
