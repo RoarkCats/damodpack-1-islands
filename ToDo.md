@@ -33,7 +33,7 @@
 - Alex's Caves
 - ~~The furry mod - yes~~
 - aquaculture
-- backpack
+- ~~backpack~~
 - ~~Tarot - yes~~
 - Bumblezone
 - ~~dark waters - yes~~
