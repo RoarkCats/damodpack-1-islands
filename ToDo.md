@@ -2,6 +2,23 @@
 - Mobtimizations config
 - Get rid of crafting recipies for limited barrels from sophisticated storage
 
+
+put 
+        [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "twilightforest:in_twilight_forest"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "twilightforest:oak_savannah"
+      }
+    ]
+
+    into lightning dragon spawn
+
 # Mod List and if they have quests or not yet
 - Mystical Agriculter ~ no
 - ~~Inventory Pets ~ yes~~
