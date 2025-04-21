@@ -44,7 +44,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0DF45E91E3671EB1"]
@@ -56,7 +56,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0F9912E824660FF5"]
@@ -68,7 +68,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4E89BCCC1AB3A1C7"]
@@ -80,7 +80,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41038E84AF63FB55"]
@@ -137,7 +137,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0DF45E91E3671EB1"]
@@ -149,7 +149,7 @@
 			}]
 			title: "Portable Upgrades"
 			x: 2.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4C38A20706E6306C"]
@@ -159,8 +159,8 @@
 				item: "sophisticatedbackpacks:crafting_upgrade"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["37CFA426CC794627"]
@@ -170,7 +170,7 @@
 				item: "sophisticatedbackpacks:everlasting_upgrade"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.75d
 			y: 5.5d
 		}
 		{
@@ -282,8 +282,8 @@
 				type: "item"
 			}]
 			title: "Let's get cooking"
-			x: -1.0d
-			y: 3.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -294,8 +294,8 @@
 				type: "item"
 			}]
 			title: "Auto Cooking"
-			x: -2.5d
-			y: 3.5d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -305,8 +305,8 @@
 				item: "sophisticatedbackpacks:blasting_upgrade"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -316,8 +316,8 @@
 				item: "sophisticatedbackpacks:smoking_upgrade"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6C4D9136B61453D2"]
@@ -327,8 +327,8 @@
 				item: "sophisticatedbackpacks:auto_blasting_upgrade"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["600691193A1B96A4"]
@@ -338,8 +338,8 @@
 				item: "sophisticatedbackpacks:auto_smoking_upgrade"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6A8E46A0EBE103F9"]
@@ -354,7 +354,9 @@
 		}
 		{
 			dependencies: ["3F7BC506FEF20ECA"]
+			description: ["Use a Stack Upgrade to increase the tank's capacity"]
 			id: "6A8E46A0EBE103F9"
+			subtitle: "Required for pumps"
 			tasks: [{
 				id: "260E6793535FDBAC"
 				item: "sophisticatedbackpacks:tank_upgrade"
@@ -371,8 +373,8 @@
 				item: "sophisticatedbackpacks:advanced_pump_upgrade"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4C38A20706E6306C"]
@@ -382,8 +384,8 @@
 				item: "sophisticatedbackpacks:anvil_upgrade"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4C38A20706E6306C"]
@@ -393,8 +395,8 @@
 				item: "sophisticatedbackpacks:smithing_upgrade"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.5d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["37CFA426CC794627"]
@@ -405,7 +407,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3F7BC506FEF20ECA"]
@@ -438,7 +440,7 @@
 				item: "sophisticatedbackpacks:void_upgrade"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.75d
 			y: 5.5d
 		}
 		{
@@ -449,8 +451,8 @@
 				item: "sophisticatedbackpacks:stonecutter_upgrade"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			description: ["            Information Networks!"]
@@ -800,7 +802,7 @@
 				item: "sophisticatedbackpacks:magnet_upgrade"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.75d
 			y: 5.5d
 		}
 		{
@@ -811,7 +813,7 @@
 				item: "sophisticatedbackpacks:feeding_upgrade"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.75d
 			y: 5.5d
 		}
 		{
@@ -1215,6 +1217,18 @@
 			}]
 			x: 1.0d
 			y: 11.0d
+		}
+		{
+			dependencies: ["6B1B508A04ED1354"]
+			id: "30BC5B374784D7CE"
+			subtitle: "No more XP death loss!"
+			tasks: [{
+				id: "2041CDF7EFA72978"
+				item: "sophisticatedbackpacks:xp_pump_upgrade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
 		}
 	]
 	title: "Storage"

@@ -43,6 +43,25 @@
 			x: 0.0d
 			y: -0.5d
 		}
+		{
+			dependencies: ["169B8CAAA201F64F"]
+			id: "6B7FAE177BBFEDED"
+			tasks: [
+				{
+					id: "125AB21D6018E653"
+					item: "unusualprehistory:analyzer"
+					type: "item"
+				}
+				{
+					id: "6174FD553128D78F"
+					item: "unusualprehistory:cultivator"
+					type: "item"
+				}
+			]
+			title: "Dino Revival"
+			x: 0.0d
+			y: -1.5d
+		}
 	]
 	title: "Unusual Prehistory"
 }

@@ -332,15 +332,42 @@
 				item: "iceandfire:weezer_blue_album"
 				type: "item"
 			}]
-			subtitle: "Better Get Exploring"
+			subtitle: "Better get exploring"
 			tasks: [{
 				id: "610CA33E532B6A74"
 				item: "lootr:trophy"
 				type: "item"
 			}]
 			title: "100 Loot Chests!"
-			x: 2.0d
-			y: 1.0d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "721B5EC0120D6C6B"
+			tasks: [
+				{
+					id: "16B9B597353DED45"
+					item: "simplehats:hatbag_common"
+					type: "item"
+				}
+				{
+					id: "5D17513617CA537F"
+					item: "simplehats:hatbag_uncommon"
+					type: "item"
+				}
+				{
+					id: "55360828131EFA13"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					id: "5BF03EC14E974ADA"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
 		}
 	]
 	title: "Misc Additions"

@@ -15,17 +15,43 @@
 	}]
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "64F1D030AF519184"
-		tasks: [{
-			dimension: "twilightforest:twilight_forest"
-			icon: "twilightforest:twilight_portal_miniature_structure"
-			id: "569BA4A4F4068A8F"
-			title: "Visit the Twilight Forest"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "64F1D030AF519184"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "569BA4A4F4068A8F"
+				title: "Visit the Twilight Forest"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64F1D030AF519184"]
+			id: "07FECFE8EB143B9F"
+			tasks: [{
+				entity: "twilightforest:naga"
+				id: "011C907623271AE1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["07FECFE8EB143B9F"]
+			id: "358DED3721435978"
+			tasks: [{
+				entity: "twilightforest:lich"
+				id: "0265B60FCC7DFEC8"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
 	title: "Twilight Forest"
 }

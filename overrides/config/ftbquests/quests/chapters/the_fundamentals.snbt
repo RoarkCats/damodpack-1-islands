@@ -55,18 +55,6 @@
 			y: 0.0d
 		}
 		{
-			id: "2511DC108CF6F8F1"
-			tasks: [{
-				count: 2L
-				id: "2D1D6D9BE629610F"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			title: "Crushing it"
-			x: -2.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["6142C2AD23BE2C94"]
 			id: "06E27CDBE5AE3EA5"
 			tasks: [{

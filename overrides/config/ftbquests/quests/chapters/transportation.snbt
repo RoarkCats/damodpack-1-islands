@@ -141,6 +141,49 @@
 			x: -1.5d
 			y: 3.5d
 		}
+		{
+			id: "2912824875E1332A"
+			tasks: [{
+				id: "7A1AE6C8BD0FFEDC"
+				item: "immersive_aircraft:engine"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2912824875E1332A"]
+			id: "5CC7CD88E6F6F923"
+			tasks: [{
+				id: "1CE70E501D0B72D1"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CC7CD88E6F6F923"]
+			id: "6FA283845455C874"
+			tasks: [{
+				id: "3D3212DF4F1B9005"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FA283845455C874"]
+			id: "5850A06877504E77"
+			tasks: [{
+				id: "22EBB3F3EC1C91AD"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
 	]
 	title: "Transportation"
 }

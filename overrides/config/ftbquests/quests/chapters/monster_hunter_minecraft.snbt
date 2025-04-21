@@ -433,12 +433,93 @@
 				entity: "subnautica_flow:sea_dragon"
 				icon: "simplehats:dragonskull"
 				id: "73C539F1A1C0C2E1"
-				title: "From the depths"
+				title: "Kill 1x Sea Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			title: "From the Depths"
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			id: "521A434F72CE811C"
+			tasks: [{
+				entity: "subnautica_flow:glow_whale"
+				id: "1DDC862AF9E515EC"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			id: "163C82B4AE51A6BD"
+			tasks: [{
+				entity: "subnautica_flow:stalker"
+				id: "3D04C5A4E17A1EFD"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			id: "68DCF4CD7D0D72C6"
+			tasks: [{
+				entity: "subnautica_flow:precursor_spider_robot"
+				id: "7B3F20BE0EDF381C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			id: "0BF440B986086973"
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "36422CBFE06ED892"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			id: "67791FA85D247161"
+			tasks: [
+				{
+					entity: "iceandfire:lightning_dragon"
+					id: "3D43F89A0CFA20AB"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "iceandfire:ice_dragon"
+					id: "73E95D744F38840D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "iceandfire:fire_dragon"
+					id: "5CCA8E5A39FEF309"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			id: "15DDDC431E6F5E9C"
+			tasks: [{
+				entity: "subnautica_flow:phantom_moth_leviathan"
+				id: "41CC577E256B99F2"
 				type: "kill"
 				value: 1L
 			}]
 			x: -7.5d
-			y: 2.5d
+			y: -1.5d
 		}
 	]
 	title: "Monster Hunter: Minecraft"

@@ -14,15 +14,177 @@
 	}]
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		id: "6C43D79A050A7811"
-		tasks: [{
-			id: "00F0B4D45EAD748C"
-			item: "guideapi_vp:vampirism-guidebook"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "6C43D79A050A7811"
+			tasks: [{
+				id: "00F0B4D45EAD748C"
+				item: "guideapi_vp:vampirism-guidebook"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C43D79A050A7811"]
+			description: ["To Begin your Journey as a Vampire, Select this Quest Line"]
+			id: "3EA3BEFC2AE7ECC2"
+			tasks: [{
+				id: "5E57ED89D9505CBD"
+				title: "Vampire"
+				type: "checkmark"
+			}]
+			title: "Way of the Vampire"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EA3BEFC2AE7ECC2"]
+			description: ["Used to progress through levels 2-4"]
+			hide_until_deps_complete: true
+			id: "72C1DB34974FCC6D"
+			tasks: [{
+				id: "16023E23AFAAABD0"
+				item: "vampirism:altar_inspiration"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72C1DB34974FCC6D"]
+			description: ["Used to progress further past level 5"]
+			id: "6CB26D5C17D46F66"
+			tasks: [
+				{
+					id: "13C7DCE58F7069F2"
+					item: "vampirism:altar_infusion"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3CF85FBB1C67CC10"
+					item: "vampirism:altar_pillar"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "04C7B048FE85FBC2"
+					item: "vampirism:altar_tip"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EA3BEFC2AE7ECC2"]
+			description: ["Time to annoy your friends, keep it night time."]
+			hide_until_deps_complete: true
+			id: "3C017C84AF5288B1"
+			tasks: [{
+				id: "401B420D691AD037"
+				item: "vampirism:coffin_white"
+				type: "item"
+			}]
+			title: "Sleeping, But Backwards"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C43D79A050A7811"]
+			id: "42B4B965DF4D8A30"
+			tasks: [{
+				id: "4906199C26FF4D7E"
+				title: "Way of the Hunter"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E9E13733A3E27D3"]
+			description: ["Talk to a vampire hunter and give him some vampire blood to get your first few levels"]
+			id: "1B57E57986AEF9BC"
+			subtitle: "Skills and kills"
+			tasks: [
+				{
+					id: "4DA3FD1099D12EE9"
+					item: "vampirism:vampire_blood_bottle"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "562B74D1C9ED35C3"
+					item: "vampirism:vampire_blood_bottle"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "34E6FCABAC666D8A"
+					item: "vampirism:vampire_blood_bottle"
+					type: "item"
+				}
+			]
+			title: "Your first levels"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42B4B965DF4D8A30"]
+			description: ["Kill vampires with the stake to get vampire blood and level up"]
+			hide_until_deps_complete: true
+			id: "6E9E13733A3E27D3"
+			subtitle: "Poke Poke"
+			tasks: [{
+				id: "372D6CF2DE05BB83"
+				item: {
+					Count: 1
+					id: "vampirism:stake"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Stab them through the heart"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CB26D5C17D46F66"]
+			description: ["Well, You can't drink these. Yet they might still be useful..."]
+			id: "7CF8936DEF88889F"
+			tasks: [
+				{
+					id: "1AF38A3C9103085F"
+					item: "vampirism:pure_blood_0"
+					type: "item"
+				}
+				{
+					id: "675C358BDCFBD05B"
+					item: "vampirism:pure_blood_1"
+					type: "item"
+				}
+				{
+					id: "6E8D21871CAF5D30"
+					item: "vampirism:pure_blood_2"
+					type: "item"
+				}
+				{
+					id: "66FC6B455E009F84"
+					item: "vampirism:pure_blood_3"
+					type: "item"
+				}
+				{
+					id: "5C5382D08DDEC571"
+					item: "vampirism:pure_blood_4"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 4.5d
+		}
+	]
 	title: "Vampirism"
 }

@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ice_and_fire"
+	group: "3062C02D5C318117"
+	icon: "simplehats:rgbdragonskull"
+	id: "3A976F645C5087E1"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0D5EC89B05FE7C0A"
+			tasks: [{
+				id: "5A402219495F40E1"
+				item: {
+					Count: 1
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;
+							0
+							15
+							2
+							7
+							6
+							5
+							24
+							13
+							3
+							18
+							26
+							4
+							1
+							12
+							25
+							10
+							21
+							17
+							23
+							8
+							14
+							9
+							22
+							16
+							11
+							20
+							19
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "5E26C3E4DD7A32EA"
+			tasks: [{
+				id: "31066BDE8DFCBCB4"
+				item: "iceandfire:dragon_flute"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D5EC89B05FE7C0A"]
+			id: "785B904313A13022"
+			tasks: [{
+				id: "4D3895652AB2CAAC"
+				item: {
+					Count: 1
+					id: "dragonseeker:dragonseeker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["785B904313A13022"]
+			id: "47C52D980605D810"
+			tasks: [{
+				id: "7F32A6286D562C58"
+				item: {
+					Count: 1
+					id: "dragonseeker:epic_dragonseeker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47C52D980605D810"]
+			id: "2F9B88DE600238B5"
+			tasks: [{
+				id: "444DE059B2CCDBDE"
+				item: {
+					Count: 1
+					id: "dragonseeker:legendary_dragonseeker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0D5EC89B05FE7C0A"]
+			description: ["It takes 125 days for your dragon to age to the max age. This is possible to speed up with the next quest"]
+			id: "3C25819FC77CF446"
+			tasks: [{
+				id: "5AA78C250AEAC7B1"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "iceandfire:dragonegg.*"
+					}
+				}
+				title: "Dragon Egg"
+				type: "item"
+			}]
+			title: "Dragon Pet"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3C25819FC77CF446"]
+			id: "23BBB7F145142A0C"
+			tasks: [{
+				id: "78F384A2B1E9F68B"
+				item: "iceandfire:dragon_stick"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C25819FC77CF446"]
+			description: ["Using this on your tamed dragon will increase its growth rate by 1 day"]
+			id: "56D1B9AB4751D76B"
+			subtitle: "Skip some birthdays"
+			tasks: [{
+				id: "705D0E6A7363998F"
+				item: "iceandfire:dragon_meal"
+				type: "item"
+			}]
+			title: "Just grow up already"
+			x: 5.0d
+			y: -0.5d
+		}
+	]
+	title: "Ice and Fire"
+}

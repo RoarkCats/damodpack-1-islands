@@ -8,19 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["With the new automation we are going to do with brass your going to need to transport the items"]
-			id: "7DB5DB28A73236E2"
-			tasks: [{
-				count: 16L
-				id: "53F49F71B47DF8C3"
-				item: "create:belt_connector"
-				type: "item"
-			}]
-			title: "Finally, a use for kelp."
-			x: -4.5d
-			y: 1.5d
-		}
-		{
+			dependencies: ["2A6F99FD10FB75EC"]
 			id: "06100322EAD8948A"
 			tasks: [{
 				count: 8L
@@ -30,9 +18,10 @@
 			}]
 			title: "Brass Building Blocks"
 			x: -1.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
+			dependencies: ["06100322EAD8948A"]
 			id: "6F38A8EE18E09D89"
 			tasks: [{
 				count: 21L
@@ -42,7 +31,51 @@
 			}]
 			title: "Crafting Time"
 			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A6F99FD10FB75EC"]
+			id: "38FFF51BEF753691"
+			tasks: [{
+				id: "6E266A5ADC00235D"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["38FFF51BEF753691"]
+			id: "6FB088DA4C54F544"
+			tasks: [{
+				id: "7EA1694A6EDF3951"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6FB088DA4C54F544"]
+			id: "15CBD4BDA87493F5"
+			tasks: [{
+				id: "3B332932F54F35C9"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6FB088DA4C54F544"]
+			id: "27EE867ECF21533F"
+			tasks: [{
+				id: "2758CDE717CF4862"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
 		}
 	]
 	title: "The Brass Age"
