@@ -1,4 +1,5 @@
-# [REDACTED] 1: Islands [![](http://cf.way2muchnoise.eu/short_1226660_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/damodpack-1-islands)
+# [REDACTED] 1: Islands [![](http://cf.way2muchnoise.eu/long_1226660_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/damodpack-1-islands)
+<!-- use 'short_<id>_downloads' for rounded small version (125 -> 100)  --> 
 A large "Survival Islands" kitchen sink pack designed with a little something for everyone
 
 ## Using this repository
