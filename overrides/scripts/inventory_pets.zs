@@ -39,9 +39,9 @@ craftingTable.addShaped("pingot_pet", <item:inventorypets:pet_pingot>, [
 
 craftingTable.removeByName("inventorypets:enderman_pet");
 craftingTable.addShaped("enderman_pet", <item:inventorypets:pet_enderman>, [
-    [<item:inventorypets:nugget_obsidian>, <item:minecraft:ender_pearl>, <item:inventorypets:nugget_obsidian>], 
-    [<item:inventorypets:nugget_obsidian>, <item:minecraft:diamond>, <item:inventorypets:nugget_obsidian>], 
-    [<item:inventorypets:nugget_obsidian>, <item:minecraft:ender_pearl>, <item:inventorypets:nugget_obsidian>]]);
+    [<item:minecraft:obsidian>, <item:minecraft:ender_pearl>, <item:minecraft:obsidian>], 
+    [<item:minecraft:totem_of_undying>, <item:minecraft:nether_star>, <item:minecraft:totem_of_undying>], 
+    [<item:minecraft:obsidian>, <item:minecraft:ender_pearl>, <item:minecraft:obsidian>]]);
 
 craftingTable.removeByName("inventorypets:iron_golem_pet");
 craftingTable.addShaped("iron_golem_pet", <item:inventorypets:pet_iron_golem>, [
