@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "vampirism:faction",
+            "conditions": {
+                "type": "LEVEL",
+                "faction": "werewolves:werewolf",
+                "level": 1
+            }
+        }
+    },
+    "rewards": {
+        "function": "dapack:quests/werewolf"
+    }
+}

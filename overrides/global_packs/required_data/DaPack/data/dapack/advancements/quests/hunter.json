@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "vampirism:faction",
+            "conditions": {
+                "type": "LEVEL",
+                "faction": "vampirism:hunter",
+                "level": 1
+            }
+        }
+    },
+    "rewards": {
+        "function": "dapack:quests/hunter"
+    }
+}
