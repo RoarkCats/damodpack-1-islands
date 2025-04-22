@@ -10,3 +10,5 @@ craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
     [<tag:items:forge:leather>]]);
 
 recipes.removeByName("immersiveengineering:alloysmelter/brass"); // balances out create again
+
+smoker.addRecipe("smoked_phantom_meat", <item:unusual_delight:cooked_phantom_meat>, <item:unusual_delight:raw_phantom_meat>, 0.35, 100);
