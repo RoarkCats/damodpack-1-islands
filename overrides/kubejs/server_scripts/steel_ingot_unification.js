@@ -50,7 +50,7 @@
                 tag: "ad_astra:raw_ostrum" // Input item (Iron Ingot)
             },
             additives: [
-                { item: "minecraft:air" } // Optional additive (Coal or Coal Coke)
+                // Optional additive (Coal or Coal Coke)
             ],
             slag: { item: "immersiveengineering:slag" }, // Optional byproduct
             time: 400, // Processing time in ticks
@@ -96,7 +96,7 @@
                 tag: "ad_astra:raw_calorite" // Input item (Iron Ingot)
             },
             additives: [
-                { item: "minecraft:air" } // Optional additive (Coal or Coal Coke)
+                // Optional additive (Coal or Coal Coke)
             ],
             slag: { item: "immersiveengineering:slag" }, // Optional byproduct
             time: 400, // Processing time in ticks
@@ -135,8 +135,6 @@
 
 
 
-
-
         event.custom({
             type: "ad_astra:compressing",
             input: {
@@ -149,9 +147,3 @@
           })
 
         })
-        
-    
-    
-    
-
-
