@@ -57,15 +57,16 @@
             energy: 51200 // Energy cost (FE)
         });
 
-        event.remove({id: "ad_astra:blasting/ostrum_ingot_from_blasting_raw_ostrum"})
-
-        event.remove({id: "ad_astra:blasting/ostrum_ingot_from_blasting_deepslate_ostrum_ore"})
-
-        event.remove({id: "ad_astra:blasting/ostrum_ingot_from_blasting_mars_ostrum_ore"})
-
         event.remove({id: "as_astra:smelting/ostrum_ingot_from_smelting_mars_ostrum_ore"})
 
-        event.remove({id: "ad_astra:blasting/osturm_ingot_from_blasting_raw_ostrum"})
+        event.remove({id: /ad_astra:blasting\/ostrum_ingot.*/}) // Remove all ostrum blasting recipes
+
+        event.remove({id: /enderio:smelting\/ad_astra\/smelting\/ostrum_ingot.*/})
+
+        event.recipes.enderio.alloy_smelting(
+            "ad_astra:ostrum_ingot",
+            Ingredient.of("ad_astra:raw_ostrum", 2)
+        ).energy(4800).smelting();
 
         event.remove({id: "thermal:furnace_324064343"})
 
@@ -102,22 +103,17 @@
             time: 400, // Processing time in ticks
             energy: 51200 // Energy cost (FE)
         });
-
-        event.remove({id: "ad_astra:blasting/calorite_ingot_from_blasting_raw_calorite"})
-
-        event.remove({id: "ad_astra:blasting/calorite_ingot_from_blasting_venus_calorite_ore"})
-
-        event.remove({id: "ad_astra:blasting/calorite_ingot_from_blasting_deepslate_calorite_ore"})
-
-        event.remove({id: "ad_astra:blasting/calorite_ingot_from_smelting_venus_calorite_ore"})
-
-        event.remove({id: "enderio:smelting/ad_astra/smelting/calorite_ingot_from_smelting_venus_calorite_ore"})
-
-        event.remove({id: "enderio:smelting/ad_astra/smelting/calorite_ingot_from_smelting_raw_calorite"})
-
+        
         event.remove({id: "ad_astra:smelting/calorite_ingot_from_smelting_venus_calorite_ore"})
 
-        event.remove({id: "enderio:smelting/ad_astra/smelting/calorite_ingot_from_smelting_deepslate_calorite_ore"})
+        event.remove({id: /ad_astra:blasting\/calorite_ingot.*/}) // Remove all calorite ingot blasting recipes
+
+        event.remove({id: /enderio:smelting\/ad_astra\/smelting\/calorite_ingot.*/})
+
+        event.recipes.enderio.alloy_smelting(
+            "ad_astra:calorite_ingot",
+            Ingredient.of("ad_astra:raw_calorite", 2)
+        ).energy(9600).smelting();
 
         event.remove({id: "create:crushing/compat/immersiveengineering/coal_coke"})
 
