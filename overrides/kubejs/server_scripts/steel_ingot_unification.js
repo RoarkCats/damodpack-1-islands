@@ -54,7 +54,7 @@
             ],
             slag: { item: "immersiveengineering:slag" }, // Optional byproduct
             time: 400, // Processing time in ticks
-            energy: 51200 // Energy cost (FE)
+            energy: 204800 // Energy cost (FE)
         });
 
         event.remove({id: "as_astra:smelting/ostrum_ingot_from_smelting_mars_ostrum_ore"})
@@ -101,7 +101,7 @@
             ],
             slag: { item: "immersiveengineering:slag" }, // Optional byproduct
             time: 400, // Processing time in ticks
-            energy: 51200 // Energy cost (FE)
+            energy: 204800 // Energy cost (FE)
         });
         
         event.remove({id: "ad_astra:smelting/calorite_ingot_from_smelting_venus_calorite_ore"})
