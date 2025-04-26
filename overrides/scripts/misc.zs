@@ -10,3 +10,9 @@ craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
     [<tag:items:forge:leather>]]);
 
 recipes.removeByName("immersiveengineering:alloysmelter/brass"); // balances out create again
+
+recipes.removeByName("regions_unexplored:raw_redstone_block"); // current recipe is a dupe exploit, 4->12+, now 13->12+
+craftingTable.addShaped("raw_redstone_block", <item:regions_unexplored:raw_redstone_block>, [
+    [<item:minecraft:air>, <tag:items:forge:dusts/redstone>, <item:minecraft:air>],
+    [<tag:items:forge:dusts/redstone>, <tag:items:forge:storage_blocks/redstone>, <tag:items:forge:dusts/redstone>],
+    [<item:minecraft:air>, <tag:items:forge:dusts/redstone>, <item:minecraft:air>]]);
