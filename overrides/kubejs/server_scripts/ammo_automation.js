@@ -133,6 +133,8 @@ ServerEvents.recipes(event => {
     seqAssRecipe(["pointblank:grenade"], "minecraft:tnt", [1,2,"pointblank:gunmetal_ingot",1,2,"#forge:gunpowder",2,"#forge:chains"], trans) // only sold for 1 emerald
     
     seqAssRecipe(["pointblank:motor"], "create:precision_mechanism", [2,"pointblank:doom_argent_ingot",0,2,"immersive_aircraft:industrial_gears",1,2,"#forge:wires/steel",2,"pointblank:doom_argent_ingot",0], trans, 8) // only sold for 64 emeralds
+
+    seqAssRecipe(["subnautica_flow:precusor_arm_chestplate"], "minecraft:nether_star", [2,"#forge:ingots/steel",2,"subnautica_flow:precursor_spider_leg",0,2,"subnautica_flow:ion_cube",2,"#forge:ingots/steel",1], trans, 4) // uncraftable
     //----
 
 
