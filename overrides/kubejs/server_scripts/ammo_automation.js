@@ -85,35 +85,23 @@ ServerEvents.recipes(event => {
         )
     } // 2 copper, 1 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:ammo762x51", 16)], "#forge:ingots/copper",
-        [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans
-    )
-    seqAssRecipe([Item.of("pointblank:doom_50calrifle", 16)], "#forge:ingots/copper",
-        [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,1,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans
-    ) // 3 copper, 1 gunpowder
+    seqAssRecipe([Item.of("pointblank:ammo762x51", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans) // 3 copper, 1 gunpowder
+    // seqAssRecipe([Item.of("pointblank:doom_50calrifle", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,1,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans) // 3 copper, 1 gunpowder
 
-    // seqAssRecipe([Item.of("pointblank:ammo338lapua", 10)], "#forge:ingots/copper",
-    //     [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans
-    // ) // 3 copper, 2 gunpowder
     seqAssRecipe([Item.of("pointblank:ammo338lapua", 10)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 2)
 
-    // seqAssRecipe([Item.of("pointblank:ammo50bmg", 10)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:gunpowder",2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans)
     seqAssRecipe([Item.of("pointblank:ammo50bmg", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 3)
     // 4 copper, 3 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper",
-        [1,2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans
-    ) // 2 copper, 1 iron
+    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper", [1,2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans) // 2 copper, 1 iron
 
-    seqAssRecipe([Item.of("pointblank:hl_rebar", 8)], "#forge:ingots/copper",
-        [2,"#forge:ingots/copper",1,0,0], trans
-    ) // 2 copper
+    seqAssRecipe([Item.of("pointblank:hl_rebar", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,0], trans) // 2 copper
 
     seqAssRecipe(["pointblank:doom_steelflechette"], "pointblank:doom_argent_ingot", [1,0,0], trans) // 1 argent ingot
 
     seqAssRecipe([Item.of("pointblank:ammolasercharge", 5)], "#forge:ingots/iron", [2,"#forge:ingots/copper",1,2,"#forge:dusts/redstone"], trans, 3) // 2 copper, 1 iron, 3 redstone
 
-    seqAssRecipe(["pointblank:grenade20mm"], "minecraft:tnt", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1], trans)
+    // seqAssRecipe(["pointblank:grenade20mm"], "minecraft:tnt", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1], trans)
     seqAssRecipe(["pointblank:grenade40mm"], "minecraft:tnt", [2,"#forge:ingots/iron",1,2,"#forge:ingots/copper",1], trans)
     // 1 copper, 1 iron, 1 tnt
 
@@ -141,6 +129,20 @@ ServerEvents.recipes(event => {
     //-- Alt assembly recipes
     seqAssRecipe([Item.of("pointblank:guninternals", 2)], "pointblank:gunmetal_ingot", [0,2,"pointblank:gunmetal_ingot",2,"#forge:ingots/iron",1], trans, 3) // 3 gunmetal, 2 iron -> 1 (4,3 -> 2)
     
-    seqAssRecipe([Item.of("pointblank:processor", 3)], "#forge:gems/diamond", [0,2,"#forge:gems/lapis",2,"#forge:ingots/copper",2,"#forge:dusts/redstone",2,"#forge:ingots/iron",1], trans, 2) // 1 diamond, 1 lapis, 1 copper, 2 redstone, 0.5 iron -> 1 (1,2,2,2,2 -> 3)
+    seqAssRecipe([Item.of("pointblank:processor", 2)], "#forge:gems/diamond", [0,2,"#forge:gems/lapis",2,"#forge:ingots/copper",2,"#forge:dusts/redstone",2,"#forge:ingots/iron",1], trans, 2) // 1 diamond, 1 lapis, 1 copper, 2 redstone, 0.5 iron -> 1 (1,2,2,2,2 -> 3)
+    //----
+
+
+    //-- Recipe removals
+    event.remove({ output: "pointblank:grenade20mm" }) // unused
+    event.remove({ output: "pointblank:doom_50calrifle" }) // unused
+    // removals in favor of custom recipes only
+    event.remove({ id: "pointblank:processor" })
+    event.remove({ id: "pointblank:guninternals" })
+    // ammos
+    event.remove({ id:/pointblank:ammo.*/ })
+    event.remove({ id:/pointblank:grenade.*/ })
+    event.remove({ id:/pointblank:.*rocket/ })
+    for (let item of ["doom_50calpistol","doom_argentblastcharge","doom_argentrocket","doom_plasmacell","doom_steelflechette","hl_rebar"]) {event.remove({id:"pointblank:"+item})}
     //----
 })
