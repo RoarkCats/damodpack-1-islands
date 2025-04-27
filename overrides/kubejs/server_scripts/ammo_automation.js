@@ -118,6 +118,8 @@ ServerEvents.recipes(event => {
 
 
     //-- New assembly recipes
+    seqAssRecipe([Item.of("pointblank:ammocreative", 16)], "pointblank:ammocreative", [0,1,0], trans) // infinite creative ammo dupe 
+    
     seqAssRecipe(["pointblank:grenade"], "minecraft:tnt", [1,2,"pointblank:gunmetal_ingot",1,2,"#forge:gunpowder",2,"#forge:chains"], trans) // only sold for 1 emerald
     
     seqAssRecipe(["pointblank:motor"], "create:precision_mechanism", [2,"pointblank:doom_argent_ingot",0,2,"immersive_aircraft:industrial_gears",1,2,"#forge:wires/steel",2,"pointblank:doom_argent_ingot",0], trans, 8) // only sold for 64 emeralds
