@@ -18,7 +18,7 @@
 			}]
 			title: "Brass Building Blocks"
 			x: -1.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["06100322EAD8948A"]
@@ -29,13 +29,15 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			title: "Crafting Time"
+			title: "Craftin Time"
 			x: 0.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2A6F99FD10FB75EC"]
+			description: ["Automated clicking, placing, attacking, and more"]
 			id: "38FFF51BEF753691"
+			subtitle: "First step of automation!"
 			tasks: [{
 				id: "6E266A5ADC00235D"
 				item: "create:deployer"
@@ -46,7 +48,15 @@
 		}
 		{
 			dependencies: ["38FFF51BEF753691"]
+			description: [
+				"&6Precision Mechanisms&r are made with a sequenced assembly process"
+				""
+				"Looking at the recipe, you first start with a single &einput item&r fed through a series of &bmachines&r completing the listed &boperations&r in order (belts are your friend)"
+				""
+				"Some recipes require you to repeat the &bsequence&r, this only means you need to repeat the same &boperations&r on the incomplete item &cinstead of&r a new &einput item&r"
+			]
 			id: "6FB088DA4C54F544"
+			subtitle: "Buckle up"
 			tasks: [{
 				id: "7EA1694A6EDF3951"
 				item: "create:precision_mechanism"
@@ -57,25 +67,50 @@
 		}
 		{
 			dependencies: ["6FB088DA4C54F544"]
+			description: ["Any speed you desire in the palm of your hands"]
 			id: "15CBD4BDA87493F5"
+			subtitle: "Speed is key"
 			tasks: [{
 				id: "3B332932F54F35C9"
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6FB088DA4C54F544"]
 			id: "27EE867ECF21533F"
+			subtitle: "Jarvis, sort my S$%t"
 			tasks: [{
 				id: "2758CDE717CF4862"
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6FB088DA4C54F544"
+				"6F38A8EE18E09D89"
+			]
+			id: "62654495F5B06E1D"
+			subtitle: "Wireless resource transportation"
+			tasks: [{
+				id: "670136522D276DCC"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^createendertransmission:.+transmitter"
+					}
+				}
+				title: "Ender Transmitters"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
 		}
 	]
 	title: "The Brass Age"

@@ -407,10 +407,10 @@
 				entity: "subnautica_flow:chelicerate"
 				icon: "upgrade_aquatic:lionfish"
 				id: "0E8AE0019EE8FA78"
-				title: "I hate you red thang"
 				type: "kill"
 				value: 1L
 			}]
+			title: "I hate you red thang"
 			x: -6.5d
 			y: 1.5d
 		}

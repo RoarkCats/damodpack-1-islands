@@ -21,33 +21,12 @@
 			description: ["Be it through The End, the hole at 0,0 in the Overworld, the cracks in the crumbling bedrock, or the embrace of the Abductor -  &oit calls out..."]
 			icon: "the_deep_void:lurker_head"
 			id: "11BFFABF07B3D6C2"
-			rewards: [
-				{
-					count: 8
-					id: "3DFE8B454385C09E"
-					item: "minecraft:torch"
-					type: "item"
-				}
-				{
-					id: "28E3208145A7A500"
-					item: {
-						Count: 1
-						id: "minecraft:paper"
-						tag: {
-							display: {
-								Lore: [
-									"{\"text\":\"Options > Distant Horizons (top left) > Rendering\",\"color\":\"gray\"}"
-									"\"\""
-									"{\"text\":\"Alternatively lower the Distant Horizons brightness\",\"color\":\"gray\"}"
-									"{\"text\":\"> D.H. > Advanced > Graphics > Quality > Brightness 0.5\",\"color\":\"gray\"}"
-								]
-								Name: "\"Disable Distant Horizons for full immersion\""
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "3DFE8B454385C09E"
+				item: "minecraft:torch"
+				type: "item"
+			}]
 			subtitle: "Jump. Embrace the void."
 			tasks: [{
 				dimension: "the_deep_void:deep_void"

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "totemic"
 	group: "0CAA3D5E912D0208"
+	icon: "totemic:totemic_staff"
 	id: "357BE9AED4C9B143"
 	images: [{
 		height: 2.0d

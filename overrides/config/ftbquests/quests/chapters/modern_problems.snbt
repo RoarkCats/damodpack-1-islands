@@ -15,7 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["We bring The BOOM to Minecraft with some heavy weaponry. Theres some modern armour to I guess..."]
+			description: ["We bring the BOOM to Minecraft with some heavy weaponry! There's some modern armor too I guess..."]
 			id: "29777E3252D52788"
 			subtitle: "Lock and Load"
 			tasks: [{
@@ -517,6 +517,7 @@
 		{
 			dependencies: ["29777E3252D52788"]
 			id: "3DC3EC5E6BEA8F90"
+			subtitle: "Get yer munitions here!"
 			tasks: [{
 				id: "28EF81321D503ED1"
 				item: "pointblank:printer"
@@ -702,7 +703,7 @@
 				title: "Juggernaut"
 				type: "checkmark"
 			}]
-			title: "Modern Military's"
+			title: "Modern Militaries"
 			x: -0.5d
 			y: 1.5d
 		}
@@ -757,7 +758,7 @@
 			]
 			title: "Hazmat Suit"
 			x: -4.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["258D6A522FD03B63"]
@@ -927,7 +928,7 @@
 			]
 			title: "Gas Masks"
 			x: -4.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["29777E3252D52788"]
@@ -957,7 +958,7 @@
 				}
 			]
 			title: "Berets"
-			x: -4.0d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -1219,20 +1220,13 @@
 		{
 			dependencies: ["3DC3EC5E6BEA8F90"]
 			id: "5CF1FE2695D77B35"
-			tasks: [
-				{
-					id: "5F6A0C86B561649D"
-					item: "pointblank:gunmetal_mesh"
-					type: "item"
-				}
-				{
-					id: "2022F146470C96D2"
-					item: "pointblank:gunmetal_ingot"
-					type: "item"
-				}
-			]
-			title: "Need a body of a gun somehow"
-			x: 9.5d
+			tasks: [{
+				id: "2022F146470C96D2"
+				item: "pointblank:gunmetal_ingot"
+				type: "item"
+			}]
+			title: "Need a gun body somehow"
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -1240,37 +1234,32 @@
 				"3DC3EC5E6BEA8F90"
 				"5CF1FE2695D77B35"
 			]
+			description: [
+				"Ammunition requires custom made sequenced assembly lines to produce, see the following for a brief guide"
+				""
+				"[\"            \",{ \"text\": \"Precision Mechanism\", \"underlined\": \"true\", \"color\":\"aqua\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6FB088DA4C54F544\" }, \"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"View Quest\",\"color\":\"aqua\"}} }]"
+			]
 			id: "2E9CEF497263549A"
+			subtitle: "Production lines"
 			tasks: [{
 				id: "5BC68318D1682EFA"
 				title: "Ammo"
 				type: "checkmark"
 			}]
 			x: 8.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5CF1FE2695D77B35"]
 			id: "577592F30169CAC6"
-			tasks: [
-				{
-					id: "09281707C226B676"
-					item: "pointblank:guninternals"
-					type: "item"
-				}
-				{
-					id: "75A3CFFBDB89D7B7"
-					item: {
-						Count: 1
-						id: "pointblank:processor"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "09281707C226B676"
+				item: "pointblank:guninternals"
+				type: "item"
+			}]
 			title: "Gun Parts"
-			x: 18.0d
-			y: -5.0d
+			x: 18.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6B209E216D659F87"]
@@ -1280,8 +1269,8 @@
 				title: "Doom Weaponry"
 				type: "checkmark"
 			}]
-			x: 14.5d
-			y: -1.5d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6B209E216D659F87"]
@@ -1292,8 +1281,8 @@
 				type: "checkmark"
 			}]
 			title: "Half Life Weaponry"
-			x: 21.0d
-			y: -1.5d
+			x: 21.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -1305,8 +1294,8 @@
 				type: "checkmark"
 			}]
 			title: "Pistols"
-			x: 16.5d
-			y: -5.5d
+			x: 17.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1315,7 +1304,7 @@
 			]
 			description: ["Make sure that the mod is compatable with your gun before making it ;)"]
 			id: "512930BA557DB67D"
-			subtitle: "Mod that S$*%"
+			subtitle: "Mod that S$*%!"
 			tasks: [{
 				id: "5DD161466483F4AF"
 				title: "Attachments"
@@ -1332,8 +1321,8 @@
 				title: "Snipers"
 				type: "checkmark"
 			}]
-			x: 19.5d
-			y: -7.5d
+			x: 20.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -1343,8 +1332,8 @@
 				title: "Assault Rifles"
 				type: "checkmark"
 			}]
-			x: 18.0d
-			y: -9.5d
+			x: 18.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -1354,8 +1343,8 @@
 				title: "Heavy Weaponry"
 				type: "checkmark"
 			}]
-			x: 22.0d
-			y: -3.0d
+			x: 22.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -1373,8 +1362,8 @@
 				}
 			]
 			title: "Special Gun Parts"
-			x: 18.0d
-			y: -2.5d
+			x: 18.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1405,8 +1394,8 @@
 				}
 				type: "item"
 			}]
-			x: 23.0d
-			y: -0.5d
+			x: 23.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1441,8 +1430,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.0d
-			y: -1.0d
+			x: 20.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1470,8 +1459,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
-			y: 0.0d
+			x: 21.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1506,8 +1495,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: -0.5d
+			x: 19.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1542,8 +1531,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: -1.0d
+			x: 22.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1574,8 +1563,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: 0.5d
+			x: 22.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1610,8 +1599,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.0d
-			y: 0.5d
+			x: 20.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1639,8 +1628,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: 0.5d
+			x: 19.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6ABCB98338E8DC50"]
@@ -1668,8 +1657,8 @@
 				}
 				type: "item"
 			}]
-			x: 23.0d
-			y: 0.5d
+			x: 23.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1697,8 +1686,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1726,8 +1715,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: -0.5d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1755,8 +1744,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.0d
+			x: 15.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1785,7 +1774,7 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -1814,8 +1803,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.0d
+			x: 16.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1843,8 +1832,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -0.5d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1872,8 +1861,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
+			x: 17.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1901,8 +1890,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 0.5d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1930,8 +1919,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -0.5d
+			x: 18.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1959,8 +1948,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 1.0d
+			x: 18.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3C0CDD94F05A0A02"]
@@ -1989,8 +1978,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.0d
+			x: 17.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["512930BA557DB67D"]
@@ -2016,7 +2005,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 6.5d
 		}
 		{
@@ -2031,7 +2020,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 6.5d
 		}
 		{
@@ -2046,7 +2035,7 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 6.5d
 		}
 		{
@@ -2061,8 +2050,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2076,8 +2065,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2091,7 +2080,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
@@ -2106,8 +2095,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2121,8 +2110,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2136,8 +2125,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2152,7 +2141,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2166,8 +2155,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2181,8 +2170,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2197,7 +2186,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2227,7 +2216,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2241,8 +2230,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2256,8 +2245,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 7.5d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2271,11 +2260,11 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["60B9233D6A1BCDD7"]
+			dependencies: ["670BD609D9B5021C"]
 			id: "20D51554071ACCA1"
 			tasks: [{
 				id: "212046D8283C75C1"
@@ -2286,8 +2275,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 7.0d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2301,8 +2290,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2321,8 +2310,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2336,8 +2325,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2352,7 +2341,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2366,8 +2355,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 6.0d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2381,8 +2370,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.5d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
@@ -2396,11 +2385,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 7.5d
 		}
 		{
-			dependencies: ["3C0CDD94F05A0A02"]
+			dependencies: ["12BAC894DCDB32BA"]
 			id: "4A9063E92B0FAF8E"
 			tasks: [{
 				id: "27D411C96B892911"
@@ -2411,11 +2400,11 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 0.5d
+			x: 17.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["3C0CDD94F05A0A02"]
+			dependencies: ["56D17E9106170440"]
 			id: "083EA5B23475A8D9"
 			tasks: [{
 				id: "22DC2108408271EE"
@@ -2426,12 +2415,13 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.5d
+			x: 15.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B9233D6A1BCDD7"]
 			id: "793FFEC5CC6605B0"
+			subtitle: "Extra sight"
 			tasks: [{
 				id: "6677376595B1A71C"
 				item: {
@@ -2441,8 +2431,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["512930BA557DB67D"]
@@ -2830,7 +2820,7 @@
 				title: "Kits"
 				type: "checkmark"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: 2.5d
 		}
 		{
@@ -2845,7 +2835,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -2860,7 +2850,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
+			x: 11.5d
 			y: 1.5d
 		}
 		{
@@ -2875,7 +2865,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
+			x: 11.5d
 			y: 2.5d
 		}
 		{
@@ -2890,7 +2880,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: 2.5d
 		}
 		{
@@ -2905,7 +2895,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: 1.5d
 		}
 		{
@@ -3041,7 +3031,6 @@
 				"663E9A68BB6D857E"
 				"2BE35DC23BDDA1AC"
 				"4C7E9814AFBB9D81"
-				"06F18CC55A399C52"
 				"3E14B4DA1F3FD5AE"
 				"11F3C9F26FD0C3B1"
 				"569A96286136B5E6"
@@ -3063,7 +3052,6 @@
 				"0D02ABC9E340C92B"
 				"217D62B5BC8D85E1"
 				"27B15ED46377DEBA"
-				"0218C63B10AB6820"
 				"0C9128FF3FF77131"
 				"12E7EF36C12F0057"
 				"15A98CDEBA1D21C0"
@@ -3163,7 +3151,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
@@ -3298,7 +3286,6 @@
 				"663E9A68BB6D857E"
 				"2BE35DC23BDDA1AC"
 				"4C7E9814AFBB9D81"
-				"06F18CC55A399C52"
 				"3E14B4DA1F3FD5AE"
 				"11F3C9F26FD0C3B1"
 				"569A96286136B5E6"
@@ -3320,7 +3307,6 @@
 				"0D02ABC9E340C92B"
 				"217D62B5BC8D85E1"
 				"27B15ED46377DEBA"
-				"0218C63B10AB6820"
 				"0C9128FF3FF77131"
 				"12E7EF36C12F0057"
 				"15A98CDEBA1D21C0"
@@ -3397,7 +3383,7 @@
 			}]
 			title: "INFINITE AMMO"
 			x: 3.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3408,7 +3394,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3419,7 +3405,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3429,8 +3415,8 @@
 				item: "pointblank:ammo762"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.0d
+			x: 7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3441,7 +3427,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3452,7 +3438,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3462,8 +3448,8 @@
 				item: "pointblank:ammo50ae"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.0d
+			x: 8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3473,8 +3459,8 @@
 				item: "pointblank:ammo357"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 8.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3485,7 +3471,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3495,8 +3481,8 @@
 				item: "pointblank:ammo45acp"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -5.0d
+			x: 8.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3514,8 +3500,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.5d
+			x: 9.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3526,7 +3512,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3536,8 +3522,8 @@
 				item: "pointblank:ammo50bmg"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 9.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3548,7 +3534,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3558,8 +3544,8 @@
 				item: "pointblank:ammo762x51"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.0d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3569,8 +3555,8 @@
 				item: "pointblank:ammo68"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -7.0d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3580,8 +3566,8 @@
 				item: "pointblank:ammolasercharge"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.0d
+			x: 6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3591,8 +3577,8 @@
 				item: "pointblank:smaw_rocket"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -6.0d
+			x: 10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3602,7 +3588,7 @@
 				item: "pointblank:at4_rocket"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 10.5d
 			y: -5.5d
 		}
 		{
@@ -3613,8 +3599,8 @@
 				item: "pointblank:grenade40mm"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: 6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3624,19 +3610,8 @@
 				item: "pointblank:javelin_rocket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["2E9CEF497263549A"]
-			id: "06F18CC55A399C52"
-			tasks: [{
-				id: "22C0BAA04649890E"
-				item: "pointblank:grenade20mm"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -4.5d
+			x: 10.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3646,7 +3621,7 @@
 				item: "pointblank:doom_argentrocket"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 10.5d
 			y: -6.5d
 		}
 		{
@@ -3657,8 +3632,8 @@
 				item: "pointblank:hl_rebar"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.5d
+			x: 9.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3668,8 +3643,8 @@
 				item: "pointblank:doom_argentblastcharge"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.5d
+			x: 6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3679,18 +3654,7 @@
 				item: "pointblank:doom_plasmacell"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["2E9CEF497263549A"]
-			id: "0218C63B10AB6820"
-			tasks: [{
-				id: "6BA5A8D534DCE968"
-				item: "pointblank:doom_50calrifle"
-				type: "item"
-			}]
-			x: 10.5d
+			x: 6.5d
 			y: -6.5d
 		}
 		{
@@ -3701,8 +3665,8 @@
 				item: "pointblank:doom_50calpistol"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.0d
+			x: 7.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["2E9CEF497263549A"]
@@ -3712,8 +3676,8 @@
 				item: "pointblank:doom_steelflechette"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.0d
+			x: 9.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3744,8 +3708,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -6.5d
+			x: 16.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3776,8 +3740,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -4.5d
+			x: 16.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3810,8 +3774,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -5.5d
+			x: 16.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3842,8 +3806,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -5.5d
+			x: 15.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3874,8 +3838,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -6.5d
+			x: 15.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3910,8 +3874,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -4.5d
+			x: 15.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3946,8 +3910,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -4.5d
+			x: 14.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -3978,8 +3942,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -5.5d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1373B5EDB515BD6F"]
@@ -4010,8 +3974,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -6.5d
+			x: 14.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -4021,8 +3985,8 @@
 				title: "Sub Machine Guns"
 				type: "checkmark"
 			}]
-			x: 16.5d
-			y: -7.5d
+			x: 17.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4067,8 +4031,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -7.5d
+			x: 16.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4109,8 +4073,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -8.5d
+			x: 17.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4145,8 +4109,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -8.5d
+			x: 16.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4177,8 +4141,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: -10.5d
+			x: 15.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4209,8 +4173,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -9.5d
+			x: 16.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4241,8 +4205,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -8.5d
+			x: 15.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4273,8 +4237,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -9.0d
+			x: 14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["044E6357A38B7C02"]
@@ -4305,8 +4269,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: -9.5d
+			x: 15.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4341,8 +4305,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.0d
-			y: -9.5d
+			x: 17.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4387,8 +4351,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -10.5d
+			x: 17.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4419,8 +4383,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: -9.5d
+			x: 19.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4455,8 +4419,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -10.5d
+			x: 19.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4497,8 +4461,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -10.5d
+			x: 18.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4539,8 +4503,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -10.5d
+			x: 20.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4571,8 +4535,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.0d
-			y: -11.5d
+			x: 20.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4613,8 +4577,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: -11.5d
+			x: 19.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4645,8 +4609,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.0d
-			y: -11.5d
+			x: 17.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4687,8 +4651,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
-			y: -11.5d
+			x: 18.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4719,8 +4683,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: -11.5d
+			x: 16.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4755,8 +4719,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.0d
-			y: -13.5d
+			x: 17.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4787,8 +4751,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -12.5d
+			x: 20.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4819,8 +4783,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -12.5d
+			x: 21.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4851,8 +4815,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: -12.5d
+			x: 16.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4883,8 +4847,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -12.5d
+			x: 19.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4929,8 +4893,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -12.5d
+			x: 17.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4961,8 +4925,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: -13.5d
+			x: 19.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["14EE911983515E73"]
@@ -4993,8 +4957,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -12.5d
+			x: 18.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5029,8 +4993,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -8.5d
+			x: 20.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5061,8 +5025,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -7.5d
+			x: 21.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5093,8 +5057,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -8.5d
+			x: 21.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5129,8 +5093,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -9.5d
+			x: 21.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5171,8 +5135,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -8.5d
+			x: 22.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5207,8 +5171,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -9.5d
+			x: 22.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5243,8 +5207,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
-			y: -10.5d
+			x: 21.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5279,8 +5243,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: -9.0d
+			x: 23.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5315,8 +5279,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: -11.0d
+			x: 22.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["77023764A355F148"]
@@ -5351,8 +5315,8 @@
 				}
 				type: "item"
 			}]
-			x: 23.0d
-			y: -10.0d
+			x: 23.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["577592F30169CAC6"]
@@ -5362,8 +5326,8 @@
 				title: "Shotguns"
 				type: "checkmark"
 			}]
-			x: 19.5d
-			y: -5.5d
+			x: 20.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5394,8 +5358,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -5.5d
+			x: 21.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5430,8 +5394,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -4.5d
+			x: 21.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5462,8 +5426,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -6.5d
+			x: 21.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5498,8 +5462,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -4.5d
+			x: 22.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5530,8 +5494,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -5.5d
+			x: 22.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5562,8 +5526,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -6.5d
+			x: 22.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0C9128FF3FF77131"]
@@ -5604,8 +5568,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: -5.5d
+			x: 23.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5633,8 +5597,8 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
-			y: -4.5d
+			x: 26.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5662,8 +5626,8 @@
 				}
 				type: "item"
 			}]
-			x: 25.0d
-			y: -5.0d
+			x: 24.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5691,8 +5655,8 @@
 				}
 				type: "item"
 			}]
-			x: 25.0d
-			y: -4.0d
+			x: 25.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5720,8 +5684,8 @@
 				}
 				type: "item"
 			}]
-			x: 26.0d
-			y: -4.5d
+			x: 24.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5752,8 +5716,8 @@
 				}
 				type: "item"
 			}]
-			x: 25.0d
-			y: -2.0d
+			x: 25.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5794,8 +5758,8 @@
 				}
 				type: "item"
 			}]
-			x: 25.0d
-			y: -1.0d
+			x: 26.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5826,8 +5790,8 @@
 				}
 				type: "item"
 			}]
-			x: 26.0d
-			y: -1.5d
+			x: 24.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0001888131FDBAE0"]
@@ -5855,8 +5819,8 @@
 				}
 				type: "item"
 			}]
-			x: 27.0d
-			y: -3.0d
+			x: 26.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["112AFDD768737DCA"]
@@ -5868,8 +5832,8 @@
 				item: "pointblank:motor"
 				type: "item"
 			}]
-			x: 26.0d
-			y: -3.0d
+			x: 25.5d
+			y: -1.5d
 		}
 	]
 	title: "Modern Problems"

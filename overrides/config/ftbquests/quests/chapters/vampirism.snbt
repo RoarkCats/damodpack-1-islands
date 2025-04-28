@@ -3,14 +3,24 @@
 	default_quest_shape: ""
 	filename: "vampirism"
 	group: "0CAA3D5E912D0208"
+	icon: {
+		Count: 1
+		id: "guideapi_vp:vampirism-guidebook"
+		tag: {
+			G-API_Category: 3
+			G-API_Category_Page: 0
+			G-API_Entry_Page: 0
+			G-API_Page: 0
+		}
+	}
 	id: "3AF49598C4552CA0"
 	images: [{
 		height: 2.0d
 		image: "pneumaticcraft:item/wip"
 		rotation: 0.0d
 		width: 2.0d
-		x: 1.5d
-		y: 0.0d
+		x: 0.0d
+		y: -3.0d
 	}]
 	order_index: 4
 	quest_links: [ ]
@@ -23,19 +33,21 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6C43D79A050A7811"]
-			description: ["To Begin your Journey as a Vampire, Select this Quest Line"]
+			description: ["To become a Vampire you must either be bitten by a Vampire, consume Vampire Fangs, or use a Sanguinare Injection and then wait for it to take effect"]
 			id: "3EA3BEFC2AE7ECC2"
+			subtitle: "Blood suckers"
 			tasks: [{
-				id: "5E57ED89D9505CBD"
-				title: "Vampire"
-				type: "checkmark"
+				icon: "vampirism:vampire_fang"
+				id: "14E84A1D30D81130"
+				title: "Become a Vampire"
+				type: "custom"
 			}]
 			title: "Way of the Vampire"
-			x: -4.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -48,7 +60,7 @@
 				item: "vampirism:altar_inspiration"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -74,7 +86,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -88,23 +100,27 @@
 				type: "item"
 			}]
 			title: "Sleeping, But Backwards"
-			x: -5.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6C43D79A050A7811"]
+			description: ["To become a Vampire Hunter you must inject yourself with a Garlic Injection while sitting in an Injection Chair"]
 			id: "42B4B965DF4D8A30"
+			subtitle: "Garlic addict"
 			tasks: [{
-				id: "4906199C26FF4D7E"
-				title: "Way of the Hunter"
-				type: "checkmark"
+				icon: "vampirism:item_garlic"
+				id: "7FF234F60C09071D"
+				title: "Become a Vampire Hunter"
+				type: "custom"
 			}]
+			title: "Way of the Hunter"
 			x: 0.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E9E13733A3E27D3"]
-			description: ["Talk to a vampire hunter and give him some vampire blood to get your first few levels"]
+			description: ["Talk to a Vampire Hunter and give him some Vampire Blood to get your first few levels"]
 			id: "1B57E57986AEF9BC"
 			subtitle: "Skills and kills"
 			tasks: [
@@ -128,11 +144,11 @@
 			]
 			title: "Your first levels"
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["42B4B965DF4D8A30"]
-			description: ["Kill vampires with the stake to get vampire blood and level up"]
+			description: ["Kill Vampires with the Stake to get Vampire Blood and level up"]
 			hide_until_deps_complete: true
 			id: "6E9E13733A3E27D3"
 			subtitle: "Poke Poke"
@@ -149,7 +165,7 @@
 			}]
 			title: "Stab them through the heart"
 			x: 0.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6CB26D5C17D46F66"]
@@ -182,8 +198,50 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -1.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["6C43D79A050A7811"]
+			description: ["To become a Werewolf you must first either be successfully scratched by a Werewolf or consume a Werewolf Tooth, and then sleep in a bed"]
+			id: "678853FDDE44C317"
+			subtitle: "Awooooo!"
+			tasks: [{
+				icon: "werewolves:cracked_bone"
+				id: "5ABABBC8F5676960"
+				title: "Become a Werewolf"
+				type: "custom"
+			}]
+			title: "Way of the Werewolf"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["678853FDDE44C317"]
+			description: [
+				"In order to level up you must perform rituals at a Stone Altar at night surrounded by 4 Fire Bowls lit with a Torch or Flint and Steel"
+				""
+				"To level you must have enough slain creatures and place Cracked Bones and Livers on the altar and ignite it"
+			]
+			hide_until_deps_complete: true
+			icon: "werewolves:stone_altar"
+			id: "64E182560DF7BA7D"
+			subtitle: "Nighttime Rituals"
+			tasks: [
+				{
+					id: "04A87CB41B940E64"
+					item: "werewolves:stone_altar"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6A206890C3848080"
+					item: "werewolves:stone_altar_fire_bowl"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 	title: "Vampirism"

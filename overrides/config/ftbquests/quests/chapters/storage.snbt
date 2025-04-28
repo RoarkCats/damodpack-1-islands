@@ -159,18 +159,19 @@
 				item: "sophisticatedbackpacks:crafting_upgrade"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["37CFA426CC794627"]
 			id: "7F0AA2E1B033BD88"
+			subtitle: "Backpacks never die!"
 			tasks: [{
 				id: "70A61310A2B688CE"
 				item: "sophisticatedbackpacks:everlasting_upgrade"
 				type: "item"
 			}]
-			x: 0.75d
+			x: -0.25d
 			y: 5.5d
 		}
 		{
@@ -276,14 +277,14 @@
 		{
 			dependencies: ["4C38A20706E6306C"]
 			id: "6FEC96082EF381D4"
+			subtitle: "Let's get cooking"
 			tasks: [{
 				id: "0A153CAB701D5186"
 				item: "sophisticatedbackpacks:smelting_upgrade"
 				type: "item"
 			}]
-			title: "Let's get cooking"
-			x: -1.5d
-			y: 4.0d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -294,8 +295,8 @@
 				type: "item"
 			}]
 			title: "Auto Cooking"
-			x: -3.0d
-			y: 4.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -305,8 +306,8 @@
 				item: "sophisticatedbackpacks:blasting_upgrade"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6FEC96082EF381D4"]
@@ -316,8 +317,8 @@
 				item: "sophisticatedbackpacks:smoking_upgrade"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6C4D9136B61453D2"]
@@ -327,8 +328,8 @@
 				item: "sophisticatedbackpacks:auto_blasting_upgrade"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["600691193A1B96A4"]
@@ -338,8 +339,8 @@
 				item: "sophisticatedbackpacks:auto_smoking_upgrade"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A8E46A0EBE103F9"]
@@ -384,8 +385,8 @@
 				item: "sophisticatedbackpacks:anvil_upgrade"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4C38A20706E6306C"]
@@ -395,8 +396,8 @@
 				item: "sophisticatedbackpacks:smithing_upgrade"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.0d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["37CFA426CC794627"]
@@ -407,7 +408,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3F7BC506FEF20ECA"]
@@ -428,13 +429,14 @@
 				title: "Misc Storage"
 				type: "checkmark"
 			}]
-			title: "Storing more then items"
+			title: "Storing more than items"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["37CFA426CC794627"]
 			id: "400361B93B0B7F44"
+			subtitle: "Into the abyss with you"
 			tasks: [{
 				id: "5392464641AFF503"
 				item: "sophisticatedbackpacks:void_upgrade"
@@ -451,8 +453,8 @@
 				item: "sophisticatedbackpacks:stonecutter_upgrade"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			description: ["            Information Networks!"]
@@ -797,6 +799,7 @@
 		{
 			dependencies: ["37CFA426CC794627"]
 			id: "13A5E43826BA0E45"
+			subtitle: "Gimme that!"
 			tasks: [{
 				id: "401F35545DA42DCE"
 				item: "sophisticatedbackpacks:magnet_upgrade"
@@ -808,6 +811,7 @@
 		{
 			dependencies: ["37CFA426CC794627"]
 			id: "1A5573FAB7A2AECE"
+			subtitle: "Om nom nom"
 			tasks: [{
 				id: "30D35C30F21C4CFD"
 				item: "sophisticatedbackpacks:feeding_upgrade"
@@ -1229,6 +1233,19 @@
 			}]
 			x: 7.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["37CFA426CC794627"]
+			id: "0FCDF42F6C8B3AD9"
+			size: 1.0d
+			subtitle: "Keep 'em comin!"
+			tasks: [{
+				id: "77D0FC767A45EA69"
+				item: "sophisticatedbackpacks:refill_upgrade"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 5.5d
 		}
 	]
 	title: "Storage"
