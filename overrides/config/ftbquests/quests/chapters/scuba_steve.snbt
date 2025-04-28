@@ -318,8 +318,9 @@
 			dependencies: ["3AA4DBBB43DADBB2"]
 			id: "3A1CDAE3C15EACF2"
 			rewards: [{
-				id: "705E2093774843EC"
-				item: "beachparty:icecream_coconut"
+				count: 2
+				id: "5B6ED620B5876140"
+				item: "farmersrespite:strong_melon_juice"
 				type: "item"
 			}]
 			subtitle: "Let's go swimming!"

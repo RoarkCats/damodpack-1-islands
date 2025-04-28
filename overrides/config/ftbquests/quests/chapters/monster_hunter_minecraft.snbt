@@ -364,7 +364,7 @@
 			id: "25F0E050E788E012"
 			tasks: [{
 				entity: "subnautica_flow:reefback"
-				icon: "beachparty:floaty"
+				icon: "beachparty:floaty_boat"
 				id: "5F97D383B70C8CEC"
 				type: "kill"
 				value: 1L
