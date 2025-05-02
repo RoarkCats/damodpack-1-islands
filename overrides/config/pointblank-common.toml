@@ -36,7 +36,7 @@ pipScopeColorBalanceBlue = 110
 #Enables custom shaders
 customShadersEnabled = true
 #Enables explosions to destroy blocks
-explosionDestroyBlocksEnabled = true
+explosionDestroyBlocksEnabled = false
 #Sets the probability of dropping some item(s) by monster mobs.
 #Range: 0.0 ~ 1.0
 itemDropChance = 0.0
