@@ -16,3 +16,9 @@ craftingTable.addShaped("raw_redstone_block", <item:regions_unexplored:raw_redst
     [<item:minecraft:air>, <tag:items:forge:dusts/redstone>, <item:minecraft:air>],
     [<tag:items:forge:dusts/redstone>, <tag:items:forge:storage_blocks/redstone>, <tag:items:forge:dusts/redstone>],
     [<item:minecraft:air>, <tag:items:forge:dusts/redstone>, <item:minecraft:air>]]);
+
+recipes.removeByName("alexsmobs:sopa_de_macaco");
+craftingTable.addShaped("sopa_de_macaco", <item:alexsmobs:sopa_de_macaco>, [
+    [<item:minecraft:bowl>, <item:neapolitan:banana>],
+    [<item:minecraft:brown_mushroom>, <item:minecraft:bone>]
+]);
