@@ -44,7 +44,7 @@ itemDropChance = 0.0
 #Range: 2 ~ 64
 maxItemDropCount = 7
 #Enables bullets breaking glass
-bulletsBreakGlassEnabled = true
+bulletsBreakGlassEnabled = false
 #Modifier to adjust damage dealt by hitscan weapons.
 #Range: 0.1 ~ 10.0
 hitscanDamageModifier = 1.0
