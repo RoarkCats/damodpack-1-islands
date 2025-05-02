@@ -1,4 +1,4 @@
-    ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
     // Remove Steel Recipe from Etrionic Blast Furnace
     event.remove({ id: "ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals" });
 
@@ -133,13 +133,15 @@
 
         event.custom({
             type: "ad_astra:compressing",
-            input: {
-              item: "immersiveengineering:steel_ingot"
+            cookingtime: 150,
+            energy: 20,
+            ingredient: {
+              tag: "forge:ingots/steel"
             },
             result: {
-              item: "ad_astra:steel_plate",
+              id: "ad_astra:steel_plate",
               count: 1
             },
           })
 
-        })
+})
