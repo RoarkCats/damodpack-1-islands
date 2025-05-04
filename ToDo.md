@@ -1,7 +1,7 @@
 # ToDo List - Mark when Done
 - Mobtimizations config
 - Get rid of crafting recipies for limited barrels from sophisticated storage
-
+- Custom Tips? https://github.com/Darkhax-Minecraft/Tips/wiki/Latest-Documentation
 
 put 
         [
