@@ -9,6 +9,7 @@ JEIEvents.hideItems(event => {
     event.hide('inventorypets:temp_sated_chest');
     event.hide('inventorypets:temp_sated_double_chest');
     event.hide('kubejs:incomplete_ammo');
+    event.hide(/creategoggles:.+_backtank_placeable/);
 });
 
 // Show JEI Items
