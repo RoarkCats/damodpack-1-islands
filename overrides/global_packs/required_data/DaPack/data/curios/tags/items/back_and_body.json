@@ -1,0 +1,19 @@
+{
+    "values": [
+        "sophisticatedbackpacks:backpack",
+        "sophisticatedbackpacks:copper_backpack",
+        "sophisticatedbackpacks:iron_backpack",
+        "sophisticatedbackpacks:gold_backpack",
+        "sophisticatedbackpacks:diamond_backpack",
+        "sophisticatedbackpacks:netherite_backpack",
+        "#dapack:backtanks",
+        "immersiveengineering:powerpack",
+        "ramcompat:frost_robe",
+        "relics:midnight_robe",
+        "aether:invisibility_cloak",
+        "botania:holy_cloak",
+        "botania:unholy_cloak",
+        "botania:balance_cloak",
+        "botania:invisibility_cloak"
+    ]
+}

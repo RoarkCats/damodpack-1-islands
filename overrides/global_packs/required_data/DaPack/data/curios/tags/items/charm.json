@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "artifacts:chorus_totem",
+        "artifacts:crystal_heart",
+        "artifacts:universal_attractor",
+        "artifacts:antidote_vessel",
+        "artifacts:obsidian_skull",
+        "artifacts:cloud_in_a_bottle"
+    ]
+}

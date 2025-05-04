@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "#curios:back_and_body",
+        "beachparty:bikini",
+        "beachparty:trunks",
+        "beachparty:rubber_ring_blue",
+        "beachparty:rubber_ring_pink",
+        "beachparty:rubber_ring_stripped",
+        "beachparty:rubber_ring_axolotl",
+        "beachparty:rubber_ring_pelican",
+        "artifacts:helium_flamingo"
+    ]
+}

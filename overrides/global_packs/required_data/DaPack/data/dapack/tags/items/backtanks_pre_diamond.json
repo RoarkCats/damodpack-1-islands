@@ -1,0 +1,9 @@
+{
+    "values": [
+        "create:copper_backtank",
+        "creategoggles:chainmail_backtank",
+        "creategoggles:golden_backtank",
+        "creategoggles:iron_backtank",
+        "creategoggles:leather_backtank"
+    ]
+}

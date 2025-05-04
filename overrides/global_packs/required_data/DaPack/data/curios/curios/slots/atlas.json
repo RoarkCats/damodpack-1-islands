@@ -1,4 +1,5 @@
 {
     "size": 1,
-    "icon": "dapack:slot/atlas"
+    "icon": "dapack:slot/atlas",
+    "order": 1001
 }
