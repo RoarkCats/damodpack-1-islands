@@ -69,9 +69,9 @@ ServerEvents.recipes(event => {
         seqAssRecipe(
             [Item.of("pointblank:"+small_ammos[i], 19)],
             "#forge:ingots/copper",
-            [].concat( toBin(i+1, 3).split(""), [2,"#forge:gunpowder",2,"#forge:nuggets/lead"] ),
+            [].concat( [0], toBin(i+1, 3).split(""), [2,"#forge:gunpowder",2,"#forge:nuggets/lead"] ),
             trans
-        )
+        ) // note: using [0] (extra cutting at start) so as not to make create copper sheets impossible 
     } // 1 copper, 1 gunpowder
 
     let med_ammos = ["ammo545", "ammo556", "ammo68", "ammo762", "ammo12gauge", "doom_50calpistol"]
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
     seqAssRecipe([Item.of("pointblank:ammo50bmg", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 3)
     // 4 copper, 3 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper", [1,2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans) // 2 copper, 1 iron
+    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans) // 2 copper, 1 iron
 
     seqAssRecipe([Item.of("pointblank:hl_rebar", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,0], trans) // 2 copper
 
