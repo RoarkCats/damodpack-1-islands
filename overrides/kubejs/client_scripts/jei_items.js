@@ -1,4 +1,4 @@
-// REQUIRES /reload
+// REQUIRES F3+T then /reload
 
 // Hide JEI Items
 JEIEvents.hideItems(event => {
@@ -8,7 +8,7 @@ JEIEvents.hideItems(event => {
     event.hide('inventorypets:temp_double_chest');
     event.hide('inventorypets:temp_sated_chest');
     event.hide('inventorypets:temp_sated_double_chest');
-    event.hide('kubejs:incomplete_ammo');
+    event.hide('kubejs:incomplete_ammo'); // hide base one
     event.hide(/creategoggles:.+_backtank_placeable/);
 });
 
@@ -20,4 +20,15 @@ JEIEvents.addItems(event => {
     event.add(Item.of('inventorypets:pet_double_chest', {Damage:0}));
     event.add(Item.of('inventorypets:pet_sated_chest', {Damage:0}));
     event.add(Item.of('inventorypets:pet_sated_double_chest', {Damage:0}));
+
+    let ammos = ["ammo9mm", "ammo45acp", "ammo57", "ammo357", "ammo50ae", "ammo46", "ammo545", "ammo556", "ammo68", "ammo762", "ammo12gauge", "doom_50calpistol" ,"ammo762x51" /*,"doom_50calrifle"*/ ,"ammo338lapua" ,"ammo50bmg" ,"doom_plasmacell" ,"hl_rebar"]
+    for (const ammo of ammos) { // not functional to cheat in, just for recipe searching
+        let name = Item.of('pointblank:'+ammo).item.getDescription().getString()
+        event.add(Item.of('kubejs:incomplete_ammo',`{display:{Name:'{"text":"Incomplete Ammo (${name})","italic":false}',Lore:['{"text":"Ammo: ${name}","color":"gray","italic":false}']}}`))
+    }
 });
+
+// Info is the desc tab ℹ️
+JEIEvents.information(event => {
+    event.addItem('kubejs:incomplete_ammo', ['Craft Incomplete Ammo to begin assembling certain Point Blank ammos.',' ','(This roundabout method avoids recipe overlap issues)'])
+})

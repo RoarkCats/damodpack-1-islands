@@ -19,10 +19,12 @@ ServerEvents.recipes(event => {
 
     
     //-- Seq assembly helper functions
+    let helperRecipesAdded = 0
     let operations = [event.recipes.createCutting, event.recipes.createPressing, event.recipes.createDeploying, event.recipes.createFilling]
     // Operations :: Cutting: 0, Pressing: 1, Deploying: 2 (+ Item), Filling: 3 (+Fluid)
-    function seqAssRecipe(results, input, seq, incomplete, loops) {
+    function seqAssRecipe(results, input, seq, incomplete, loops, helperRecipe) {
         loops = loops || 1 // defaults to 1 (optional inp)
+        helperRecipe = helperRecipe || false
         let sequence = [] // compiled
         let op_inp = 0
         for (const s of seq) { // build compiled version
@@ -35,11 +37,26 @@ ServerEvents.recipes(event => {
                 op_inp = 0 // push operation with input item next in list
             }
         } // make recipe
-        event.recipes.create.sequenced_assembly(
+        let rec = event.recipes.create.sequenced_assembly(
             results,
-            input,
+            helperRecipe ? 'minecraft:structure_void' : input, // use incomplete as initial item if helper required
             sequence
         ).transitionalItem(incomplete).loops(loops);
+        //
+        if (helperRecipe) { // generates a shaped recipe for the incomplete item at step 0 to deal with overlap issues
+            helperRecipesAdded++
+            let shape = toBin(helperRecipesAdded,8)
+            shape = shape.substring(0,4) + 'I' + shape.substring(4)
+            event.shaped(
+                Item.of(incomplete,`{display:{Lore:['{"text":"Ammo: ${results[0].item.getDescription().getString()}","color":"gray","italic":false}']}, SequencedAssembly:{Step:0,id:"create:${rec.path}"}}`),
+                [shape.substring(0,3),shape.substring(3,6),shape.substring(6,9)],
+                {
+                    I: input, // all uses have input as copper so no need to make more complicated
+                    1: '#forge:nuggets/copper',
+                    0: 'minecraft:air'
+                }
+            ).noMirror() // else >:(
+        }
     }
     function toBin(num, leading_zeros) {
         return num.toString(2).padStart(leading_zeros,"0")
@@ -49,6 +66,8 @@ ServerEvents.recipes(event => {
 
     //-- Ammo seq assembly recipes
     let trans = "kubejs:incomplete_ammo" // transitional placeholder item used in all recipes
+
+    event.shaped(Item.of('minecraft:structure_void',`{display:{Lore:['"Craft Incomplete Ammo instead"','"to begin making Point Blank ammos"']}}`), ['AV'], {A: trans, V: 'minecraft:structure_void'}) // jei info recipe
     // ~ EXAMPLE
     // seqAssRecipe([Item.of("pointblank:ammo9mm", 19)], "#forge:ingots/copper", [1,0,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 1)
     // ~ This block is equivalent to the line above
@@ -69,9 +88,9 @@ ServerEvents.recipes(event => {
         seqAssRecipe(
             [Item.of("pointblank:"+small_ammos[i], 19)],
             "#forge:ingots/copper",
-            [].concat( [0], toBin(i+1, 3).split(""), [2,"#forge:gunpowder",2,"#forge:nuggets/lead"] ),
-            trans
-        ) // note: using [0] (extra cutting at start) so as not to make create copper sheets impossible 
+            [].concat( toBin(i+1, 3).split(""), [2,"#forge:gunpowder",2,"#forge:nuggets/lead"] ),
+            trans, 1, true
+        )
     } // 1 copper, 1 gunpowder
 
     let med_ammos = ["ammo545", "ammo556", "ammo68", "ammo762", "ammo12gauge", "doom_50calpistol"]
@@ -81,21 +100,21 @@ ServerEvents.recipes(event => {
             [Item.of("pointblank:"+med_ammos[i], count)],
             "#forge:ingots/copper",
             [].concat( [2,"#forge:ingots/copper"], toBin(i+1, 3).split(""), [2,"#forge:gunpowder",2,"#forge:nuggets/lead"] ),
-            trans
+            trans, 1, true
         )
     } // 2 copper, 1 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:ammo762x51", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans) // 3 copper, 1 gunpowder
-    // seqAssRecipe([Item.of("pointblank:doom_50calrifle", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,1,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans) // 3 copper, 1 gunpowder
+    seqAssRecipe([Item.of("pointblank:ammo762x51", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 1, true) // 3 copper, 1 gunpowder
+    // seqAssRecipe([Item.of("pointblank:doom_50calrifle", 16)], "#forge:ingots/copper", [2,"#forge:ingots/copper",2,"#forge:ingots/copper",1,0,1,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 1, true) // 3 copper, 1 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:ammo338lapua", 10)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 2)
+    seqAssRecipe([Item.of("pointblank:ammo338lapua", 10)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 2, true)
 
-    seqAssRecipe([Item.of("pointblank:ammo50bmg", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 3)
+    seqAssRecipe([Item.of("pointblank:ammo50bmg", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,2,"#forge:gunpowder",2,"#forge:nuggets/lead"], trans, 3, true)
     // 4 copper, 3 gunpowder
 
-    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans) // 2 copper, 1 iron
+    seqAssRecipe([Item.of("pointblank:doom_plasmacell", 13)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1,0], trans, 1, true) // 2 copper, 1 iron
 
-    seqAssRecipe([Item.of("pointblank:hl_rebar", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,0], trans) // 2 copper
+    seqAssRecipe([Item.of("pointblank:hl_rebar", 8)], "#forge:ingots/copper", [2,"#forge:ingots/copper",1,0,0], trans, 1, true) // 2 copper
 
     seqAssRecipe(["pointblank:doom_steelflechette"], "pointblank:doom_argent_ingot", [1,0,0], trans) // 1 argent ingot
 
@@ -105,8 +124,8 @@ ServerEvents.recipes(event => {
     seqAssRecipe(["pointblank:grenade40mm"], "minecraft:tnt", [2,"#forge:ingots/iron",1,2,"#forge:ingots/copper",1], trans)
     // 1 copper, 1 iron, 1 tnt
 
-    seqAssRecipe(["pointblank:smaw_rocket"], "minecraft:tnt", [2,"pointblank:gunmetal_ingot",1,0], trans, 10)
-    seqAssRecipe(["pointblank:at4_rocket"], "minecraft:tnt", [2,"pointblank:gunmetal_ingot",0,1], trans, 10)
+    seqAssRecipe(["pointblank:smaw_rocket"], "minecraft:tnt", [0,2,"pointblank:gunmetal_ingot",1], trans, 10)
+    seqAssRecipe(["pointblank:at4_rocket"], "minecraft:tnt", [2,"pointblank:gunmetal_ingot",1,0], trans, 10)
     // 10 gunmetal, 1 tnt
 
     seqAssRecipe(["pointblank:javelin_rocket"], "pointblank:processor", [2,"pointblank:gunmetal_ingot",2,"minecraft:redstone_block",0,2,"pointblank:gunmetal_ingot",2,"#forge:gunpowder",2,"#minecraft:sand",1], trans, 4) // 10 gunmetal, 1 processor, 33 redstone, 1 tnt (8,1,36,1-)
