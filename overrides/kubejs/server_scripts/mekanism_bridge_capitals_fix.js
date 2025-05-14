@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     // remove recipes if loaded so no overlap
-    let capital_recipes = ['AndesiteAloy','BrassCreate','BrassIngot','BrassNugget','Osmium','PlutoniumTeta','poloniumCompactMethod','SulfurTri','zincNugget', /* bad recipes now */, 'osmium1', 'plutonium2'];
+    let capital_recipes = ['AndesiteAloy','BrassCreate','BrassIngot','BrassNugget','Osmium','PlutoniumTeta','poloniumCompactMethod','SulfurTri','zincNugget', /* bad recipes now */, 'osmium1', 'plutonium2', 'uranhex', 'uranium3', 'steel', 'steel2', 'plutonium'];
     for (const rec of capital_recipes) { event.remove({id: 'mekanismbridge:'+rec}); }
 
     // re-add recipes
@@ -66,11 +66,10 @@ ServerEvents.recipes(event => {
                     ]
                 },
                 {
-                    "probability": 100.0,
+                    "probability": 25.0,
                     "results": [
                         {
-                            "item": "chemlib:zinc",
-                            "count": 2
+                            "item": "chemlib:zinc"
                         }
                     ]
                 }
@@ -159,7 +158,7 @@ ServerEvents.recipes(event => {
                 }
             ],
             "rolls": 1,
-            "weighted": true
+            "weighted": false
         }
     });
     
@@ -244,7 +243,7 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:compactor",
         "group": "alchemistry:compactor",
         "input": {
-          "count": 30,
+          "count": 32,
           "ingredient": {
             "item": "chemlib:polonium"
           }
@@ -281,4 +280,143 @@ ServerEvents.recipes(event => {
     //     }
     // });
     
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {
+                "tag": "forge:ingots/steel"
+            },
+            "count": 1
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {
+                            "item": "chemlib:iron",
+                            "count": 16
+                        },
+                        {
+                            "item": "chemlib:carbon",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        "type": "alchemistry:compactor",
+        "group": "alchemistry:compactor",
+        "input": {
+          "count": 16,
+          "ingredient": {
+            "item": "chemlib:plutonium"
+          }
+        },
+        "result": {
+          "item": "mekanism:pellet_plutonium"
+        }
+    });
+    
+    // extra extra custom stuff!
+
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {
+                "item": "mekanism:pellet_plutonium"
+            }
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {
+                            "item": "chemlib:plutonium",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+    
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {
+                "item": "mekanism:pellet_polonium"
+            }
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {
+                            "item": "chemlib:polonium",
+                            "count": 32
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+
+    event.remove({id: /alchemistry:.*\/ghast_tear/ });
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {
+                "item": "minecraft:ghast_tear"
+            }
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {
+                            "item": "chemlib:polonium",
+                            "count": 8
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        "type": "alchemistry:combiner",
+        "group": "alchemistry:combiner",
+        "input": [
+            {
+                "ingredient": {
+                    "item": "chemlib:polonium"
+                },
+                "count": 8
+            }
+        ],
+        "result": {
+            "item": "minecraft:ghast_tear"
+        }
+    });
+
+
 })
