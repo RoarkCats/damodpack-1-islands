@@ -99,7 +99,7 @@
 				value: 1L
 			}]
 			x: -0.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			icon: {
@@ -135,7 +135,7 @@
 				value: 1L
 			}]
 			x: -2.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			icon: "duckensinvasion:ward"
@@ -520,6 +520,57 @@
 			}]
 			x: -7.5d
 			y: -1.5d
+		}
+		{
+			id: "1AFA2587F72EC56A"
+			subtitle: "Carnivorous Koalas"
+			tasks: [{
+				entity: "alexsmobs:dropbear"
+				icon: "alexsmobs:dropbear_claw"
+				id: "7C5DF727C3133E59"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Australian Native"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "vampirism:pitchfork"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74A094186512CBB3"
+			subtitle: "No Blood, Garlic, or Guts for me!"
+			tasks: [
+				{
+					entity: "vampirism:vampire"
+					icon: "vampirism:vampire_fang"
+					id: "5E11BE1893B81703"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "vampirism:hunter"
+					icon: "vampirism:item_garlic"
+					id: "72083818900510BB"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "werewolves:werewolf_survivalist"
+					icon: "werewolves:liver"
+					id: "447A46A29CC9E775"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Human Purist"
+			x: 7.0d
+			y: -1.0d
 		}
 	]
 	title: "Monster Hunter: Minecraft"

@@ -7,19 +7,11 @@
 	id: "61679442473341D7"
 	images: [
 		{
-			height: 2.0d
-			image: "pneumaticcraft:item/wip"
-			rotation: 0.0d
-			width: 2.0d
-			x: -1.5d
-			y: 10.0d
-		}
-		{
 			height: 1.0d
 			image: "minecraft:block/crafting_table_front"
 			rotation: 0.0d
 			width: 1.0d
-			x: 12.0d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
@@ -27,7 +19,7 @@
 			image: "pneumaticcraft:item/wip"
 			rotation: 0.0d
 			width: 2.0d
-			x: 13.5d
+			x: 14.0d
 			y: 7.5d
 		}
 	]
@@ -466,30 +458,14 @@
 				item: "integrateddynamics:on_the_dynamics_of_integration"
 				type: "item"
 			}]
+			title: "Integrated Dynamics"
 			x: 2.0d
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"69BF303980DCEAF9"
-				"41EFC05EAA76D013"
-				"6C5D5A8B566008CD"
-			]
-			id: "6B334971289EFD73"
-			shape: "rsquare"
-			subtitle: "also drawers"
-			tasks: [{
-				id: "12E2F07CD0677CDA"
-				item: "storagedrawers:diamond_storage_upgrade"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.5d
-		}
-		{
 			dependencies: ["2199F95552654675"]
 			description: [
-				"Place a reader facing a source (block, fluid, entity, storage, etc.) and pass it a variable card to storage that information in the variable for usage elsewhere"
+				"Place a reader facing a source (block, fluid, entity, storage, etc.) and pass it a variable card to store a reference to that information in the variable for usage elsewhere"
 				""
 				"{\"text\":\"               > Intro Guide <\",\"color\":\"yellow\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"YouTube Video\",\"color\":\"yellow\"}},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/BUccN_FEfo0\"}}"
 			]
@@ -552,57 +528,6 @@
 			y: 6.0d
 		}
 		{
-			id: "69BF303980DCEAF9"
-			tasks: [{
-				id: "3DABE6077B43D13E"
-				item: {
-					Count: 1
-					id: "itemfilters:id_regex"
-					tag: {
-						value: "storagedrawers:.*_full_drawers_1"
-					}
-				}
-				title: "1x1 drawer"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 7.5d
-		}
-		{
-			id: "41EFC05EAA76D013"
-			tasks: [{
-				id: "6CFFAD0AD856877F"
-				item: {
-					Count: 1
-					id: "itemfilters:id_regex"
-					tag: {
-						value: "storagedrawers:.*_full_drawers_2"
-					}
-				}
-				type: "item"
-			}]
-			title: "1x2 drawer"
-			x: -1.0d
-			y: 7.5d
-		}
-		{
-			id: "6C5D5A8B566008CD"
-			tasks: [{
-				id: "6F9C338BC4B412E3"
-				item: {
-					Count: 1
-					id: "itemfilters:id_regex"
-					tag: {
-						value: "storagedrawers:.*_full_drawers_4"
-					}
-				}
-				type: "item"
-			}]
-			title: "2x2 drawer"
-			x: -1.5d
-			y: 8.5d
-		}
-		{
 			dependencies: ["0B759CBC802C8493"]
 			description: ["Using Variable Cards to program Variable Cards"]
 			id: "3E14AD2C0CE9F047"
@@ -622,7 +547,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["3E14AD2C0CE9F047"]
+			dependencies: ["346BDA9553CF7EC3"]
 			id: "6122F96E77F9FF8C"
 			subtitle: "Write to the world!"
 			tasks: [{
@@ -666,8 +591,8 @@
 				type: "item"
 			}]
 			title: "Writers"
-			x: 9.5d
-			y: 6.0d
+			x: 10.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3A7C355385C7BD68"]
@@ -1095,7 +1020,7 @@
 				type: "item"
 			}]
 			title: "Item Interface"
-			x: 7.5d
+			x: 8.0d
 			y: 7.5d
 		}
 		{
@@ -1107,7 +1032,7 @@
 				item: "integrateddynamics:cable"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 7.5d
 		}
 		{
@@ -1120,7 +1045,7 @@
 				item: "integratedterminals:part_terminal_storage"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 7.5d
 		}
 		{
@@ -1139,7 +1064,7 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
+			x: 11.0d
 			y: 7.5d
 		}
 		{
@@ -1152,7 +1077,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1246,6 +1171,360 @@
 			}]
 			x: 0.75d
 			y: 5.5d
+		}
+		{
+			dependencies: ["3E14AD2C0CE9F047"]
+			description: [
+				"Variable Stores hold set variables!"
+				"                 &8&o*shocker*&r"
+				"They're required to provide the context a network may need should it contain writers or displays that reference variables other than themselves"
+				""
+				"Variables are first initiated from a reader or Logic Programmer, then may be referenced by other variables for more complex logic, the references must be stored"
+			]
+			id: "346BDA9553CF7EC3"
+			rewards: [{
+				count: 8
+				id: "7C993397B22710EB"
+				item: "integrateddynamics:variable"
+				type: "item"
+			}]
+			subtitle: "Every network needs one"
+			tasks: [{
+				id: "60E5578232D202E8"
+				item: "integrateddynamics:variablestore"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["346BDA9553CF7EC3"]
+			id: "66C2C66331C41515"
+			subtitle: "Surely you'll name your variables..?"
+			tasks: [{
+				id: "45737D1762D4A545"
+				item: "integrateddynamics:labeller"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6122F96E77F9FF8C"]
+			description: [
+				"The Delayer takes in a variable and provides a new list type variable containing the values of the tracked variable over time"
+				""
+				"Its recording frequency and buffer size can be configured within the block"
+			]
+			id: "6885B97581966A66"
+			subtitle: "Pull up the logs"
+			tasks: [{
+				id: "796FE9135FAEDD7E"
+				item: "integrateddynamics:delay"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6885B97581966A66"]
+			description: [
+				"&bMaterializer:&r Allows static copies of variables' values to be made"
+				""
+				"&bProxy:&r Allows dynamic copies of variables to be made which update with the variable stored in the Proxy"
+			]
+			id: "313FA4A8AEF69CF0"
+			subtitle: "Into the deep end"
+			tasks: [
+				{
+					id: "6EB1C69969EFA5D3"
+					item: "integrateddynamics:proxy"
+					type: "item"
+				}
+				{
+					id: "6A65CC78CF2E89E7"
+					item: "integrateddynamics:materializer"
+					type: "item"
+				}
+			]
+			title: "Advanced Networking"
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			description: [
+				"&nDrawer Controls&r"
+				""
+				"&bRight-Click&r: Insert held stack"
+				"&bDouble-Right-Click&r: Insert all stacks"
+				"&bLeft-Click&r: Remove an item"
+				"&bShift+Left-Click&r: Remove a stack"
+				"&bShift+Right-Click (empty hand)&r: Open GUI"
+			]
+			id: "14B54602ECF8D105"
+			shape: "rsquare"
+			subtitle: "Bulk storage"
+			tasks: [
+				{
+					id: "274358282DC74766"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: ".*_full_drawers_1"
+						}
+					}
+					optional_task: true
+					title: "1x1 Drawers"
+					type: "item"
+				}
+				{
+					id: "798B790294AF4AC7"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: ".*_full_drawers_2"
+						}
+					}
+					optional_task: true
+					title: "1x2 Drawers"
+					type: "item"
+				}
+				{
+					id: "2893B94607A00E31"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: ".*_full_drawers_4"
+						}
+					}
+					optional_task: true
+					title: "2x2 Drawers"
+					type: "item"
+				}
+			]
+			title: "Storage Drawers"
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			description: ["Place a drawer in the Framing Table with a few other blocks of choice for infinite posibilities!"]
+			id: "4A81398BC8D5393A"
+			subtitle: "Fancy frames!"
+			tasks: [{
+				id: "65092654596D4ADE"
+				item: "storagedrawers:framing_table"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			description: ["Locked slots won't forget their contents when empty"]
+			id: "69155F7FF3252F4E"
+			subtitle: "Lockin' slots"
+			tasks: [{
+				id: "730D477B43803BAD"
+				item: "storagedrawers:drawer_key"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["69155F7FF3252F4E"]
+			id: "3DA47BA5670BE661"
+			subtitle: "It's in the details!"
+			tasks: [{
+				id: "661936220460D038"
+				item: "storagedrawers:quantify_key"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			id: "6C0852C71161A81E"
+			subtitle: "x2"
+			tasks: [{
+				id: "76E40306C71B541C"
+				item: "storagedrawers:obsidian_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6C0852C71161A81E"]
+			id: "6862120061F6415F"
+			subtitle: "x4"
+			tasks: [{
+				id: "09214BD5A4ECA53B"
+				item: "storagedrawers:iron_storage_upgrade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6862120061F6415F"]
+			id: "3C566CB41BC3874D"
+			subtitle: "x8"
+			tasks: [{
+				id: "236596B487809B83"
+				item: "storagedrawers:gold_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3C566CB41BC3874D"]
+			id: "16457F1EEB5F047E"
+			subtitle: "x16"
+			tasks: [{
+				id: "2B8A4AEFD07B0A80"
+				item: "storagedrawers:diamond_storage_upgrade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["16457F1EEB5F047E"]
+			id: "10F1DBBB13D8B713"
+			subtitle: "x32"
+			tasks: [{
+				id: "1752000439AA448E"
+				item: "storagedrawers:emerald_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["10F1DBBB13D8B713"]
+			id: "764FB3771DF181D1"
+			subtitle: "Endless storage!"
+			tasks: [{
+				id: "13D95854A2F01FC2"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			id: "6E716A67176C99CC"
+			subtitle: "Loading in progress..."
+			tasks: [{
+				id: "5087B1A493C7210B"
+				item: "storagedrawers:fill_level_upgrade"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			id: "7A55AF45A719EF18"
+			subtitle: "Begone with you!"
+			tasks: [{
+				id: "314A631D478CEF6D"
+				item: "storagedrawers:void_upgrade"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			id: "2BAB312B1E72282D"
+			subtitle: "Bulk² storage"
+			tasks: [{
+				id: "03E298E8D5926A66"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_drawers_2"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_drawers_3"
+							}
+						]
+					}
+				}
+				title: "Compacting Drawers"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			description: [
+				"Acts as an interface for insertion of items into connected drawers within 12 blocks"
+				""
+				"Compatible with pipes/machines for automated insertion and extraction"
+				""
+				"Extendable with a Drawer Controller Slave if more faces are needed for automation"
+			]
+			id: "4328F6C929F863F7"
+			subtitle: "Group interface"
+			tasks: [{
+				id: "327081B137CFEA44"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4328F6C929F863F7"]
+			id: "512FB34105EB198D"
+			subtitle: "Remote controlled"
+			tasks: [{
+				id: "2B6A7C0C0BF5DE12"
+				item: "storagedrawers:remote_upgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["512FB34105EB198D"]
+			id: "683E12520715E055"
+			subtitle: "Remote management"
+			tasks: [{
+				id: "668499FB9E8E552F"
+				item: "storagedrawers:remote_group_upgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["14B54602ECF8D105"]
+			id: "23C8FB676D7A265B"
+			subtitle: "Buffer"
+			tasks: [{
+				id: "345FC9E4942E1355"
+				item: "storagedrawers:one_stack_upgrade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
 		}
 	]
 	title: "Storage"

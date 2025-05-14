@@ -501,6 +501,17 @@
 			x: 13.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["7099D0AAFEFB74F6"]
+			id: "2FC917B9CFAF7B9D"
+			tasks: [{
+				id: "12AA7532A19994A1"
+				item: "mysticalagriculture:deepslate_seeds"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
 	]
 	title: "Mystical Agriculture"
 }
