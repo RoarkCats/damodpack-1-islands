@@ -9,8 +9,8 @@ craftingTable.addShaped("feed_bag", <item:inventorypets:feed_bag>, [
 // Pets
 craftingTable.removeByName("inventorypets:illuminati_pet");
 craftingTable.addShaped("bill_cipher_pet", <item:inventorypets:pet_illuminati>, [
-    [<item:minecraft:air>, <item:mekanism:pellet_polonium>, <item:minecraft:air>], 
-    [<item:mekanism:pellet_polonium>, <item:minecraft:nether_star>, <item:mekanism:pellet_polonium>], 
+    [<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>], 
+    [<item:mekanism:pellet_polonium>, <item:mekanism:pellet_antimatter>, <item:mekanism:pellet_polonium>], 
     [<item:minecraft:emerald_block>, <item:mekanism:pellet_polonium>, <item:minecraft:emerald_block>]]);
 
 craftingTable.removeByName("inventorypets:squid_pet");
