@@ -28,3 +28,15 @@ craftingTable.addShaped("creative_storage_upgrade", <item:storagedrawers:creativ
     [<item:storagedrawers:emerald_storage_upgrade>,<tag:items:forge:ingots/netherite>,<item:storagedrawers:emerald_storage_upgrade>],
     [<item:mekanism:pellet_antimatter>,<item:storagedrawers:void_upgrade>,<item:mekanism:pellet_antimatter>]
 ]);
+
+craftingTable.addShaped("light", <item:minecraft:light>*8, [
+    [<item:minecraft:air>, <tag:items:forge:dusts/glowstone>, <item:minecraft:air>],
+    [<tag:items:forge:dusts/glowstone>, <item:mekanism:pellet_antimatter>, <tag:items:forge:dusts/glowstone>],
+    [<item:minecraft:air>, <tag:items:forge:dusts/glowstone>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("pipez_infinity_upgrade", <item:pipez:infinity_upgrade>, [
+    [<item:mekanism:pellet_antimatter>, <item:fluxnetworks:flux_block>, <item:mekanism:pellet_antimatter>],
+    [<item:fluxnetworks:flux_block>, <item:pipez:ultimate_upgrade>, <item:fluxnetworks:flux_block>],
+    [<item:mekanism:pellet_antimatter>, <item:fluxnetworks:flux_block>, <item:mekanism:pellet_antimatter>]
+]);
