@@ -417,6 +417,45 @@ ServerEvents.recipes(event => {
             "item": "minecraft:ghast_tear"
         }
     });
-
+    
+    // Silicon
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {
+                "item": "enderio:silicon"
+            }
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {
+                            "item": "chemlib:silicon",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+    
+    event.custom({
+        "type": "alchemistry:compactor",
+        "group": "alchemistry:compactor",
+        "input": {
+          "count": 16,
+          "ingredient": {
+            "item": "chemlib:silicon"
+          }
+        },
+        "result": {
+          "item": "enderio:silicon"
+        }
+    });
 
 })
