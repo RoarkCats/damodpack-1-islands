@@ -23,12 +23,6 @@ craftingTable.addShaped("sopa_de_macaco", <item:alexsmobs:sopa_de_macaco>, [
     [<item:minecraft:brown_mushroom>, <item:minecraft:bone>]
 ]);
 
-craftingTable.addShaped("creative_storage_upgrade", <item:storagedrawers:creative_storage_upgrade>, [
-    [<item:mekanism:pellet_antimatter>,<item:storagedrawers:void_upgrade>,<item:mekanism:pellet_antimatter>],
-    [<item:storagedrawers:emerald_storage_upgrade>,<tag:items:forge:ingots/netherite>,<item:storagedrawers:emerald_storage_upgrade>],
-    [<item:mekanism:pellet_antimatter>,<item:storagedrawers:void_upgrade>,<item:mekanism:pellet_antimatter>]
-]);
-
 craftingTable.addShaped("light", <item:minecraft:light>*8, [
     [<item:minecraft:air>, <tag:items:forge:dusts/glowstone>, <item:minecraft:air>],
     [<tag:items:forge:dusts/glowstone>, <item:mekanism:pellet_antimatter>, <tag:items:forge:dusts/glowstone>],
