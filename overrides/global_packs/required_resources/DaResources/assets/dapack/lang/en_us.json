@@ -1,3 +1,17 @@
 {
-    "curios.identifier.atlas": "Atlas"
+    "curios.identifier.atlas": "Atlas",
+    
+    "item.minecraft.tipped_arrow.effect.strong_hunger": "Arrow of Hunger",
+    "item.createfood.chocolate_cream_frosted_cupcake": "Chocolate Cream Frosted Cupcake",
+    "item.createfood.pork_meatball_stick_3": "Pork Meatball Stick",
+    "item.createfood.rabbit_meatball_stick_3": "Rabbit Meatball Stick",
+    "item.mekanismscience.hydrogen_cyanide_bucket": "Hydrogen Cyanide Bucket",
+    "item.mekanismscience.potassium_cyanide_bucket": "Potassium Cyanide Bucket",
+    "item.mekanismscience.methane_bucket": "Methane Bucket",
+    "block.mekanismscience.hydrogen_cyanide": "Liquid Hydrogen Cyanide",
+    "block.mekanismscience.potassium_cyanide": "Liquid Potassium Cyanide",
+    "block.mekanismscience.methane": "Liquid Methane",
+    "gas.mekanismscience.hydrogen_cyanide": "Hydrogen Cyanide",
+    "gas.mekanismscience.potassium_cyanide": "Potassium Cyanide",
+    "gas.mekanismscience.methane": "Methane"
 }
