@@ -25,6 +25,7 @@ A large "Survival Islands" kitchen sink pack designed with a little something fo
 4. Create a new tag for the release, this should be the version number (Ex `1.0.0`)
    - See semantic versioning (`Breaking.Feature.Fix`/`Major.Minor.Patch`)
    - Increment minor for mod changes and patch for config/quests (`Modpack.Mod.Config`)
+   - **Important**: Update the pack version in the [Better Compatibility Checker config file](overrides/config/bcc-common.toml)
 5. Set release title (Ex `[Redacted] 1.0.0`)
 6. Set release description with changelog, this should document all commits since last release
 7. Check the "Set as pre-release" box if not ready for public
