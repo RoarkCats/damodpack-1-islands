@@ -125,3 +125,5 @@ craftingTable.removeByName("inventorypets:house_pet");
 craftingTable.removeByName("inventorypets:moon_pet");
 craftingTable.removeByName("inventorypets:black_hole_pet");
 craftingTable.removeByName("inventorypets:april_fool_pet");
+craftingTable.removeByName("inventorypets:dirt_pet");
+craftingTable.removeByName("inventorypets:cobblestone_pet");
