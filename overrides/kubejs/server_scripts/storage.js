@@ -62,10 +62,22 @@ ServerEvents.recipes(event => {
         [menril, center, menril],
         [menril, menril, menril]
     ];}
-    let interfaces = [['item','#forge:chests/wooden'], ['fluid','minecraft:bucket'], ['energy','integrateddynamics:energy_battery']];
-    for (const intf of interfaces) {
-        event.remove({id:`integratedtunnels:crafting/part_interface_${intf[0]}`});
-        event.shaped(`4x integratedtunnels:part_interface_${intf[0]}`, part_interface(intf[1]));
+    let types = [['item','#forge:chests/wooden'], ['fluid','minecraft:bucket'], ['energy','integrateddynamics:energy_battery']];
+    for (const type of types) {
+        event.remove({id:`integratedtunnels:crafting/part_interface_${type[0]}`});
+        event.shaped(`4x integratedtunnels:part_interface_${type[0]}`, part_interface(type[1]));
+    }
+
+    // trash cans
+    types[1][0] = 'liquid';
+    types[2][1] = '#forge:dusts/redstone';
+    for (const type of types) {
+        event.remove({id:`trashcans:${type[0]}_trash_can`});
+        event.shaped(`trashcans:${type[0]}_trash_can`, [
+            ['#forge:ingots/steel','#forge:ingots/steel','#forge:ingots/steel'],
+            ['#forge:cobblestone',type[1],'#forge:cobblestone'],
+            ['#forge:cobblestone','sophisticatedstorage:void_upgrade','#forge:cobblestone']
+        ]);
     }
 
     //-- New recipes
