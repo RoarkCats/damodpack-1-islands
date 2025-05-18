@@ -41,3 +41,9 @@ craftingTable.addShaped("uncrafting_table", <item:twilightforest:uncrafting_tabl
     [<item:twilightforest:fiery_blood>, <item:twilightforest:lamp_of_cinders>,<item:twilightforest:fiery_tears>],
     [<item:minecraft:crafting_table>, <item:twilightforest:alpha_yeti_fur>,<item:minecraft:crafting_table>]
 ]);
+
+craftingTable.addShaped("log_chests", <item:minecraft:chest>*4, [
+    [<tag:items:minecraft:logs>,<tag:items:minecraft:logs>,<tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>,<item:minecraft:air>,<tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>,<tag:items:minecraft:logs>,<tag:items:minecraft:logs>]
+]);
