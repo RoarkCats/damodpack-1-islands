@@ -34,3 +34,10 @@ craftingTable.addShaped("pipez_infinity_upgrade", <item:pipez:infinity_upgrade>,
     [<item:fluxnetworks:flux_block>, <item:pipez:ultimate_upgrade>, <item:fluxnetworks:flux_block>],
     [<item:mekanism:pellet_antimatter>, <item:fluxnetworks:flux_block>, <item:mekanism:pellet_antimatter>]
 ]);
+
+recipes.removeByName("twilightforest:uncrafting_table");
+craftingTable.addShaped("uncrafting_table", <item:twilightforest:uncrafting_table>, [
+    [<item:minecraft:crafting_table>, <item:twilightforest:magic_beans>,<item:minecraft:crafting_table>],
+    [<item:twilightforest:fiery_blood>, <item:twilightforest:lamp_of_cinders>,<item:twilightforest:fiery_tears>],
+    [<item:minecraft:crafting_table>, <item:twilightforest:alpha_yeti_fur>,<item:minecraft:crafting_table>]
+]);
