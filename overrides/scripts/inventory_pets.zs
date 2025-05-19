@@ -110,20 +110,5 @@ craftingTable.addShaped("magma_cube_pet", <item:inventorypets:pet_magma_cube>, [
     [<item:alexsmobs:lava_bottle>, <item:botania:blaze_block>, <item:alexsmobs:lava_bottle>], 
     [<item:minecraft:magma_cream>, <item:minecraft:netherite_scrap>, <item:minecraft:magma_cream>]]);
 
-// Disabled Pets
-craftingTable.removeByName("inventorypets:petrifier"); // turns stuff into pets for free
-craftingTable.removeByName("inventorypets:lead_pet");
-craftingTable.removeByName("inventorypets:nether_portal_pet");
-craftingTable.removeByName("inventorypets:saddle_pet");
-craftingTable.removeByName("inventorypets:flying_saddle_pet");
-craftingTable.removeByName("inventorypets:end_portal_pet");
-craftingTable.removeByName("inventorypets:biome_pet");
-craftingTable.removeByName("inventorypets:grave_pet");
-craftingTable.removeByName("inventorypets:meta_pet_zzz");
-craftingTable.removeByName("inventorypets:juggernaut_pet");
-craftingTable.removeByName("inventorypets:house_pet");
-craftingTable.removeByName("inventorypets:moon_pet");
-craftingTable.removeByName("inventorypets:black_hole_pet");
-craftingTable.removeByName("inventorypets:april_fool_pet");
-craftingTable.removeByName("inventorypets:dirt_pet");
-craftingTable.removeByName("inventorypets:cobblestone_pet");
+// Remove all recipes for disabled pets
+craftingTable.remove(<tag:items:dapack:disabled_pets>);

@@ -1,0 +1,32 @@
+{
+    "values": [
+        "inventorypets:item_petrifier",
+        "inventorypets:pet_lead",
+        "inventorypets:pet_nether_portal",
+        "inventorypets:pet_saddle",
+        "inventorypets:pet_flying_saddle",
+        "inventorypets:pet_end_portal",
+        "inventorypets:pet_biome",
+        "inventorypets:pet_grave",
+        "inventorypets:pet_juggernaut",
+        "inventorypets:pet_house",
+        "inventorypets:pet_moon",
+        "inventorypets:pet_black_hole",
+        "inventorypets:pet_april_fool",
+        "inventorypets:pet_cobblestone",
+        "inventorypets:pet_dirt",
+
+        "inventorypets:pet_meta",
+        "inventorypets:pet_meta_100",
+        "inventorypets:pet_meta_75",
+        "inventorypets:pet_meta_50",
+        "inventorypets:pet_meta_25",
+        "inventorypets:pet_meta_aoe",
+        "inventorypets:pet_meta_fan",
+        "inventorypets:pet_meta_mob",
+        "inventorypets:pet_meta_peaceful",
+        "inventorypets:pet_meta_special",
+        "inventorypets:pet_meta_utility",
+        "inventorypets:pet_meta_youtuber"
+    ]
+}
