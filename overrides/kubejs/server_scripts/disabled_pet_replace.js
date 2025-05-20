@@ -8,6 +8,8 @@ PlayerEvents.inventoryChanged(event => {
         else if (slot == 40) {slot = 'weapon.offhand';}
         else {return;} // invalid slot or armor
         player.runCommandSilent(`loot replace entity @s ${slot} loot dapack:replacement_pets`);
+        player.runCommandSilent('playsound block.fire.extinguish master @s ~ ~ ~ 0.5 1.2')
+        player.runCommandSilent('title @s actionbar {"text":"Inventory pet disabled","color":"red"}')
         // player.inventory.setItem(slot,'stone') // setStackInSlot also good, player.inventory required tho!
     }
     // player.tell(`${event.server.lootData.getLootTable('gameplay/piglin_bartering').getRandomItems(???)}`) // not sure how to pass LootParams_
