@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "inventorypets:peaceful_pets"
+                },
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "inventorypets:mob_pets"
+                },
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "inventorypets:fan_pets"
+                }
+            ]
+        }
+    ]
+}
