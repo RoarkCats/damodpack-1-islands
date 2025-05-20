@@ -1,1 +1,1 @@
-tellraw @a {"text":"Thank you for downloading DaPack by RoarkCats!","color":"gold"}
+tellraw @a {"text":"DaPack loaded by RoarkCats!","color":"gold"}
