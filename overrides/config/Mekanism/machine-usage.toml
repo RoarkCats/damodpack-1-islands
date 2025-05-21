@@ -46,7 +46,7 @@
 	#Energy per operation tick (Joules).
 	laser = "10000"
 	#Energy per operation tick (Joules).
-	formulaicAssemblicator = "10"
+	formulaicAssemblicator = "5"
 	#Energy per operation tick (Joules).
 	modificationStation = "100"
 	#Energy per operation tick (Joules).
