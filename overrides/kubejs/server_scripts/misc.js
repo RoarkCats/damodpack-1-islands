@@ -91,10 +91,23 @@ ServerEvents.recipes(event => {
         }
     });
 
+    // Helium compat
+    event.remove({id:'mekanismscience:rotary/helium'});
+    // -- recipe in DaPack bc KubeJS oopid no work :(
+
 })
 
 ServerEvents.tags('item', event => {
 
     // Sulfur tag addition (The Deep Void)
     event.add('forge:dusts/sulfur', 'the_deep_void:sulfur_powder');
+})
+
+ServerEvents.tags('fluid', event => {
+
+    // Create infinite draining
+    event.add('create:no_infinite_draining', /chemlib:/);
+    
+    // Helium compat
+    event.add('dapack:helium', ['mekanismscience:helium', 'chemlib:helium_fluid']);
 })
