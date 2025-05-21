@@ -1162,6 +1162,333 @@
 			x: 8.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1A9B7ECC825A70BE"]
+			icon: "ftbquests:barrier"
+			id: "2CDCA8A338EF4A85"
+			shape: "hexagon"
+			subtitle: "Woah there buddy!"
+			tasks: [
+				{
+					id: "458980EC5F9D42CC"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:handheld_worldshaper"
+								}
+								{
+									Count: 1b
+									id: "create:creative_motor"
+								}
+								{
+									Count: 1b
+									id: "create:creative_fluid_tank"
+								}
+								{
+									Count: 1b
+									id: "create:creative_crate"
+								}
+								{
+									Count: 1b
+									id: "create:creative_blaze_cake"
+								}
+								{
+									Count: 1b
+									id: "iceandfire:creative_dragon_meal"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:capacitor_creative"
+								}
+								{
+									Count: 1b
+									id: "integrateddynamics:energy_battery_creative"
+								}
+								{
+									Count: 1b
+									id: "mekanism:creative_bin"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:creative_spell_book"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:creative_source_jar"
+								}
+								{
+									Count: 1b
+									id: "botania:creative_pool"
+								}
+								{
+									Count: 1b
+									id: "botania:infrangible_platform"
+								}
+								{
+									Count: 1b
+									id: "botania:corporea_spark_creative"
+								}
+								{
+									Count: 1b
+									id: "createaddition:creative_energy"
+								}
+								{
+									Count: 1b
+									id: "enderio:creative_power"
+								}
+								{
+									Count: 1b
+									id: "mysticalagriculture:creative_soulium_dagger"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:creative_compressed_iron_block"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:creative_compressor"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:creative_upgrade"
+								}
+								{
+									Count: 1b
+									id: "rftoolsutility:creative_screen"
+								}
+								{
+									Count: 1b
+									id: "storagedrawers:creative_vending_upgrade"
+								}
+								{
+									Count: 1b
+									id: "mekanism:creative_energy_cube"
+									tag: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b
+												stored: "18446744073709551615.9999"
+											}]
+											componentConfig: {
+												config0: {
+													side0: 4
+													side1: 4
+													side2: 4
+													side3: 4
+													side4: 4
+													side5: 4
+												}
+											}
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "totemic:ceremony_cheat"
+								}
+								{
+									Count: 1b
+									id: "totemic:creative_medicine_bag"
+								}
+								{
+									Count: 1b
+									id: "vampiresneedumbrellas:creative_umbrella"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:or"
+									tag: {
+										items: [
+											{
+												Count: 1b
+												id: "vampirism:sunscreen_beacon"
+											}
+											{
+												Count: 1b
+												id: "rftoolsdim:admin_dimlet"
+												tag: {
+													name: "cheater"
+												}
+											}
+											{
+												Count: 1b
+												id: "sophisticatedbackpacks:survival_infinity_upgrade"
+											}
+											{
+												Count: 1b
+												id: "sophisticatedstorage:survival_infinity_upgrade"
+											}
+											{
+												Count: 1b
+												id: "minecraft:spawner"
+											}
+											{
+												Count: 1b
+												id: "occultism:miner_debug_unspecialized"
+												tag: {
+													Damage: 0
+													maxMiningTime: 100
+													rollsPerOperation: 10
+													spiritName: "Styrvirark"
+												}
+											}
+											{
+												Count: 1b
+												id: "sophisticatedstorage:debug_tool"
+											}
+											{
+												Count: 1b
+												id: "ars_elemental:debug"
+											}
+											{
+												Count: 1b
+												id: "ars_nouveau:debug"
+											}
+											{
+												Count: 1b
+												id: "occultism:debug_wand"
+											}
+											{
+												Count: 1b
+												id: "fluxnetworks:admin_configurator"
+											}
+											{
+												Count: 1b
+												id: "minecraft:debug_stick"
+											}
+											{
+												Count: 1b
+												id: "minecraft:barrier"
+											}
+											{
+												Count: 1b
+												id: "minecraft:structure_void"
+											}
+											{
+												Count: 1b
+												id: "minecraft:structure_block"
+											}
+											{
+												Count: 1b
+												id: "minecraft:jigsaw"
+											}
+											{
+												Count: 1b
+												id: "minecraft:command_block_minecart"
+											}
+											{
+												Count: 1b
+												id: "minecraft:repeating_command_block"
+											}
+											{
+												Count: 1b
+												id: "minecraft:chain_command_block"
+											}
+											{
+												Count: 1b
+												id: "minecraft:command_block"
+											}
+											{
+												Count: 1b
+												id: "structure_gel:building_tool"
+											}
+											{
+												Count: 1b
+												id: "structure_gel:dynamic_spawner"
+											}
+											{
+												Count: 1b
+												id: "structure_gel:data_handler"
+											}
+											{
+												Count: 1b
+												id: "itemfilters:or"
+												tag: {
+													items: [
+														{
+															Count: 1b
+															id: "structure_gel:blue_gel"
+														}
+														{
+															Count: 1b
+															id: "structure_gel:green_gel"
+														}
+														{
+															Count: 1b
+															id: "structure_gel:cyan_gel"
+														}
+														{
+															Count: 1b
+															id: "structure_gel:orange_gel"
+														}
+														{
+															Count: 1b
+															id: "structure_gel:red_gel"
+														}
+														{
+															Count: 1b
+															id: "structure_gel:yellow_gel"
+														}
+													]
+												}
+											}
+											{
+												Count: 1b
+												id: "minecraft:bedrock"
+											}
+										]
+									}
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Creative Items"
+					type: "item"
+				}
+				{
+					id: "74131606C9BB2377"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:creative_fluid_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:creative_chemical_tank"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Creative Tanks"
+					type: "item"
+				}
+				{
+					id: "269CF5F0107BBA2A"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: ".*_spawn_egg"
+						}
+					}
+					optional_task: true
+					title: "Spawn Eggs"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -3.0d
+		}
 	]
 	title: "Inventory Pets"
 }

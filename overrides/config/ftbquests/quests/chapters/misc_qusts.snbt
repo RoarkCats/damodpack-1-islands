@@ -158,6 +158,11 @@
 		{
 			description: ["Combine your pallet with some dye and get to painting all in Minecraft!"]
 			id: "587033611550E909"
+			rewards: [{
+				id: "6887BFD1E0B3E60A"
+				item: "simplehats:fro"
+				type: "item"
+			}]
 			subtitle: "MS Paint!"
 			tasks: [
 				{
@@ -248,7 +253,7 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
-			subtitle: "Mapping? For Free?!"
+			subtitle: "Mapping? For free?!"
 			tasks: [{
 				id: "0E56BB1AAFD27E1F"
 				item: {
@@ -273,6 +278,8 @@
 				"&bScrewdriver:&r Rotates camo blocks"
 				"&bKey:&r Locks framed block states"
 				"&bBlueprint:&r Saves/Places framed blocks"
+				""
+				"&9Tip:&r Use Glowstone Dust to emit light"
 			]
 			icon: "framedblocks:framing_saw"
 			id: "3ABDE39BC0A0C7CC"
@@ -340,10 +347,17 @@
 			}]
 			title: "100 Loot Chests!"
 			x: 2.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			id: "721B5EC0120D6C6B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E08CBFF056F9391"
+				table_id: 7294962671578227883L
+				type: "loot"
+			}]
+			subtitle: "Gettin' classy now"
 			tasks: [
 				{
 					id: "16B9B597353DED45"
@@ -366,8 +380,38 @@
 					type: "item"
 				}
 			]
+			title: "Hats!"
 			x: -3.5d
-			y: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "53B4F6ADF60A61FC"
+			subtitle: "Hotbar clutter no more!"
+			tasks: [{
+				id: "5EDA4B0877BBAEC1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/paxels"
+					}
+				}
+				title: "Paxels"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			id: "6C4A1618A369689E"
+			subtitle: "Surprisingly useful"
+			tasks: [{
+				id: "0D1FE2009FBF02A6"
+				item: "minecraft:bundle"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
 		}
 	]
 	title: "Misc Additions"

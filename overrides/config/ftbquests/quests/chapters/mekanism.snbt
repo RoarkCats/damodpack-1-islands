@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "4F2BD3C3C28E3E9C"
+	icon: {
+		Count: 1
+		id: "mekanism:creative_energy_cube"
+		tag: {
+			mekData: {
+				EnergyContainers: [{
+					Container: 0b
+					stored: "18446744073709551615.9999"
+				}]
+				componentConfig: {
+					config0: {
+						side0: 4
+						side1: 4
+						side2: 4
+						side3: 4
+						side4: 4
+						side5: 4
+					}
+				}
+			}
+		}
+	}
+	id: "6E9B371BDD6188F5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "mekanism:ingot_osmium"
+			id: "209E72B4BD12EE05"
+			subtitle: "Might need a bit of this"
+			tasks: [{
+				id: "7EB9162A3DCA1836"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/osmium"
+					}
+				}
+				title: "Osmium Ingot"
+				type: "item"
+			}]
+			title: "Osmium"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07FFC677E342B907"]
+			id: "18F5ABBE0337108D"
+			subtitle: "Alloy infuser"
+			tasks: [{
+				id: "2AF12BCE136F5DC1"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			id: "5BF3701E5A878AD3"
+			subtitle: "Output Setting: Fine"
+			tasks: [{
+				id: "6304D6EFEE0F359C"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BF3701E5A878AD3"]
+			id: "5F014F57F76C6792"
+			subtitle: "Oxygen ore tripling"
+			tasks: [{
+				id: "690533694845FFC4"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: ["            Stacks exponentially"]
+			id: "4EB53E6A873E3CF9"
+			subtitle: "Progress go brrr"
+			tasks: [{
+				id: "4A62D76A739970E2"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: ["            Stacks exponentially"]
+			id: "1F1C0E031BA3CD2B"
+			subtitle: "Need more powah!"
+			tasks: [{
+				id: "274E48BA72CB72EC"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: ["            Stacks exponentially"]
+			id: "618749422CE9C422"
+			subtitle: "Extra gassy"
+			tasks: [{
+				id: "4C0090F4CB9016E1"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["209E72B4BD12EE05"]
+			description: [
+				"Provide with burnable fuel for active generation of up to 45 FE/t"
+				""
+				"Surround with Lava for passive generation of up to 48 FE/t"
+				""
+				"(generator and cables can be lava-logged via shift-right-click)"
+				""
+				"Supports a combined max of 118 FE/t"
+			]
+			id: "07FFC677E342B907"
+			subtitle: "Rudimentary power"
+			tasks: [{
+				id: "7E7A51B0B8B9411A"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			id: "7EBE1DC1D1BE3BC7"
+			subtitle: "Sticks n planks"
+			tasks: [{
+				id: "5FC89719505470ED"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7EBE1DC1D1BE3BC7"]
+			id: "4791937E3C0589F3"
+			subtitle: "Moving day!"
+			tasks: [{
+				id: "179227B160950F89"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+	]
+	title: "Mekanism"
+}

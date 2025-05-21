@@ -1,0 +1,16 @@
+{
+	id: "653CE9E64127A4AB"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 4, item: "simplehats:hatbag_common" }
+		{ count: 3, item: "simplehats:hatbag_uncommon" }
+		{ count: 2, item: "simplehats:hatbag_rare" }
+		{ item: "simplehats:hatbag_epic" }
+		{ item: "simplehats:hatbag_easter" }
+		{ item: "simplehats:hatbag_summer" }
+		{ item: "simplehats:hatbag_halloween" }
+		{ item: "simplehats:hatbag_festive" }
+	]
+	title: "Hat Bags"
+}

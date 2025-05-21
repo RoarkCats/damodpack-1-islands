@@ -3,6 +3,18 @@
 	default_quest_shape: "octagon"
 	filename: "making_matt_lowne_proud_2"
 	group: "5C4C328B5EBA006F"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: {
+			BotariumData: {
+				StoredFluids: [{
+					Amount: 0L
+					Fluid: "ad_astra:fuel"
+				}]
+			}
+		}
+	}
 	id: "1B326EB3AB50D5AC"
 	order_index: 4
 	quest_links: [ ]

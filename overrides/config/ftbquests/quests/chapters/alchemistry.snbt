@@ -1,0 +1,252 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alchemistry"
+	group: "4F2BD3C3C28E3E9C"
+	icon: "alchemistry:dissolver"
+	id: "0EBD1F99EC1E08A9"
+	images: [
+		{
+			alpha: 200
+			height: 1.5d
+			image: "alchemistry:block/fission_core_end"
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			alpha: 200
+			height: 1.5d
+			image: "alchemistry:block/fusion_core_end"
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			id: "4077E5FB47C92162"
+			subtitle: "Ore lore"
+			tasks: [{
+				id: "609FA13E51162020"
+				item: "chemlib:periodic_table"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			id: "5ACA480CC14F3345"
+			subtitle: "For the blockiest of heads"
+			tasks: [{
+				id: "628203C7AB56E841"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "alchemistry:alchemistry_book"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			id: "751C2E8A26C0D4CC"
+			subtitle: "Melting everything down"
+			tasks: [{
+				id: "70C3C652A53EF2E4"
+				item: "alchemistry:dissolver"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			description: ["First select a recipe via a button on the side, then supply power and items"]
+			id: "092D32F98047E3FC"
+			subtitle: "Compounds to items"
+			tasks: [{
+				id: "73DAAEDD32DD797E"
+				item: "alchemistry:combiner"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			id: "4744739DC5D7F5E7"
+			subtitle: "Fluids no more"
+			tasks: [{
+				id: "2AF48321CFD89776"
+				item: "alchemistry:atomizer"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			description: ["First select a recipe via a button on the side, then supply power and items"]
+			id: "44551D8120D45BA3"
+			subtitle: "Elements to items"
+			tasks: [{
+				id: "48A04BF615808F90"
+				item: "alchemistry:compactor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			description: [
+				"Energy and item interfaces can be placed in the frame, but not where Reactor Glass could go"
+				""
+				"Reactor Glass is optional and may be replaced with Reactor Casing"
+				""
+				"See manual for a multiblock diagram"
+			]
+			icon: "alchemistry:fission_chamber_controller"
+			id: "64B0BC174F09D61A"
+			subtitle: "Splitting the atom"
+			tasks: [
+				{
+					id: "50A90E6ADD19654F"
+					item: "alchemistry:fission_chamber_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "018D68E04DCCDF30"
+					item: "alchemistry:fission_core"
+					type: "item"
+				}
+				{
+					id: "17B5B6E879B6EA66"
+					item: "alchemistry:reactor_energy"
+					type: "item"
+				}
+				{
+					id: "521D50994C1E6EDE"
+					item: "alchemistry:reactor_input"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DF306A32BD12547"
+					item: "alchemistry:reactor_output"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "6C695BC48C29A2CF"
+					item: "alchemistry:reactor_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 62L
+					id: "3A60D4B945E2AFDF"
+					item: "alchemistry:reactor_casing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			description: [
+				"Energy and item interfaces can be placed in the frame, but not where Reactor Glass could go"
+				""
+				"Reactor Glass is optional and may be replaced with Reactor Casing"
+				""
+				"See manual for a multiblock diagram"
+			]
+			icon: "alchemistry:fusion_chamber_controller"
+			id: "5E8A7B6D77882090"
+			subtitle: "Just a few years away..."
+			tasks: [
+				{
+					id: "4A3F49EE131C7E26"
+					item: "alchemistry:fusion_chamber_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5057E753FBB10B2A"
+					item: "alchemistry:fusion_core"
+					type: "item"
+				}
+				{
+					id: "2FC0C667EDD86DBA"
+					item: "alchemistry:reactor_energy"
+					type: "item"
+				}
+				{
+					id: "47AB40F2AFC119CE"
+					item: "alchemistry:reactor_input"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23A4B5ACABA693C4"
+					item: "alchemistry:reactor_output"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "6E207C3A39E66E0E"
+					item: "alchemistry:reactor_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 62L
+					id: "05F97DF3576AADF8"
+					item: "alchemistry:reactor_casing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			id: "4426EE98DF33A02D"
+			subtitle: "Pretty colors"
+			tasks: [{
+				id: "7B640200FC893768"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^chemlib:.*_lamp_block"
+					}
+				}
+				title: "Gas Lamps"
+				type: "item"
+			}]
+			title: "Noble Gas Lamps"
+			x: -2.0d
+			y: 0.5d
+		}
+	]
+	title: "Alchemistry"
+}
