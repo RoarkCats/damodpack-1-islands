@@ -34,31 +34,31 @@ ServerEvents.recipes(event => {
     const sulf = 'mysticalagriculture:sulfur_essence';
 
     event.remove({id: 'mysticalagriculture:essence/common/sulfur'}); // overwrite default
-    event.shaped('4x alexscaves:sulfur_dust', [
+    event.shaped('8x alexscaves:sulfur_dust', [
         [sulf,sulf,sulf],
         ['','',''],
         ['','','']
     ]).noMirror().noShrink();
 
-    event.shaped('4x the_deep_void:sulfur_powder', [
+    event.shaped('8x the_deep_void:sulfur_powder', [
         ['',sulf,''],
         ['',sulf,''],
         ['',sulf,'']
     ]).noMirror().noShrink();
 
-    event.shaped('1x the_deep_void:sulfur', [
+    event.shaped('2x the_deep_void:sulfur', [
         ['','',''],
         ['',sulf,''],
         [sulf,'',sulf]
     ]).noMirror().noShrink();
 
-    event.shaped('4x mekanism:dust_sulfur', [
+    event.shaped('8x mekanism:dust_sulfur', [
         ['','',sulf],
         ['',sulf,''],
         [sulf,'','']
     ]).noMirror().noShrink();
 
-    event.shaped('4x immersiveengineering:dust_sulfur', [
+    event.shaped('8x immersiveengineering:dust_sulfur', [
         [sulf,'',''],
         ['',sulf,''],
         ['','',sulf]
