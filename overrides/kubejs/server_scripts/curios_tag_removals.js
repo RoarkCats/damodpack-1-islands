@@ -15,4 +15,5 @@ ServerEvents.tags('item', event => { // removing items from tags without remakin
 
     event.remove('curios:charm', "relics:spore_sack");
 
+    event.remove('curios:qio', 'mekanism:portable_qio_dashboard');
 })

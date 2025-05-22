@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "#curios:bundle"
+        "#curios:bundle",
+        "#curios:portable_terminals"
     ]
 }

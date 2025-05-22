@@ -8,8 +8,7 @@
         "occultism:satchel",
         "mna:practitioners_pouch",
         "botania:flower_bag",
-        "integratedterminals:terminal_storage_portable",
-        "occultism:storage_remote",
-        "relics:spore_sack"
+        "relics:spore_sack",
+        "#curios:portable_terminals"
     ]
 }
