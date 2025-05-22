@@ -95,6 +95,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanismscience:rotary/helium'});
     // -- recipe in DaPack bc KubeJS oopid no work :(
 
+    // Anchor tweak: push back in progression a bit to match Dimensional Stabilizer
+    event.replaceInput({id:'mekanism:upgrade/anchor'}, '#forge:dusts/diamond', 'mekanism:dust_refined_obsidian')
 })
 
 ServerEvents.tags('item', event => {
