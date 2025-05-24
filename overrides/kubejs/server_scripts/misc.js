@@ -8,7 +8,10 @@ ServerEvents.recipes(event => {
     // Add missing plank sawing recipes to mekanism Precision Sawmill
     event.forEachRecipe({ id: /create:cutting\/runtime_generated\/compat\/.*_planks$/ }, recipe => {
         const out = recipe.originalRecipeResult.id;
-        const inp = Item.of(recipe.originalRecipeIngredients[0]).id;
+        let inp = Item.of(recipe.originalRecipeIngredients[0]).id;
+        
+        const inp_no_strip = inp.replaceAll('stripped_','');
+        if (Item.exists(inp_no_strip)) {inp = inp_no_strip;}
 
         if (event.findRecipeIds({ type: 'mekanism:sawing', output: out }).length == 0) {
             event.custom({
@@ -97,6 +100,25 @@ ServerEvents.recipes(event => {
 
     // Anchor tweak: push back in progression a bit to match Dimensional Stabilizer
     event.replaceInput({id:'mekanism:upgrade/anchor'}, '#forge:dusts/diamond', 'mekanism:dust_refined_obsidian')
+
+    // Flint Block to Oxygen
+    event.custom({
+        "type": "mekanism:gas_conversion",
+        "input": {
+            "ingredient": {
+                "item": "supplementaries:flint_block"
+            }
+        },
+        "output": {
+            "amount": 90,
+            "gas": "mekanism:oxygen"
+        }
+    });
+
+    // Alchemistry ingot tag recipe compats
+    event.replaceInput({id:'alchemistry:reactor_casing'}, 'chemlib:platinum_ingot', '#forge:ingots/platinum');
+    event.replaceInput({id:'alchemistry:reactor_casing'}, 'chemlib:osmium_ingot', '#forge:ingots/osmium');
+    event.replaceInput({id:'alchemistry:fusion_core'}, 'chemlib:tungsten_ingot', '#forge:ingots/tungsten');
 })
 
 ServerEvents.tags('item', event => {
