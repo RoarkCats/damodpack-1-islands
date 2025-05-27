@@ -26,6 +26,41 @@
 		}
 	}
 	id: "6E9B371BDD6188F5"
+	images: [
+		{
+			height: 2.0d
+			image: "pneumaticcraft:item/wip"
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "pneumaticcraft:textures/gui/icon/gui_upgrade.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "pneumaticcraft:textures/gui/icon/gui_upgrade.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			alpha: 150
+			height: 1.5d
+			image: "mekanism:block/factory/crushing/crushing_factory_front_active"
+			rotation: 0.0d
+			width: 1.5d
+			x: 5.0d
+			y: -4.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -46,44 +81,94 @@
 				type: "item"
 			}]
 			title: "Osmium"
-			x: -0.5d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["07FFC677E342B907"]
+			icon: "mekanism:metallurgic_infuser"
 			id: "18F5ABBE0337108D"
 			subtitle: "Alloy infuser"
-			tasks: [{
-				id: "2AF12BCE136F5DC1"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: 2.5d
+			tasks: [
+				{
+					id: "2AF12BCE136F5DC1"
+					item: "mekanism:metallurgic_infuser"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "648023F4337C84E4"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*infusing_factory"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["18F5ABBE0337108D"]
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:enrichment_chamber"
 			id: "5BF3701E5A878AD3"
 			subtitle: "Output Setting: Fine"
-			tasks: [{
-				id: "6304D6EFEE0F359C"
-				item: "mekanism:enrichment_chamber"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
+			tasks: [
+				{
+					id: "6304D6EFEE0F359C"
+					item: "mekanism:enrichment_chamber"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "48D2FD4B0B884399"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*enriching_factory"
+						}
+					}
+					optional_task: true
+					title: "Enriching Factory"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5BF3701E5A878AD3"]
+			icon: "mekanism:purification_chamber"
 			id: "5F014F57F76C6792"
 			subtitle: "Oxygen ore tripling"
-			tasks: [{
-				id: "690533694845FFC4"
-				item: "mekanism:purification_chamber"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
+			tasks: [
+				{
+					id: "690533694845FFC4"
+					item: "mekanism:purification_chamber"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1CB45E010FE6568C"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*purifying_factory"
+						}
+					}
+					optional_task: true
+					title: "Purifying Factory"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["18F5ABBE0337108D"]
@@ -95,7 +180,7 @@
 				item: "mekanism:upgrade_speed"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.0d
 			y: 1.5d
 		}
 		{
@@ -108,7 +193,7 @@
 				item: "mekanism:upgrade_energy"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
@@ -121,7 +206,7 @@
 				item: "mekanism:upgrade_gas"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -142,20 +227,37 @@
 				item: "mekanismgenerators:heat_generator"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["18F5ABBE0337108D"]
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:precision_sawmill"
 			id: "7EBE1DC1D1BE3BC7"
 			subtitle: "Sticks n planks"
-			tasks: [{
-				id: "5FC89719505470ED"
-				item: "mekanism:precision_sawmill"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
+			tasks: [
+				{
+					id: "5FC89719505470ED"
+					item: "mekanism:precision_sawmill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3BED2019748FF1A6"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*sawing_factory"
+						}
+					}
+					optional_task: true
+					title: "Sawing Factory"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7EBE1DC1D1BE3BC7"]
@@ -166,8 +268,811 @@
 				item: "mekanism:cardboard_box"
 				type: "item"
 			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: [
+				"Shift+Scroll cycles the selected mode"
+				""
+				"&bEmpty:&r Shift-Right-Click ejects items"
+				"&bRotate:&r Sets clicked face forward/back"
+				"&bWrench:&r Standard rotate/disassemble"
+				""
+				"Configures pipes and cables"
+				""
+				"&bRight-Click:&r Toggle redstone sensitivity"
+				"&bShift-R-Click:&r Normal/Pull/Push/None"
+				""
+				"Troubleshoots unformed multiblocks"
+				""
+				"Configures special IO color schemes"
+				"[\"                       \",{\"text\":\"ℹ\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"Configuration Color Scheme - Mekanism Wiki\",\"color\":\"blue\"}},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Configurator#Configuration_Color_Scheme\"}}]"
+			]
+			id: "5170DEF292EE8D67"
+			subtitle: "Electric wrench"
+			tasks: [{
+				id: "6E59F26046BBE8D8"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5170DEF292EE8D67"]
+			id: "35D36F334446DCB7"
+			subtitle: "Power cables"
+			tasks: [{
+				id: "6620EB04A4E63603"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*cable"
+					}
+				}
+				title: "Universal Cables"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5170DEF292EE8D67"]
+			id: "1317CB1D87CFC049"
+			subtitle: "Item pipes"
+			tasks: [{
+				id: "343721A5B91BF207"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*transporter"
+					}
+				}
+				title: "Logistical Transporters"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5170DEF292EE8D67"]
+			id: "695C166AAB7563BC"
+			subtitle: "Fluid pipes"
+			tasks: [{
+				id: "25E92BBD79EC6F1C"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*pipe"
+					}
+				}
+				title: "Mechanical Pipes"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5170DEF292EE8D67"]
+			id: "422A4659A4FC2522"
+			subtitle: "Gas pipes"
+			tasks: [{
+				id: "1F49CE2FDF2743B3"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*tube"
+					}
+				}
+				title: "Pressurized Tubes"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: [
+				"- Drains energy on the left,"
+				"- Charges items on the right"
+				"- Stores millions of FE"
+				""
+				"All Mekanism energy slots accept Redstone at 4k FE per piece, should you need some energy in a pinch"
+			]
+			id: "4F5872A9C60F8639"
+			subtitle: "Battery \\& charger"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "mekanism:basic_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000"
+							}]
+						}
+					}
+				}
+				id: "78B77D10F4816052"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*energy_cube"
+					}
+				}
+				title: "Energy Cubes"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Mekanism cable types can be upgraded in-world by right clicking them with the next tier alloy, upgrading up to 8 connected cables"
+				"{image:create:item/brass_hand width:20 height:20 align:center}"
+				"{image:mekanism:item/alloy_infused width:20 height:20 align:center}"
+				"{image:mekanism:block/models/multipart/basic_mechanical_pipe width:20 height:20 align:center}"
+			]
+			id: "0516E45D77707BF0"
+			subtitle: "Applicable in-world"
+			tasks: [
+				{
+					id: "0FD731AC1516F098"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:alloy_infused"
+								}
+								{
+									Count: 1b
+									id: "mekanism:alloy_reinforced"
+								}
+								{
+									Count: 1b
+									id: "mekanism:alloy_atomic"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Mekanism Alloys"
+					type: "item"
+				}
+				{
+					advancement: "mekanism:alloy_upgrading"
+					criterion: ""
+					id: "20ADFF76BD113B7D"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Mekanism factories can be upgraded in-world by shift right clicking them with the next tier installer"
+				"{image:create:item/brass_hand width:20 height:20 align:center}"
+				"{image:mekanism:item/basic_tier_installer width:20 height:20 align:center}"
+				"{image:mekanism:block/factory/combining/combining_factory_front width:20 height:20 align:center}"
+			]
+			id: "44668CE109C30B8D"
+			subtitle: "Applicable in-world"
+			tasks: [{
+				id: "31C521377E1B109F"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "mekanism:.*_tier_installer"
+					}
+				}
+				title: "Tier Installers"
+				type: "item"
+			}]
 			x: 5.0d
-			y: -1.0d
+			y: -5.5d
+		}
+		{
+			description: ["Factories allow for parallelization of tasks, providing multiple slots for the same operation and auto-sorting to balance inputs across all columns"]
+			id: "4B3C27E4987B032C"
+			subtitle: "It must grow!"
+			tasks: [{
+				advancement: "mekanism:factory"
+				criterion: ""
+				id: "395A438AF3A18AB8"
+				title: "Factories"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			id: "1B6D49C6611004D4"
+			subtitle: "Fluid \\& gas"
+			tasks: [
+				{
+					id: "12F32CF9D9C5BDF5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_fluid_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_fluid_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_fluid_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_fluid_tank"
+								}
+							]
+						}
+					}
+					title: "Fluid Tanks"
+					type: "item"
+				}
+				{
+					id: "6D29F786901DA9F8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_chemical_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_chemical_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_chemical_tank"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_chemical_tank"
+								}
+							]
+						}
+					}
+					title: "Chemical Tanks"
+					type: "item"
+				}
+			]
+			title: "Tanks"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BF3701E5A878AD3"]
+			description: ["Enrich your ores before infusing them for vastly increased resource efficiency! (x8 Infusion Type)"]
+			id: "328B4E4BFF0D51CA"
+			subtitle: "Improved infusion"
+			tasks: [{
+				id: "3075180F98AE7EFE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "mekanism:enriched"
+					}
+				}
+				title: "Enriched Ores"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			id: "5EA66364C167946A"
+			subtitle: "'gots of Steel"
+			tasks: [{
+				id: "6FE992594E878F97"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:crusher"
+			id: "64BF911B5D797E3B"
+			subtitle: "General purpose"
+			tasks: [
+				{
+					id: "6659FCB070E6594B"
+					item: "mekanism:crusher"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23BA42904375CC39"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*crushing_factory"
+						}
+					}
+					optional_task: true
+					title: "Crushing Factory"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:energized_smelter"
+			id: "48BE85F99B689A6C"
+			subtitle: "Electric furnace"
+			tasks: [
+				{
+					id: "66E2AEDB6E8E6900"
+					item: "mekanism:energized_smelter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2218126694F49D94"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*smelting_factory"
+						}
+					}
+					optional_task: true
+					title: "Smelting Factory"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F014F57F76C6792"]
+			icon: "mekanism:chemical_injection_chamber"
+			id: "125CD06B5FA5FF35"
+			subtitle: "Chemical ore quadrupling"
+			tasks: [
+				{
+					id: "3067D825748704AE"
+					item: "mekanism:chemical_injection_chamber"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "25A14C7B96D07560"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*injecting_factory"
+						}
+					}
+					optional_task: true
+					title: "Injecting Factory"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:osmium_compressor"
+			id: "63FEF7E29E977593"
+			subtitle: "Osmium alloy production"
+			tasks: [
+				{
+					id: "39A70DD739F9D95E"
+					item: "mekanism:osmium_compressor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C04B7BA2C83E9B5"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "mekanism:.*compressing_factory"
+						}
+					}
+					optional_task: true
+					title: "Compressing Factory"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63FEF7E29E977593"]
+			id: "51CA864050CBC6FF"
+			subtitle: "Stronger than Netherite"
+			tasks: [{
+				id: "493544D159658270"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			id: "0285FE0AA8D23668"
+			subtitle: "Open a portal"
+			tasks: [
+				{
+					id: "7B6FA5AA2FA2FBA1"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+				{
+					id: "45B87C55D0510748"
+					item: "mekanism:teleporter_frame"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0285FE0AA8D23668"]
+			id: "209B68CC00273675"
+			subtitle: "Magic mirror"
+			tasks: [{
+				id: "63D701F5EFFBC1B0"
+				item: "mekanism:portable_teleporter"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1317CB1D87CFC049"]
+			id: "7DF28B77FA36040B"
+			subtitle: "Item routing"
+			tasks: [{
+				id: "54AE96B4797A010A"
+				item: "mekanism:logistical_sorter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["695C166AAB7563BC"]
+			id: "6D35762EBBE8D19A"
+			subtitle: "Infinite water"
+			tasks: [{
+				id: "4511730811621B86"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"125CD06B5FA5FF35"
+				"51CA864050CBC6FF"
+			]
+			id: "49939DF57ACC3E36"
+			subtitle: "Sulfuric ore quintupling"
+			tasks: [{
+				id: "0462CC55882D6685"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Helps moving or removing fluid/gas from Mekanism machines"
+				""
+				"Pick up the Gauge Dropper item in your inventory and hover over a gauge in a machine's GUI"
+				""
+				"&bLeft-Click:&r Collect up to 1000mB"
+				"&bRight-Click:&r Insert contents if possible"
+				"&bShift-Left-Click:&r Dump gauge contents"
+				""
+				"Shift right clicking while held outside a GUI will also dump the item's contents"
+			]
+			id: "48B9F97158B82099"
+			subtitle: "Recipe tester"
+			tasks: [{
+				id: "38421163B1184FBE"
+				item: "mekanism:gauge_dropper"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			description: [
+				"&bDimensional Stabilizer:&r Loads its surroundings up to a radius of 2 chunks (5x5) when powered at a cost of 2kFE/t each."
+				""
+				"While Energy Upgrades do not decrease the power required, they do increase its capacity, allowing it to load the full 5x5 with 4 upgrades."
+				""
+				"&bAnchor Upgrade:&r Loads a single chunk of any machine"
+				""
+				"&7Tip:&r Press F3+G to see chunk borders"
+			]
+			id: "2CA7C18311197C42"
+			subtitle: "Chunk loading"
+			tasks: [
+				{
+					id: "442F687F9D85EC67"
+					item: "mekanism:dimensional_stabilizer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7FE0EC6C0108513E"
+					item: "mekanism:upgrade_anchor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["18F5ABBE0337108D"]
+			description: [
+				"&bSolar:&r 24 FE/t in daylight"
+				""
+				"&bSolar Advanced:&r 120 FE/t in daylight"
+				""
+				"&bWind:&r Up to 160 FE/t at world height"
+				""
+				"&bBiofuel:&r 140 FE/t at 2240 FE/item"
+			]
+			id: "125B2B0F5925CD76"
+			subtitle: "Clean energy"
+			tasks: [
+				{
+					id: "162C2F1E18ACC56D"
+					item: "mekanismgenerators:solar_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4AD3F443112E29C1"
+					item: "mekanismgenerators:advanced_solar_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2665993BCBF976CD"
+					item: "mekanismgenerators:wind_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BDC19BB8F2726AA"
+					item: "mekanismgenerators:bio_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Intermediate Generators"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			description: [
+				"Create a new filter and type out your desired tag (ex \"&3forge:ingots/steel&r\"), then save the filter"
+				""
+				"To select which type is desired, select the filter and cycle through the list with the next/last item arrows"
+				""
+				"Passing in any items that match a filter will convert them to the desired type"
+			]
+			id: "6C34881C8793064C"
+			subtitle: "Tag conversion"
+			tasks: [{
+				id: "1C58C8DABC776801"
+				item: "mekanism:oredictionificator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			description: [
+				"Build a recipe in the crafting grid then encode a Crafting Formula with the button to the left, finally enable Auto-Mode found below the output"
+				""
+				"Enabling Stock Control will prevent the input buffer from filling up completely with a single ingredient, clogging up"
+			]
+			icon: "mekanism:formulaic_assemblicator"
+			id: "1B415094B2804BEA"
+			subtitle: "Autocrafter"
+			tasks: [
+				{
+					id: "7DA959E1738C55FD"
+					item: "mekanism:formulaic_assemblicator"
+					type: "item"
+				}
+				{
+					id: "1AD7B0E8A0FF83CF"
+					item: "mekanism:crafting_formula"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			description: [
+				"Create a frequency and set two or more Entangloporters to it"
+				""
+				"Each frequency will act as a remote buffer for any form of matter to be wirelessly accessed and transferred"
+				""
+				"Don't forget to configure its sides to input/output your form of matter"
+			]
+			id: "11CF81674A7A5885"
+			subtitle: "Wireless transporter"
+			tasks: [{
+				id: "13578AF9234EE812"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			description: [
+				"The gas generator burns various fuels and scales its burn rate according to how much power is stored"
+				""
+				"&bHydrogen:&r  20.5 kFE/t  (256 mB/t)"
+				"&bEthylene:&r  72.2 kFE/t  (6.4 mB/t)"
+				"&bAmmonia:&r  79.2 kFE/t  (0.33 mB/t)"
+			]
+			id: "4BA5F8E8599480FD"
+			subtitle: "Advanced generators"
+			tasks: [{
+				id: "2B84544061577001"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			description: [
+				"Can be placed on a Chargepad and provides the player with a portable crafting grid, furnace, chest, and anvil"
+				""
+				"Should it die, it will simply teleport back to its Chargepad, can be picked back up with a Configurator shift right click"
+			]
+			icon: "mekanism:robit"
+			id: "1EC16388AF510C85"
+			subtitle: "Little helper friend!"
+			tasks: [
+				{
+					id: "0F3D1502E44F0E24"
+					item: "mekanism:robit"
+					type: "item"
+				}
+				{
+					id: "39ACB99C81AEAA86"
+					item: "mekanism:chargepad"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51CA864050CBC6FF"]
+			description: [
+				"Shift right click or use tool keybind to cycle modes"
+				""
+				"&bFast:&r Diamond efficiency 5"
+				"&bNormal:&r Diamond efficiency 2"
+				"&bSlow:&r Base diamond speed"
+				"&bOff:&r Won't mine, will attack"
+			]
+			id: "2D7E02777C0BEEFE"
+			subtitle: "Electronic paxel"
+			tasks: [{
+				id: "69A940A27A86C3EA"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5EA66364C167946A"]
+			icon: "mekanism:pressurized_reaction_chamber"
+			id: "6BF553CBF74704A1"
+			subtitle: "Plastic production"
+			tasks: [
+				{
+					id: "08EEB63F0C859730"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+				{
+					id: "1A5693AFEE70C550"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+				{
+					id: "361B6019030B8FFD"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6BF553CBF74704A1"]
+			description: ["May JEI and god be on your side 🙏"]
+			id: "36B1BE8CDDD0537D"
+			subtitle: "Better automate this"
+			tasks: [{
+				id: "0D472C2FB9ED2C74"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7EBE1DC1D1BE3BC7"]
+			description: [
+				"Craft a cover with your block of choice, then place it on a cable"
+				""
+				"Use a wrench to remove the cover and craft it separate out the block"
+			]
+			id: "756C9E7E6C4AE348"
+			subtitle: "I don't wanna see your cables!"
+			tasks: [{
+				id: "23707832C7C3AC4C"
+				item: "mekanismcovers:empty_cover"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
 		}
 	]
 	title: "Mekanism"

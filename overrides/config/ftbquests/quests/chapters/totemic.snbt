@@ -137,7 +137,7 @@
 				{
 					count: 16L
 					id: "34879DE8A0AE4805"
-					item: "totemic:cedar_log"
+					item: { Count: 16, id: "totemic:cedar_log" }
 					type: "item"
 				}
 			]

@@ -7,20 +7,21 @@
 	id: "61679442473341D7"
 	images: [
 		{
+			alpha: 150
 			height: 1.0d
 			image: "minecraft:block/crafting_table_front"
 			rotation: 0.0d
 			width: 1.0d
-			x: 12.5d
-			y: 7.5d
+			x: 8.5d
+			y: 8.5d
 		}
 		{
-			height: 2.0d
+			height: 1.5d
 			image: "pneumaticcraft:item/wip"
 			rotation: 0.0d
-			width: 2.0d
-			x: 14.0d
-			y: 7.5d
+			width: 1.5d
+			x: 12.5d
+			y: 8.5d
 		}
 	]
 	order_index: 3
@@ -1558,6 +1559,82 @@
 			}]
 			x: -3.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["679049AB060A8DB8"]
+			description: [
+				"Place facing a Crafting Table or machine and supply it with recipes from the Logic Programmer"
+				""
+				"Recipes can be made by selecting the Recipe type in the Programmer and using JEI to auto-fill the slots"
+				""
+				"Recipes within the interface will be available to the network to auto-craft though the terminal or Crafting Writers"
+			]
+			id: "3942228F8953CA42"
+			subtitle: "Auto-crafting"
+			tasks: [{
+				id: "3B2100DB83B7E6A6"
+				item: "integratedcrafting:part_interface_crafting"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3942228F8953CA42"]
+			id: "0982C21060C442E6"
+			subtitle: "Auto-auto-crafting"
+			tasks: [{
+				id: "7AA3B31E6DC74B47"
+				item: "integratedcrafting:part_crafting_writer"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			id: "153A36F98008C46C"
+			tasks: [{
+				id: "4F8B466BD6FD407F"
+				item: "integratedscripting:part_terminal_scripting"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			description: ["Scripting Drives hold a single Scripting Disk, exposing its contents to the network"]
+			id: "1127BFA187D498BF"
+			subtitle: "Script storage"
+			tasks: [{
+				id: "3A04198663025DCF"
+				item: "integratedscripting:scripting_drive"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			description: ["Scripting Disks can be moved between networks without loss of script data"]
+			id: "44A2DD914839D7F3"
+			subtitle: "Script files"
+			tasks: [{
+				id: "7229B49C106D3581"
+				item: "integratedscripting:scripting_disk"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			id: "37C028A7CFE57415"
+			subtitle: "Ooey gooey"
+			tasks: [{
+				id: "3DF338070A19A87D"
+				item: "integratedscripting:mendesite"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.5d
 		}
 	]
 	title: "Storage"

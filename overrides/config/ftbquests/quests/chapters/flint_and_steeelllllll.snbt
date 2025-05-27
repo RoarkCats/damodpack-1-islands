@@ -52,7 +52,7 @@
 			tasks: [{
 				count: 27L
 				id: "6FABFF0091E58E45"
-				item: "immersiveengineering:cokebrick"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
 				type: "item"
 			}]
 			title: "Cokeing up the club"
@@ -325,7 +325,7 @@
 			tasks: [{
 				count: 8L
 				id: "4129A8F056AE4A82"
-				item: "immersiveengineering:alloybrick"
+				item: { Count: 8, id: "immersiveengineering:alloybrick" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -337,7 +337,7 @@
 			tasks: [{
 				count: 4L
 				id: "52061B871A5906AB"
-				item: "immersiveengineering:sheetmetal_steel"
+				item: { Count: 4, id: "immersiveengineering:sheetmetal_steel" }
 				type: "item"
 			}]
 			x: 8.0d

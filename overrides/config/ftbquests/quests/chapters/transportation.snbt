@@ -135,7 +135,7 @@
 			tasks: [{
 				count: 8L
 				id: "329A233397A42CF2"
-				item: "smallships:cannon_ball"
+				item: { Count: 8, id: "smallships:cannon_ball" }
 				type: "item"
 			}]
 			x: -1.5d

@@ -66,8 +66,8 @@
 				item: "alchemistry:dissolver"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5ACA480CC14F3345"]
@@ -80,7 +80,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5ACA480CC14F3345"]
@@ -128,7 +128,7 @@
 				{
 					count: 3L
 					id: "018D68E04DCCDF30"
-					item: "alchemistry:fission_core"
+					item: { Count: 3, id: "alchemistry:fission_core" }
 					type: "item"
 				}
 				{
@@ -151,14 +151,14 @@
 				{
 					count: 36L
 					id: "6C695BC48C29A2CF"
-					item: "alchemistry:reactor_glass"
+					item: { Count: 36, id: "alchemistry:reactor_glass" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 62L
 					id: "3A60D4B945E2AFDF"
-					item: "alchemistry:reactor_casing"
+					item: { Count: 62, id: "alchemistry:reactor_casing" }
 					optional_task: true
 					type: "item"
 				}
@@ -188,7 +188,7 @@
 				{
 					count: 3L
 					id: "5057E753FBB10B2A"
-					item: "alchemistry:fusion_core"
+					item: { Count: 3, id: "alchemistry:fusion_core" }
 					type: "item"
 				}
 				{
@@ -211,14 +211,14 @@
 				{
 					count: 36L
 					id: "6E207C3A39E66E0E"
-					item: "alchemistry:reactor_glass"
+					item: { Count: 36, id: "alchemistry:reactor_glass" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 62L
 					id: "05F97DF3576AADF8"
-					item: "alchemistry:reactor_casing"
+					item: { Count: 62, id: "alchemistry:reactor_casing" }
 					optional_task: true
 					type: "item"
 				}
@@ -246,6 +246,18 @@
 			title: "Noble Gas Lamps"
 			x: -2.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["5ACA480CC14F3345"]
+			id: "7E76EAD37741E9F7"
+			subtitle: "Juice me up!"
+			tasks: [{
+				id: "4FA0169EA48E4EAE"
+				item: "alchemistry:liquifier"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
 		}
 	]
 	title: "Alchemistry"

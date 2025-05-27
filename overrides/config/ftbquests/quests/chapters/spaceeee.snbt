@@ -125,7 +125,7 @@
 			tasks: [{
 				count: 2L
 				id: "3D45A141A2571D70"
-				item: "ad_astra:desh_tank"
+				item: { Count: 2, id: "ad_astra:desh_tank" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -137,7 +137,7 @@
 			tasks: [{
 				count: 6L
 				id: "13D82C9376F96903"
-				item: "ad_astra:desh_block"
+				item: { Count: 6, id: "ad_astra:desh_block" }
 				type: "item"
 			}]
 			x: 9.5d

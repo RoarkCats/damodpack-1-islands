@@ -95,7 +95,7 @@
 			tasks: [{
 				count: 6L
 				id: "0F733EAB8E5E8E6B"
-				item: "ad_astra:calorite_block"
+				item: { Count: 6, id: "ad_astra:calorite_block" }
 				type: "item"
 			}]
 			x: 6.0d

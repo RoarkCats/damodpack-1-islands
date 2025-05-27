@@ -1472,19 +1472,6 @@
 					title: "Creative Tanks"
 					type: "item"
 				}
-				{
-					id: "269CF5F0107BBA2A"
-					item: {
-						Count: 1
-						id: "itemfilters:id_regex"
-						tag: {
-							value: ".*_spawn_egg"
-						}
-					}
-					optional_task: true
-					title: "Spawn Eggs"
-					type: "item"
-				}
 			]
 			x: 5.5d
 			y: -3.0d

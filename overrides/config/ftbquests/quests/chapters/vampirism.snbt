@@ -76,13 +76,13 @@
 				{
 					count: 8L
 					id: "3CF85FBB1C67CC10"
-					item: "vampirism:altar_pillar"
+					item: { Count: 8, id: "vampirism:altar_pillar" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "04C7B048FE85FBC2"
-					item: "vampirism:altar_tip"
+					item: { Count: 4, id: "vampirism:altar_tip" }
 					type: "item"
 				}
 			]
@@ -126,19 +126,19 @@
 			tasks: [
 				{
 					id: "4DA3FD1099D12EE9"
-					item: "vampirism:vampire_blood_bottle"
+					item: { Count: 19, id: "vampirism:vampire_blood_bottle" }
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "562B74D1C9ED35C3"
-					item: "vampirism:vampire_blood_bottle"
+					item: { Count: 19, id: "vampirism:vampire_blood_bottle" }
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "34E6FCABAC666D8A"
-					item: "vampirism:vampire_blood_bottle"
+					item: { Count: 12, id: "vampirism:vampire_blood_bottle" }
 					type: "item"
 				}
 			]
@@ -236,7 +236,7 @@
 				{
 					count: 4L
 					id: "6A206890C3848080"
-					item: "werewolves:stone_altar_fire_bowl"
+					item: { Count: 4, id: "werewolves:stone_altar_fire_bowl" }
 					type: "item"
 				}
 			]

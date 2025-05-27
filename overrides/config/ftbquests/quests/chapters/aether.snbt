@@ -137,7 +137,7 @@
 				{
 					count: 10L
 					id: "46A44A592E67505C"
-					item: "aether:victory_medal"
+					item: { Count: 10, id: "aether:victory_medal" }
 					type: "item"
 				}
 				{

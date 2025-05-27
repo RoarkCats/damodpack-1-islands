@@ -14,7 +14,7 @@
 			tasks: [{
 				count: 128L
 				id: "178999821B8E90AC"
-				item: "minecraft:cobblestone"
+				item: { Count: 128, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
 			title: "Cobble Generator"
@@ -27,7 +27,7 @@
 			tasks: [{
 				count: 2L
 				id: "7E746C5ED6716DFE"
-				item: "create:crushing_wheel"
+				item: { Count: 2, id: "create:crushing_wheel" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -39,7 +39,7 @@
 			tasks: [{
 				count: 128L
 				id: "0673444F934462E7"
-				item: "minecraft:gravel"
+				item: { Count: 128, id: "minecraft:gravel" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -82,13 +82,13 @@
 				{
 					count: 3L
 					id: "36F81CA89DBDC210"
-					item: "create:belt_connector"
+					item: { Count: 3, id: "create:belt_connector" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "3509489FDE943E3F"
-					item: "create:shaft"
+					item: { Count: 8, id: "create:shaft" }
 					type: "item"
 				}
 			]
@@ -101,7 +101,7 @@
 			tasks: [{
 				count: 2L
 				id: "5988FD208FAE3799"
-				item: "create:brass_funnel"
+				item: { Count: 2, id: "create:brass_funnel" }
 				type: "item"
 			}]
 			x: 4.0d
