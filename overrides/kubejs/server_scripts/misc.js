@@ -179,6 +179,28 @@ ServerEvents.tags('item', event => {
             event.remove(`dapack:ec_glass_pane_${glass}`, /everycomp:.*diamond_bordered.*_glass_pane$/);
         }
     }
+
+    // Inv pet tag improvements
+    event.add('forge:raw_fishes', [
+        'thalassophobia:raw_glow_fish',
+        'alexsmobs:cosmic_cod',
+        'alexscaves:tripodfish',
+        'alexscaves:lanternfish',
+        'unusualprehistory:raw_scau',
+        'unusualprehistory:raw_stetha',
+    ]);
+    event.add('inventorypets:raw_fishes', ['#forge:raw_fishes']);
+
+    event.add('werewolves:cooked_fish', [
+        'thalassophobia:cooked_glow_fish',
+        'alexscaves:cooked_tripodfish',
+        'alexscaves:cooked_lanternfish',
+        'unusualprehistory:cooked_scau',
+        'unusualprehistory:cooked_stetha',
+    ]);
+    event.add('inventorypets:cooked_fishes', ['#werewolves:cooked_fish']);
+
+    event.add('inventorypets:raw_meats', ['#forge:rawmeats']); // this technically has fish too but I don't really care 
 })
 
 ServerEvents.tags('fluid', event => {
