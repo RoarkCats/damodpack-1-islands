@@ -182,6 +182,7 @@ ServerEvents.tags('item', event => {
 
     // Inv pet tag improvements
     event.add('forge:raw_fishes', [
+        'aquamirae:spinefish',
         'thalassophobia:raw_glow_fish',
         'alexsmobs:cosmic_cod',
         'alexscaves:tripodfish',
@@ -193,6 +194,7 @@ ServerEvents.tags('item', event => {
     event.add('inventorypets:raw_fishes', ['#forge:raw_fishes']);
 
     event.add('werewolves:cooked_fish', [
+        'aquamirae:cooked_spinefish',
         'thalassophobia:cooked_glow_fish',
         'alexscaves:cooked_tripodfish',
         'alexscaves:cooked_lanternfish',
