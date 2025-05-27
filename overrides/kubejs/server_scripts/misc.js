@@ -188,6 +188,7 @@ ServerEvents.tags('item', event => {
         'alexscaves:lanternfish',
         'unusualprehistory:raw_scau',
         'unusualprehistory:raw_stetha',
+        'cataclysm:lionfish',
     ]);
     event.add('inventorypets:raw_fishes', ['#forge:raw_fishes']);
 
