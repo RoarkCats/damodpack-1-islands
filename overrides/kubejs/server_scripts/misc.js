@@ -119,12 +119,66 @@ ServerEvents.recipes(event => {
     event.replaceInput({id:'alchemistry:reactor_casing'}, 'chemlib:platinum_ingot', '#forge:ingots/platinum');
     event.replaceInput({id:'alchemistry:reactor_casing'}, 'chemlib:osmium_ingot', '#forge:ingots/osmium');
     event.replaceInput({id:'alchemistry:fusion_core'}, 'chemlib:tungsten_ingot', '#forge:ingots/tungsten');
+
+    // Every Compat: Chipped Glassblower clutter fix
+    let chipped_glass_types = [
+        "circle",
+        "snowflake",
+        "bared",
+        "bordered",
+        "diamond_bordered",
+        "horizontal_lined",
+        "large_diamond",
+        "line_bared",
+        "ornate_bared",
+        "woven",
+        "square",
+    ];
+    for (const glass of chipped_glass_types) {
+        event.custom({"type":"chipped:carpenters_table","tags":[`dapack:ec_glass_${glass}`,`dapack:ec_glass_pane_${glass}`]}); // add 2 recipes for each glass type
+    }
 })
 
 ServerEvents.tags('item', event => {
 
     // Sulfur tag addition (The Deep Void)
     event.add('forge:dusts/sulfur', 'the_deep_void:sulfur_powder');
+
+    // Every Compat: Chipped Glassblower clutter fix
+    event.remove('chipped:glass', /everycomp:/);
+    event.remove('chipped:glass_pane', /everycomp:/);
+    // build tags for recipe
+    let chipped_glass_types = [
+        "circle",
+        "snowflake",
+        "bared",
+        "bordered",
+        "diamond_bordered",
+        "horizontal_lined",
+        "large_diamond",
+        "line_bared",
+        "ornate_bared",
+        "woven",
+        "square",
+    ];
+    for (const glass of chipped_glass_types) {
+        event.add(`dapack:ec_glass_${glass}`, [
+            new RegExp(`chipped:(oak_)?${glass}(_oak)?_glass$`),
+            new RegExp(`everycomp:.*${glass}.*_glass$`)
+        ]);
+        event.add(`dapack:ec_glass_pane_${glass}`, [
+            new RegExp(`chipped:(oak_)?${glass}(_oak)?_glass_pane$`),
+            new RegExp(`everycomp:.*${glass}.*_glass_pane$`)
+        ]);
+        if (glass == 'bared') {
+            event.remove(`dapack:ec_glass_${glass}`, /everycomp:.*(line_bared|ornate_bared).*_glass$/);
+            event.remove(`dapack:ec_glass_pane_${glass}`, /everycomp:.*(line_bared|ornate_bared).*_glass_pane$/);
+        }
+        if (glass == 'bordered') {
+            event.remove(`dapack:ec_glass_${glass}`, /everycomp:.*diamond_bordered.*_glass$/);
+            event.remove(`dapack:ec_glass_pane_${glass}`, /everycomp:.*diamond_bordered.*_glass_pane$/);
+        }
+    }
 })
 
 ServerEvents.tags('fluid', event => {
