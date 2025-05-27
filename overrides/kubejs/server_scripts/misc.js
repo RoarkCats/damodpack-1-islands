@@ -137,6 +137,50 @@ ServerEvents.recipes(event => {
     for (const glass of chipped_glass_types) {
         event.custom({"type":"chipped:carpenters_table","tags":[`dapack:ec_glass_${glass}`,`dapack:ec_glass_pane_${glass}`]}); // add 2 recipes for each glass type
     }
+
+    // Storage Drawers alt recipes (in place of every compat)
+    event.shaped('1x storagedrawers:oak_full_drawers_1', [
+        'WWW',
+        ' C ',
+        'WWW',
+    ], {W:'#minecraft:planks', C:'#forge:chests/wooden'});
+
+    event.shaped('2x storagedrawers:oak_full_drawers_2', [
+        'WCW',
+        'WWW',
+        'WCW',
+    ], {W:'#minecraft:planks', C:'#forge:chests/wooden'});
+
+    event.shaped('4x storagedrawers:oak_full_drawers_4', [
+        'CWC',
+        'WWW',
+        'CWC',
+    ], {W:'#minecraft:planks', C:'#forge:chests/wooden'});
+
+    event.shaped('1x storagedrawers:oak_half_drawers_1', [
+        'WWW',
+        ' C ',
+        'WWW',
+    ], {W:'#minecraft:wooden_slabs', C:'#forge:chests/wooden'});
+
+    event.shaped('2x storagedrawers:oak_half_drawers_2', [
+        'WCW',
+        'WWW',
+        'WCW',
+    ], {W:'#minecraft:wooden_slabs', C:'#forge:chests/wooden'});
+
+    event.shaped('4x storagedrawers:oak_half_drawers_4', [
+        'CWC',
+        'WWW',
+        'CWC',
+    ], {W:'#minecraft:wooden_slabs', C:'#forge:chests/wooden'});
+
+    event.shaped('4x storagedrawers:oak_trim', [
+        'WSW',
+        'SWS',
+        'WSW',
+    ], {W:'#minecraft:planks', C:'#forge:rods/wooden'});
+
 })
 
 ServerEvents.tags('item', event => {
