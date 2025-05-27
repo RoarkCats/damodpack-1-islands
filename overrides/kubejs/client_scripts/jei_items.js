@@ -8,8 +8,15 @@ JEIEvents.hideItems(event => {
     event.hide('inventorypets:temp_double_chest');
     event.hide('inventorypets:temp_sated_chest');
     event.hide('inventorypets:temp_sated_double_chest');
+    event.hide('#dapack:disabled_pets');
     event.hide('kubejs:incomplete_ammo'); // hide base one
     event.hide(/creategoggles:.+_backtank_placeable/);
+
+    // hide soph storage clutter with types and tiers (should only show 1 each type and 1 each tier)
+    event.hide(/sophisticatedstorage:[a-z]+_barrel/);
+    event.hide(/sophisticatedstorage:[a-z]+_chest/);
+    event.hide(/sophisticatedstorage:[a-z]+_shulker_box/);
+    event.hide(/sophisticatedstorage:limited_[a-z]+_barrel_./);
 });
 
 // Show JEI Items
@@ -20,6 +27,14 @@ JEIEvents.addItems(event => {
     event.add(Item.of('inventorypets:pet_double_chest', {Damage:0}));
     event.add(Item.of('inventorypets:pet_sated_chest', {Damage:0}));
     event.add(Item.of('inventorypets:pet_sated_double_chest', {Damage:0}));
+
+    // add back basic soph storage tiers (clutter fix)
+    for (const tier of ['copper', 'iron', 'gold', 'diamond', 'netherite']) {
+        event.add(Item.of(`sophisticatedstorage:${tier}_barrel`, {woodType:'spruce'}));
+        event.add(Item.of(`sophisticatedstorage:${tier}_chest`, {woodType:'oak'}));
+        event.add(Item.of(`sophisticatedstorage:${tier}_shulker_box`));
+        for (let i=1; i<=4; i++) { event.add(Item.of(`sophisticatedstorage:limited_${tier}_barrel_${i}`, {woodType:'spruce'})); }
+    }
 
     // let ammos = ["ammo9mm", "ammo45acp", "ammo57", "ammo357", "ammo50ae", "ammo46", "ammo545", "ammo556", "ammo68", "ammo762", "ammo12gauge", "doom_50calpistol" ,"ammo762x51" /*,"doom_50calrifle"*/ ,"ammo338lapua" ,"ammo50bmg" ,"doom_plasmacell" ,"hl_rebar"]
     // for (const ammo of ammos) { // not functional to cheat in, just for recipe searching
