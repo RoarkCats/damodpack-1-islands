@@ -179,7 +179,7 @@ ServerEvents.recipes(event => {
         'WSW',
         'SWS',
         'WSW',
-    ], {W:'#minecraft:planks', C:'#forge:rods/wooden'});
+    ], {W:'#minecraft:planks', S:'#forge:rods/wooden'});
 
 })
 
