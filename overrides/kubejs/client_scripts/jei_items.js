@@ -13,10 +13,10 @@ JEIEvents.hideItems(event => {
     event.hide(/creategoggles:.+_backtank_placeable/);
 
     // hide soph storage clutter with types and tiers (should only show 1 each type and 1 each tier)
-    event.hide(/sophisticatedstorage:[a-z]+_barrel/);
-    event.hide(/sophisticatedstorage:[a-z]+_chest/);
-    event.hide(/sophisticatedstorage:[a-z]+_shulker_box/);
-    event.hide(/sophisticatedstorage:limited_[a-z]+_barrel_./);
+    event.hide(/sophisticatedstorage:[a-z]+_barrel$/);
+    event.hide(/sophisticatedstorage:[a-z]+_chest$/);
+    event.hide(/sophisticatedstorage:[a-z]+_shulker_box$/);
+    event.hide(/sophisticatedstorage:limited_[a-z]+_barrel_.$/);
 });
 
 // Show JEI Items
