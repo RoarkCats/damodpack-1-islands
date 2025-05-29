@@ -95,6 +95,7 @@ ServerEvents.tags('item', event => {
         'cataclysm:blessed_amethyst_crab_meat',
         'alexscaves:cooked_trilocaris_tail',
         'collectorsreap:cooked_tiger_prawn',
+        'createfood:boiled_egg_peeled',
     ]);
 
     event.add('dapack:kinda_meat', [
@@ -208,6 +209,7 @@ ServerEvents.tags('item', event => {
         'createfood:rabbit_meatball_stick_2',
         'createfood:rabbit_meatball_stick_3',
         'collectorsreap:salmon_wrapped_prawn',
+        'createfood:fried_egg_plate',
     ]);
 
     // Update werewolves tag (first two already in)
