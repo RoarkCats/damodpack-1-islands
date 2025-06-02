@@ -127,8 +127,8 @@ ServerEvents.recipes(event => {
         
         event.remove({id: "immersive_aircraft:engine"})
 
-        event.remove({id: "mysticalagriculture:essence/common/steel_ingot"})
-        event.custom({"type": "cucumber:shaped_tag", "conditions": [{"type": "mysticalagriculture:crop_enabled", "crop": "mysticalagriculture:steel"}], "pattern": ["EEE", "E E", "EEE"], "key": {"E": {"item": "mysticalagriculture:steel_essence"}}, "result": {"tag": "forge:ingots/steel", "count": 2}}) // nerf steel recipe to 2 count
+        // event.remove({id: "mysticalagriculture:essence/common/steel_ingot"})
+        event.shaped("2x mekanism:ingot_steel", ["EEE","E E","EEE"], {E:"mysticalagriculture:steel_essence"}) // nerf steel recipe to 2 count, dapack file still req so myst agri doesnt warn the recipe id missing (cant set here for some reason, tried ct too)
 
         event.custom({
             type: "ad_astra:compressing",
