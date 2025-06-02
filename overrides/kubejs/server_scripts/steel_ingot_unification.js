@@ -75,8 +75,6 @@ ServerEvents.recipes(event => {
         event.remove({id: "thermal:furnace_1253146086"})
 
         event.remove({id: "immersiveengineering:crafting/plate_ostrum_hammering"})
-
-        event.remove({id: "mysticalagriculture:seed/infusion/steel"})
         
         event.remove({id: "create:pressing/compat/immersiveengineering/plate_steel"})
 
@@ -129,7 +127,8 @@ ServerEvents.recipes(event => {
         
         event.remove({id: "immersive_aircraft:engine"})
 
-
+        event.remove({id: "mysticalagriculture:essence/common/steel_ingot"})
+        event.custom({"type": "cucumber:shaped_tag", "conditions": [{"type": "mysticalagriculture:crop_enabled", "crop": "mysticalagriculture:steel"}], "pattern": ["EEE", "E E", "EEE"], "key": {"E": {"item": "mysticalagriculture:steel_essence"}}, "result": {"tag": "forge:ingots/steel", "count": 2}}) // nerf steel recipe to 2 count
 
         event.custom({
             type: "ad_astra:compressing",
