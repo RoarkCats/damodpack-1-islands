@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     // remove recipes if loaded so no overlap
-    let capital_recipes = ['AndesiteAloy','BrassCreate','BrassIngot','BrassNugget','Osmium','PlutoniumTeta','poloniumCompactMethod','SulfurTri','zincNugget', /* bad recipes now */, 'osmium1', 'plutonium2', 'uranhex', 'uranium3', 'steel', 'steel2', 'plutonium'];
+    let capital_recipes = [/*'AndesiteAloy','BrassCreate','BrassIngot','BrassNugget','Osmium','PlutoniumTeta','poloniumCompactMethod','SulfurTri','zincNugget', (NOTE: This stuff used to be removed here but was moved to DaPack to be rid of the errors message shown in Multiplayer) */ /* bad recipes now */ 'osmium1', 'plutonium2', 'uranhex', 'uranium3', 'steel', 'steel2', 'plutonium'];
     for (const rec of capital_recipes) { event.remove({id: 'mekanismbridge:'+rec}); }
 
     // re-add recipes
