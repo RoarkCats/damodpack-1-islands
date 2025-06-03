@@ -330,9 +330,7 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:dissolver",
         "group": "alchemistry:dissolver",
         "input": {
-            "ingredient": {
-                "item": "mekanism:pellet_plutonium"
-            }
+            "ingredient": {"item": "mekanism:pellet_plutonium"}
         },
         "output": {
             "rolls": 1,
@@ -341,10 +339,7 @@ ServerEvents.recipes(event => {
                 {
                     "probability": 100.0,
                     "results": [
-                        {
-                            "item": "chemlib:plutonium",
-                            "count": 16
-                        }
+                        {"item": "chemlib:plutonium","count": 16}
                     ]
                 }
             ]
@@ -355,9 +350,7 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:dissolver",
         "group": "alchemistry:dissolver",
         "input": {
-            "ingredient": {
-                "item": "mekanism:pellet_polonium"
-            }
+            "ingredient": {"item": "mekanism:pellet_polonium"}
         },
         "output": {
             "rolls": 1,
@@ -366,10 +359,7 @@ ServerEvents.recipes(event => {
                 {
                     "probability": 100.0,
                     "results": [
-                        {
-                            "item": "chemlib:polonium",
-                            "count": 32
-                        }
+                        {"item": "chemlib:polonium","count": 32}
                     ]
                 }
             ]
@@ -381,9 +371,7 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:dissolver",
         "group": "alchemistry:dissolver",
         "input": {
-            "ingredient": {
-                "item": "minecraft:ghast_tear"
-            }
+            "ingredient": {"item": "minecraft:ghast_tear"}
         },
         "output": {
             "rolls": 1,
@@ -392,10 +380,7 @@ ServerEvents.recipes(event => {
                 {
                     "probability": 100.0,
                     "results": [
-                        {
-                            "item": "chemlib:polonium",
-                            "count": 8
-                        }
+                        {"item": "chemlib:polonium","count": 8}
                     ]
                 }
             ]
@@ -407,15 +392,10 @@ ServerEvents.recipes(event => {
         "group": "alchemistry:combiner",
         "input": [
             {
-                "ingredient": {
-                    "item": "chemlib:polonium"
-                },
-                "count": 8
+                "ingredient": {"item": "chemlib:polonium"},"count": 8
             }
         ],
-        "result": {
-            "item": "minecraft:ghast_tear"
-        }
+        "result": {"item": "minecraft:ghast_tear"}
     });
     
     // Silicon
@@ -423,9 +403,7 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:dissolver",
         "group": "alchemistry:dissolver",
         "input": {
-            "ingredient": {
-                "item": "enderio:silicon"
-            }
+            "ingredient": {"item": "enderio:silicon"}
         },
         "output": {
             "rolls": 1,
@@ -434,10 +412,7 @@ ServerEvents.recipes(event => {
                 {
                     "probability": 100.0,
                     "results": [
-                        {
-                            "item": "chemlib:silicon",
-                            "count": 16
-                        }
+                        {"item": "chemlib:silicon","count": 16}
                     ]
                 }
             ]
@@ -449,12 +424,55 @@ ServerEvents.recipes(event => {
         "group": "alchemistry:compactor",
         "input": {
           "count": 16,
-          "ingredient": {
-            "item": "chemlib:silicon"
-          }
+          "ingredient": {"item": "chemlib:silicon"}
         },
-        "result": {
-          "item": "enderio:silicon"
+        "result": {"item": "enderio:silicon"}
+    });
+
+    // Quartz (missing combiner)
+    event.custom({
+        "type": "alchemistry:combiner",
+        "group": "alchemistry:combiner",
+        "input": [
+            {"ingredient": {"item": "chemlib:silicon_dioxide"},"count": 32},
+            {"ingredient": {"item": "chemlib:barium"},"count": 16}
+        ],
+        "result": {"item": "minecraft:quartz"}
+    });
+
+    // Prosperity Shard
+    event.custom({
+        "type": "alchemistry:combiner",
+        "group": "alchemistry:combiner",
+        "input": [
+            {"ingredient": {"item": "chemlib:mullite"},"count": 16},
+            {"ingredient": {"item": "chemlib:barium"},"count": 8},
+            {"ingredient": {"item": "chemlib:titanium"},"count": 8},
+            {"ingredient": {"item": "chemlib:gallium"},"count": 8}
+        ],
+        "result": {"item": "mysticalagriculture:prosperity_shard"}
+    });
+    
+    event.custom({
+        "type": "alchemistry:dissolver",
+        "group": "alchemistry:dissolver",
+        "input": {
+            "ingredient": {"item": "mysticalagriculture:prosperity_shard"}
+        },
+        "output": {
+            "rolls": 1,
+            "weighted": false,
+            "groups": [
+                {
+                    "probability": 100.0,
+                    "results": [
+                        {"item": "chemlib:mullite","count": 16},
+                        {"item": "chemlib:barium","count": 8},
+                        {"item": "chemlib:titanium","count": 8},
+                        {"item": "chemlib:gallium","count": 8}
+                    ]
+                }
+            ]
         }
     });
 
