@@ -203,8 +203,10 @@ ServerEvents.recipes(event => {
     }
     event.remove({id:/sophisticatedstorage:generic_/});
 
-    // Remove extra osmium smelting recipes from Chemlib
-    event.remove({id:/chemlib:osmium_ingot_from_[a-z]+_osmium_dust/});
+    // Remove extra smelting/blasting recipes from Chemlib (provided by other mods)
+    for (const type of ['osmium','uranium','lead','silver','tin']) {
+        event.remove({id: new RegExp(`chemlib:${type}_ingot_from_[a-z]+_${type}_dust`) });
+    }
 })
 
 ServerEvents.tags('item', event => {
