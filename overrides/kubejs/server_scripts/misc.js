@@ -202,6 +202,9 @@ ServerEvents.recipes(event => {
         ['SWS','WTW','SWS'], {W:`#dapack:${type}_type_planks`, S:'#minecraft:wooden_slabs', T:'minecraft:redstone_torch'});
     }
     event.remove({id:/sophisticatedstorage:generic_/});
+
+    // Remove extra osmium smelting recipes from Chemlib
+    event.remove({id:/chemlib:osmium_ingot_from_[a-z]+_osmium_dust/});
 })
 
 ServerEvents.tags('item', event => {
