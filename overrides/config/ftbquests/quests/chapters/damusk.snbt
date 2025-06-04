@@ -49,37 +49,37 @@
 				{
 					count: 27L
 					id: "79B300085AFBE4C0"
-					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					item: "immersiveengineering:blastbrick_reinforced"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "2428CA8B906B4AD2"
-					item: { Count: 5, id: "immersiveengineering:heavy_engineering" }
+					item: "immersiveengineering:heavy_engineering"
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "2FB8A79D83F49F71"
-					item: { Count: 10, id: "immersiveengineering:heavy_engineering" }
+					item: "immersiveengineering:heavy_engineering"
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "76D8BD18B5F93049"
-					item: { Count: 6, id: "immersiveengineering:storage_steel" }
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "0931CFEBAC8C7921"
-					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					item: "immersiveengineering:steel_scaffolding_standard"
 					type: "item"
 				}
 				{
 					count: 14L
 					id: "0D94DAD000521AD7"
-					item: { Count: 14, id: "immersiveengineering:slab_sheetmetal_steel" }
+					item: "immersiveengineering:slab_sheetmetal_steel"
 					type: "item"
 				}
 				{
@@ -109,7 +109,7 @@
 			tasks: [{
 				count: 6L
 				id: "1E1293A730469D27"
-				item: { Count: 6, id: "ad_astra:ostrum_block" }
+				item: "ad_astra:ostrum_block"
 				type: "item"
 			}]
 			x: 6.0d
@@ -132,7 +132,7 @@
 			tasks: [{
 				count: 2L
 				id: "69DE874FBE675AF5"
-				item: { Count: 2, id: "ad_astra:ostrum_tank" }
+				item: "ad_astra:ostrum_tank"
 				type: "item"
 			}]
 			x: 6.0d

@@ -38,7 +38,7 @@
 			tasks: [{
 				count: 16L
 				id: "61CC80C5147D7786"
-				item: { Count: 16, id: "mysticalagriculture:inferium_essence" }
+				item: "mysticalagriculture:inferium_essence"
 				type: "item"
 			}]
 			title: "Tier 1"
@@ -85,7 +85,7 @@
 			tasks: [{
 				count: 12L
 				id: "798DAC608D611855"
-				item: { Count: 12, id: "mysticalagriculture:inferium_growth_accelerator" }
+				item: "mysticalagriculture:inferium_growth_accelerator"
 				type: "item"
 			}]
 			title: "Inferium Growth Accelerator"
@@ -124,7 +124,7 @@
 			tasks: [{
 				count: 12L
 				id: "383876F8797CE6F9"
-				item: { Count: 12, id: "mysticalagriculture:imperium_growth_accelerator" }
+				item: "mysticalagriculture:imperium_growth_accelerator"
 				type: "item"
 			}]
 			title: "Imperium Growth Accelerator"
@@ -137,7 +137,7 @@
 			tasks: [{
 				count: 12L
 				id: "05684C92B5664C52"
-				item: { Count: 12, id: "mysticalagriculture:supremium_growth_accelerator" }
+				item: "mysticalagriculture:supremium_growth_accelerator"
 				type: "item"
 			}]
 			title: "Supremium Growth Accelerator"
@@ -452,11 +452,13 @@
 		{
 			dependencies: ["07868CE7AA797831"]
 			id: "284500D3BD5003DB"
+			subtitle: "Basis for your revolution"
 			tasks: [{
-				id: "763C29D6BDA59ACE"
-				title: "Tier 0"
-				type: "checkmark"
+				id: "48CF0E2CE767FBB2"
+				item: "mysticalagriculture:prosperity_shard"
+				type: "item"
 			}]
+			title: "Tier 0"
 			x: 15.5d
 			y: 1.0d
 		}
@@ -485,6 +487,7 @@
 		{
 			dependencies: ["284500D3BD5003DB"]
 			id: "09417080AFAFDDD6"
+			subtitle: "Infusion crafting"
 			tasks: [
 				{
 					id: "2D6A461061E0EA21"
@@ -494,7 +497,7 @@
 				{
 					count: 8L
 					id: "01707376CEFC5D02"
-					item: { Count: 8, id: "mysticalagriculture:infusion_pedestal" }
+					item: "mysticalagriculture:infusion_pedestal"
 					type: "item"
 				}
 			]

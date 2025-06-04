@@ -572,6 +572,57 @@
 			x: 7.0d
 			y: -1.0d
 		}
+		{
+			description: ["Search for a Shell Horn in an Ice Ship"]
+			id: "7B7B68CE29DCF7D2"
+			subtitle: "Aye aye captain!"
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: "aquamirae:shell_horn"
+				id: "1435B17F5EEEAB3C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ghostly Pirate Gal"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "103F5DAB59D894DB"
+			tasks: [{
+				entity: "aquamirae:eel"
+				id: "623E625BB5205F2D"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "6E810859EE9881E2"
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "7D4AB8F6A69DDDCE"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			description: ["Love me some pork n' cookies with my dragon summoning"]
+			id: "6F2637A6A0E429A5"
+			subtitle: "Oiinkk"
+			tasks: [{
+				entity: "mna:tfpd"
+				icon: "simplehats:pighead"
+				id: "5DFD521461246306"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
 	]
 	title: "Monster Hunter: Minecraft"
 }

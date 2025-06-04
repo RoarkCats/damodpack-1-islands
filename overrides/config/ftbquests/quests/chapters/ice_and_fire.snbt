@@ -49,8 +49,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3C25819FC77CF446"]
@@ -220,7 +220,37 @@
 			]
 			title: "Dragon Steel Gear"
 			x: 0.5d
-			y: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D52A42E8EB29265"]
+			id: "77B6C62D63757055"
+			subtitle: "Oversized pet chicken"
+			tasks: [{
+				icon: "iceandfire:cockatrice_eye"
+				id: "52202BB5B4213CDA"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Cockatrice"
+				to_observe: "iceandfire:cockatrice"
+				type: "observation"
+			}]
+			title: "Cockatrice"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0D5EC89B05FE7C0A"]
+			description: ["        Rarely laid by Chickens 🐔"]
+			id: "0D52A42E8EB29265"
+			subtitle: "Not very tasty"
+			tasks: [{
+				id: "4AF27FF2AD20AB27"
+				item: "iceandfire:rotten_egg"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
 		}
 	]
 	title: "Ice and Fire"

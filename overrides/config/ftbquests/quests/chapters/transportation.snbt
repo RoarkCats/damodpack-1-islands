@@ -30,22 +30,22 @@
 		}
 		{
 			description: [
-				"So many ships to choose from but how does everything work?"
+				"So many ships to choose from, but how does it all work?"
 				""
 				"&lShip performance:&r"
-				"&7In terms of ship performance, cold-water ships will be 10% faster in cold water biomes but 10% slower in warm water biomes. Conversely, warm-water ships will be 10% faster in warm water biomes but 10% slower in cold water biomes. It's important to note that the speed of the ships will also be affected by the number of cannons on board, reducing speed by 2.5% per cannon. Additionally, cargo on board can decrease the ship's speed by up to 10%.&r"
+				"&7Cold-water ships will be 10% faster in cold water biomes but 10% slower in warm water biomes, and vice versa for warm-water ships. The ship speed will also be affected by the number of cannons on board, reducing speed by 2.5% per cannon. Cargo also reduces the ship's speed by up to 10%.&r"
 				" "
 				"&lSail coloring:&r"
 				"&7You can customize sails by coloring them with dye items. Simply right-click the ship with the dye in your hand.&r"
 				""
 				"&lShip repairing:&r"
-				"&7You can repair your ship with iron nuggets and planks. Simply right-click the ship with the iron nuggets in your hand, you need to have a good supply of planks in your inventory.&r"
+				"&7You can repair your ship with iron nuggets and planks. Simply right-click the ship with iron nuggets in hand and planks in your inventory.&r"
 				""
 				"&lShip naming: &r"
 				"&7You can name your ship with a name-tag. Simply right-click the ship with the name-tag in your hand.&r"
 				""
 				"&lLeashing: &r"
-				"&7Leashing allows players to tether ships. Leashed ships cannot be directly controlled, and only ships without a player on the controller seat can be leashed.&r"
+				"&7Players can tether ships by leashing them with nobody aboard. Leashed ships cannot be directly controlled.&r"
 			]
 			id: "0DB96C61CC8CF73B"
 			subtitle: "Boats!"
@@ -120,26 +120,23 @@
 		}
 		{
 			dependencies: ["0DB96C61CC8CF73B"]
+			icon: "smallships:cannon"
 			id: "610352625DCF3C5F"
-			tasks: [{
-				id: "070074274EB47716"
-				item: "smallships:cannon"
-				type: "item"
-			}]
+			subtitle: "Fire the cannons!"
+			tasks: [
+				{
+					id: "070074274EB47716"
+					item: "smallships:cannon"
+					type: "item"
+				}
+				{
+					id: "2835F7A454A50E5C"
+					item: "smallships:cannon_ball"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 2.0d
-		}
-		{
-			dependencies: ["610352625DCF3C5F"]
-			id: "2DE5B7074F8FBE1C"
-			tasks: [{
-				count: 8L
-				id: "329A233397A42CF2"
-				item: { Count: 8, id: "smallships:cannon_ball" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.5d
 		}
 		{
 			id: "2912824875E1332A"

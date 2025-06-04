@@ -12,16 +12,17 @@
 			image: "minecraft:block/crafting_table_front"
 			rotation: 0.0d
 			width: 1.0d
-			x: 8.5d
-			y: 8.5d
+			x: 8.0d
+			y: 9.5d
 		}
 		{
+			alpha: 150
 			height: 1.5d
-			image: "pneumaticcraft:item/wip"
+			image: "integratedscripting:item/scripting_disk"
 			rotation: 0.0d
 			width: 1.5d
-			x: 12.5d
-			y: 8.5d
+			x: 14.25d
+			y: 6.5d
 		}
 	]
 	order_index: 3
@@ -525,8 +526,8 @@
 				type: "item"
 			}]
 			title: "Readers"
-			x: 7.5d
-			y: 6.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0B759CBC802C8493"]
@@ -544,8 +545,8 @@
 				item: "integrateddynamics:logic_programmer"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.5d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["346BDA9553CF7EC3"]
@@ -592,8 +593,8 @@
 				type: "item"
 			}]
 			title: "Writers"
-			x: 10.5d
-			y: 5.5d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A7C355385C7BD68"]
@@ -668,7 +669,7 @@
 			}]
 			title: "Basic Storage"
 			x: 2.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["341B33BB79F872C5"]
@@ -719,8 +720,8 @@
 				item: "integrateddynamics:portable_logic_programmer"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 6.5d
+			x: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["251282EFCE464EB5"]
@@ -762,7 +763,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0769A7D49EE08FF9"]
@@ -780,7 +781,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6F7DCBA7A885AC36"]
@@ -798,7 +799,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1D09F81D8F6C3701"]
@@ -816,7 +817,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -828,7 +829,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["29876A040D5D6F30"]
@@ -840,7 +841,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["38C298F296B26CFB"]
@@ -852,7 +853,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6973D34C5C12C7E6"]
@@ -864,7 +865,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["45CD30A04CF12423"]
@@ -876,7 +877,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -888,7 +889,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["507D1AD7DAE93BF7"]
@@ -900,7 +901,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2A06FF849619A22B"]
@@ -912,7 +913,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6B4FAA613C96C5FE"]
@@ -924,7 +925,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["65D5C115E4186D46"]
@@ -936,7 +937,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -953,11 +954,12 @@
 				{
 					id: "104560E99E69C6BC"
 					item: "sophisticatedstorage:paintbrush"
+					optional_task: true
 					type: "item"
 				}
 			]
 			x: 2.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -993,7 +995,7 @@
 				}
 			]
 			x: 2.0d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2199F95552654675"]
@@ -1021,8 +1023,8 @@
 				type: "item"
 			}]
 			title: "Item Interface"
-			x: 8.0d
-			y: 7.5d
+			x: 7.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["62C0512F341CBA4A"]
@@ -1033,8 +1035,8 @@
 				item: "integrateddynamics:cable"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 7.5d
+			x: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["679049AB060A8DB8"]
@@ -1046,8 +1048,8 @@
 				item: "integratedterminals:part_terminal_storage"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: 9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["397B3C789E85A2E2"]
@@ -1065,8 +1067,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 7.5d
+			x: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6122F96E77F9FF8C"]
@@ -1077,8 +1079,8 @@
 				item: "integrateddynamics:part_display_panel"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 6.5d
+			x: 10.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1106,7 +1108,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1118,7 +1120,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1146,7 +1148,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6B1B508A04ED1354"]
@@ -1195,8 +1197,8 @@
 				item: "integrateddynamics:variablestore"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.0d
+			x: 9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["346BDA9553CF7EC3"]
@@ -1207,8 +1209,8 @@
 				item: "integrateddynamics:labeller"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 5.0d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6122F96E77F9FF8C"]
@@ -1224,8 +1226,8 @@
 				item: "integrateddynamics:delay"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 6.0d
+			x: 11.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6885B97581966A66"]
@@ -1249,8 +1251,8 @@
 				}
 			]
 			title: "Advanced Networking"
-			x: 11.5d
-			y: 5.0d
+			x: 11.0d
+			y: 4.5d
 		}
 		{
 			description: [
@@ -1518,7 +1520,7 @@
 		{
 			dependencies: ["14B54602ECF8D105"]
 			id: "23C8FB676D7A265B"
-			subtitle: "Buffer"
+			subtitle: "Item buffer"
 			tasks: [{
 				id: "345FC9E4942E1355"
 				item: "storagedrawers:one_stack_upgrade"
@@ -1576,8 +1578,8 @@
 				item: "integratedcrafting:part_interface_crafting"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 8.5d
+			x: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["3942228F8953CA42"]
@@ -1588,21 +1590,39 @@
 				item: "integratedcrafting:part_crafting_writer"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.5d
+			x: 10.0d
+			y: 9.5d
 		}
 		{
+			dependencies: ["44A2DD914839D7F3"]
+			description: [
+				"First select your desired network's Scripting Disk ID in the top left, then create a new script with the '+' button at the bottom, select this script and begin scripting with JavaScript!"
+				""
+				""
+				"Builtin operators can be called within scripts by using their Global or Method name found in the Logic Programmer"
+				""
+				"&bGlobal Functions:&r Callable via &7idContext.ops.global_name_here(obj)&r"
+				"&bMethod Functions:&r Callable via &7obj.method_name_here()&r"
+				""
+				"Examples:"
+				"&7 idContext.ops.itemstackStackable(item)"
+				"&7 item.isStackable()"
+				""
+				"Use &7console.log()&r and &7console.error()&r to debug output viewable via terminal"
+			]
 			id: "153A36F98008C46C"
+			subtitle: "In-game IDE"
 			tasks: [{
 				id: "4F8B466BD6FD407F"
 				item: "integratedscripting:part_terminal_scripting"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.5d
+			x: 12.0d
+			y: 7.0d
 		}
 		{
-			description: ["Scripting Drives hold a single Scripting Disk, exposing its contents to the network"]
+			dependencies: ["44A2DD914839D7F3"]
+			description: ["Scripting Drives hold a single Scripting Disk, exposing it to the network"]
 			id: "1127BFA187D498BF"
 			subtitle: "Script storage"
 			tasks: [{
@@ -1610,10 +1630,11 @@
 				item: "integratedscripting:scripting_drive"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 9.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["6122F96E77F9FF8C"]
 			description: ["Scripting Disks can be moved between networks without loss of script data"]
 			id: "44A2DD914839D7F3"
 			subtitle: "Script files"
@@ -1622,19 +1643,87 @@
 				item: "integratedscripting:scripting_disk"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 9.5d
+			x: 11.0d
+			y: 6.5d
 		}
 		{
-			id: "37C028A7CFE57415"
-			subtitle: "Ooey gooey"
+			dependencies: [
+				"1127BFA187D498BF"
+				"153A36F98008C46C"
+			]
+			description: [
+				"Most elements in a script can be exported to a Variable Card by passing the Scripting Terminal a card and clicking the text within the script"
+				""
+				"Examples include constants, variables, or even functions as operators"
+				""
+				"Use an 'apply' operator in the Logic Programmer to run scripted functions"
+				""
+				"Function variable cards will reflect changes to the script automatically"
+			]
+			id: "324A343271EAE06A"
+			rewards: [{
+				id: "46A94F9194A1B7FE"
+				type: "xp"
+				xp: 500
+			}]
+			subtitle: "Using scripts"
 			tasks: [{
-				id: "3DF338070A19A87D"
-				item: "integratedscripting:mendesite"
+				advancement: "integratedscripting:terminal/bind"
+				criterion: ""
+				id: "3FD14C842A4D7818"
+				type: "advancement"
+			}]
+			title: "Variable Use"
+			x: 13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["400361B93B0B7F44"]
+			id: "33D13F5CBD1A7CFB"
+			subtitle: "Void excess"
+			tasks: [{
+				id: "15F3C562D16F5EC1"
+				item: "sophisticatedbackpacks:advanced_void_upgrade"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.5d
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Place a Variable Card with your filter function in an item predicate slot"
+				""
+				"&7function filter(item) \\{"
+				"&7   const filterTag = 'minecraft:logs';"
+				"&7   let tags = item.tags();"
+				"&7   if (tags) \\{"
+				"&7      return tags.includes(filterTag);"
+				"&7   }"
+				"&7}"
+			]
+			id: "5B1507170031524E"
+			shape: "none"
+			subtitle: "Item filter"
+			tasks: [{
+				id: "6CEB9D31EE736955"
+				type: "checkmark"
+			}]
+			title: "Example Script"
+			x: 14.3d
+			y: 6.55d
+		}
+		{
+			dependencies: ["679049AB060A8DB8"]
+			id: "571A865F83C7400B"
+			subtitle: "Cable management"
+			tasks: [{
+				id: "3A9C5894187D0C72"
+				item: "integrateddynamics:facade"
+				title: "Facades"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.5d
 		}
 	]
 	title: "Storage"

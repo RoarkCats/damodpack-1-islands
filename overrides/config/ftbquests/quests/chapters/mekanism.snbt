@@ -32,8 +32,8 @@
 			image: "pneumaticcraft:item/wip"
 			rotation: 0.0d
 			width: 2.0d
-			x: 13.5d
-			y: -3.5d
+			x: 13.0d
+			y: -1.0d
 		}
 		{
 			height: 1.0d
