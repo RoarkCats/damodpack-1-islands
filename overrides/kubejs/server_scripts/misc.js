@@ -207,6 +207,20 @@ ServerEvents.recipes(event => {
     for (const type of ['osmium','uranium','lead','silver','tin']) {
         event.remove({id: new RegExp(`chemlib:${type}_ingot_from_[a-z]+_${type}_dust`) });
     }
+
+    // Ammonia compat (added back in DaPack bc KubeJS oopid)
+    event.remove({id:'mekanismscience:rotary/ammonia'});
+
+    // Rod crafting output nerf
+    for (const type of ['iron','steel','aluminum']) {
+        event.remove({id:`immersiveengineering:crafting/stick_${type}`});
+        event.shaped(`2x immersiveengineering:stick_${type}`, ['I','I'], {I:`#forge:ingots/${type}`});
+
+        if (type !== 'aluminum') {
+            event.remove({id:`ad_astra:${type}_rod`});
+            event.shaped(`2x ad_astra:${type}_rod`, ['P','P'], {P:`#forge:plates/${type}`});
+        }
+    }
 })
 
 ServerEvents.tags('item', event => {
@@ -365,8 +379,11 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('fluid', event => {
 
     // Create infinite draining
-    event.add('create:no_infinite_draining', /chemlib:/);
+    event.add('create:no_infinite_draining', [/chemlib:/, /immersivegeology:/]);
     
     // Helium compat
     event.add('dapack:helium', ['mekanismscience:helium', 'chemlib:helium_fluid']);
+
+    // Ammonia compat
+    event.add('dapack:ammonia', ['mekanismscience:ammonia', 'chemlib:ammonia_fluid', 'immersivegeology:fluid_ammoniasolution']);
 })
