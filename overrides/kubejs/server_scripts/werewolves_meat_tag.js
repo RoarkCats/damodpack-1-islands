@@ -210,6 +210,11 @@ ServerEvents.tags('item', event => {
         'createfood:rabbit_meatball_stick_3',
         'collectorsreap:salmon_wrapped_prawn',
         'createfood:fried_egg_plate',
+        'createfood:strider_meatball',
+        'createfood:small_strider_meatballs',
+        'createfood:strider_meatball_stick_1',
+        'createfood:strider_meatball_stick_2',
+        'createfood:strider_meatball_stick_3',
     ]);
 
     // Update werewolves tag (first two already in)
