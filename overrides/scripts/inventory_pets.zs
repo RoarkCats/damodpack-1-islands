@@ -34,7 +34,7 @@ craftingTable.addShaped("slime_pet", <item:inventorypets:pet_slime>, [
 craftingTable.removeByName("inventorypets:pingot_pet");
 craftingTable.addShaped("pingot_pet", <item:inventorypets:pet_pingot>, [
     [<item:minecraft:lapis_lazuli>, <item:minecraft:diamond_pickaxe>, <item:minecraft:lapis_lazuli>], 
-    [<item:createaddition:capacitor>, <item:pointblank:processor>, <item:createaddition:capacitor>], 
+    [<item:createaddition:capacitor>, <item:minecraft:gold_ingot>, <item:createaddition:capacitor>], 
     [<item:minecraft:lapis_lazuli>, <item:createaddition:capacitor>, <item:minecraft:lapis_lazuli>]]);
 
 craftingTable.removeByName("inventorypets:enderman_pet");
