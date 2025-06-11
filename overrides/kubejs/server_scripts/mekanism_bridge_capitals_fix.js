@@ -113,47 +113,27 @@ ServerEvents.recipes(event => {
         "type": "alchemistry:combiner",
         "group": "alchemistry:combiner",
         "input": [
-            {
-                "count": 16,
-                "ingredient": {
-                    "item": "chemlib:copper"
-                }
-            },
-            {
-                "count": 16,
-                "ingredient": {
-                    "item": "chemlib:zinc"
-                }
-            }
+            {"count": 32,"ingredient": {"item": "chemlib:copper"}},
+            {"count": 32,"ingredient": {"item": "chemlib:zinc"}}
         ],
-        "result": {
-            "item": "create:brass_nugget",
-            "count": 1
-        }
-    });
+        "result": {"item": "occultengineering:brass_dust","count": 1}
+    }); // improved brass recipe (now 4x worse instead of 18x worse!)
+    event.smelting('create:brass_ingot', 'occultengineering:brass_dust');
     
     event.custom({
         "type": "alchemistry:dissolver",
         "group": "alchemistry:dissolver",
         "input": {
             "count": 1,
-            "ingredient": {
-                "item": "create:brass_nugget"
-            }
+            "ingredient": {"item": "create:brass_nugget"}
         },
         "output": {
             "groups": [
                 {
                     "probability": 100.0,
                     "results": [
-                        {
-                            "item": "chemlib:copper",
-                            "count": 1
-                        },
-                        {
-                            "item": "chemlib:zinc",
-                            "count": 1
-                        }
+                        {"item": "chemlib:copper","count": 1},
+                        {"item": "chemlib:zinc","count": 1}
                     ]
                 }
             ],
