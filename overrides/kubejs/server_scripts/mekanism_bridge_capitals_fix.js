@@ -476,4 +476,16 @@ ServerEvents.recipes(event => {
         }
     });
 
+    // Soap
+    event.custom({
+        "type": "alchemistry:combiner",
+        "group": "alchemistry:combiner",
+        "input": [
+            {"ingredient": {"item": "chemlib:protein"},"count": 1},
+            {"ingredient": {"item": "chemlib:graphite"},"count": 1},
+            {"ingredient": {"item": "chemlib:water"},"count": 1}
+        ],
+        "result": {"item": "supplementaries:soap"}
+    });
+
 })
