@@ -17,7 +17,16 @@
   //    Example: minecraft:diamond
   "blacklisted_items": [
     "alexsmobs:banana",
-    "alexsmobs:banana_peel"
+    "alexsmobs:banana_peel",
+
+    "!mcwtrpdoors:.*_classic_trapdoor",
+    "!mcwtrpdoors:.*_mystic_trapdoor",
+    "!mcwtrpdoors:.*_cottage_trapdoor",
+    "!mcwtrpdoors:.*_barred_trapdoor",
+    "mcwtrpdoors:print_classic",
+    "mcwtrpdoors:print_mystic",
+    "mcwtrpdoors:print_cottage",
+    "mcwtrpdoors:print_barred"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
