@@ -364,11 +364,14 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('fluid', event => {
 
     // Create infinite draining
-    event.add('create:no_infinite_draining', [/chemlib:/, /immersivegeology:/]);
+    event.add('create:no_infinite_draining', [/chemlib:/, /immersivegeology:/, /immersiveengineering:/, /pneumaticcraft:/]);
     
     // Helium compat
     event.add('dapack:helium', ['mekanismscience:helium', 'chemlib:helium_fluid']);
 
     // Ammonia compat
     event.add('dapack:ammonia', ['mekanismscience:ammonia', 'chemlib:ammonia_fluid', 'immersivegeology:fluid_ammoniasolution']);
+
+    // Ethanol compat
+    event.add('forge:ethanol', ['chemlib:ethanol_fluid']);
 })
