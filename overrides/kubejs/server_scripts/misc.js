@@ -6,6 +6,25 @@ ServerEvents.recipes(event => {
     });
 
     // Add missing plank sawing recipes to mekanism Precision Sawmill
+    function meksaw(inp, out) {
+        event.custom({
+            "type": "mekanism:sawing",
+            "input": {
+                "ingredient": {
+                    "item": inp
+                }
+            },
+            "mainOutput": {
+                "count": 6,
+                "item": out
+            },
+            "secondaryChance": 0.25,
+            "secondaryOutput": {
+                "item": "mekanism:sawdust"
+            }
+        });
+    }
+
     event.forEachRecipe({ id: /create:cutting\/runtime_generated\/compat\/.*_planks$/ }, recipe => {
         const out = recipe.originalRecipeResult.id;
         let inp = Item.of(recipe.originalRecipeIngredients[0]).id;
@@ -14,24 +33,12 @@ ServerEvents.recipes(event => {
         if (Item.exists(inp_no_strip)) {inp = inp_no_strip;}
 
         if (event.findRecipeIds({ type: 'mekanism:sawing', output: out }).length == 0) {
-            event.custom({
-                "type": "mekanism:sawing",
-                "input": {
-                    "ingredient": {
-                        "item": inp
-                    }
-                },
-                "mainOutput": {
-                    "count": 6,
-                    "item": out
-                },
-                "secondaryChance": 0.25,
-                "secondaryOutput": {
-                    "item": "mekanism:sawdust"
-                }
-            });
+            meksaw(inp, out);
         }
     })
+    
+    meksaw('integrateddynamics:menril_log','integrateddynamics:menril_planks'); // some manual intervention
+    meksaw('integrateddynamics:menril_wood','integrateddynamics:menril_planks'); // bc the auto comp stupid
 
     // Sulfur recipes (Mystical Agriculture)
     const sulf = 'mysticalagriculture:sulfur_essence';
