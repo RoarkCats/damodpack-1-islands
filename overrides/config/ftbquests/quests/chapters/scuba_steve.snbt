@@ -312,7 +312,7 @@
 				}
 			]
 			x: -2.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -455,7 +455,7 @@
 			]
 			title: "Beach Party!!!"
 			x: -3.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -561,7 +561,7 @@
 			]
 			title: "Depth Armor"
 			x: -2.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -622,7 +622,7 @@
 			]
 			title: "Three-Bolt Suit"
 			x: 0.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -683,7 +683,7 @@
 			]
 			title: "Neptunium Armor"
 			x: 1.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -744,7 +744,7 @@
 			]
 			title: "Aquamancer's Robes"
 			x: -3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -809,7 +809,7 @@
 			]
 			title: "Tide Armor"
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4B62ABD2E56124D3"]
@@ -897,7 +897,7 @@
 			]
 			title: "Air Suit"
 			x: 1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3AA4DBBB43DADBB2"]
@@ -1050,7 +1050,67 @@
 			]
 			title: "Space Suit"
 			x: -3.0d
-			y: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3AA4DBBB43DADBB2"]
+			icon: {
+				Count: 1
+				id: "thalassophobia:scuba_gear_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6F60FD8713821020"
+			tasks: [
+				{
+					id: "471C88A27CD38331"
+					item: {
+						Count: 1
+						id: "thalassophobia:scuba_gear_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "632BEFE84E005193"
+					item: {
+						Count: 1
+						id: "thalassophobia:scuba_gear_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "678C2C97A63449D6"
+					item: {
+						Count: 1
+						id: "thalassophobia:scuba_gear_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D17EC24CC8C0D0B"
+					item: {
+						Count: 1
+						id: "thalassophobia:scuba_gear_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Scuba Suit"
+			x: -3.5d
+			y: 0.5d
 		}
 	]
 	title: "Scuba Steve"

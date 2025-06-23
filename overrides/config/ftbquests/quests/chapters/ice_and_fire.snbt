@@ -178,7 +178,7 @@
 			dependencies: ["0D5EC89B05FE7C0A"]
 			description: ["My tip to get enough scales for this forge, as well as the blood needed to make the steel itself, tame a male and female dragon of the same type first. After you have two dragons you can breed, breed them until you can kill your own pets at tier 5. Cruel? Yes. Effective? Bigger yes"]
 			id: "1248EFDF90D31B77"
-			subtitle: "Make sure you use the same type of brick"
+			subtitle: "Be sure to use the same type of brick"
 			tasks: [
 				{
 					id: "2680523ABC13011E"
@@ -251,6 +251,25 @@
 			}]
 			x: 2.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["1248EFDF90D31B77"]
+			id: "00F75A8C0CBCBF62"
+			subtitle: "Tougher than scales"
+			tasks: [{
+				id: "5EE70F9258EA66AC"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^iceandfire:dragonsteel_[a-z]+_ingot$"
+					}
+				}
+				title: "Dragonsteel Ingots"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
 		}
 	]
 	title: "Ice and Fire"

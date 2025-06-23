@@ -347,7 +347,7 @@
 			}]
 			title: "100 Loot Chests!"
 			x: 2.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "721B5EC0120D6C6B"
@@ -381,8 +381,8 @@
 				}
 			]
 			title: "Hats!"
-			x: -3.5d
-			y: -1.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			id: "53B4F6ADF60A61FC"
@@ -400,7 +400,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "6C4A1618A369689E"
@@ -411,7 +411,59 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "003A5D836A9F3C95"
+			subtitle: "Too much todo!"
+			tasks: [{
+				id: "68F2437CA9A3B677"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Immersive Geology replaces most natural ore generation with huge veins requiring excavation and processing!"
+				""
+				"Read more in the &9Engineer's Manual&r"
+			]
+			id: "57FEDE6B887E773F"
+			rewards: [{
+				id: "585999438F582066"
+				type: "xp"
+				xp: 250
+			}]
+			subtitle: "Replacing ore gen"
+			tasks: [
+				{
+					id: "12DC369F91452AEB"
+					item: {
+						Count: 1
+						id: "immersivegeology:prospector_kit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4254F83D407FEB2F"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Immersive Geology"
+			x: -3.5d
+			y: -1.5d
 		}
 	]
 	title: "Misc Additions"

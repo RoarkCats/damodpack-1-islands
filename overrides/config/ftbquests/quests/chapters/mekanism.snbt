@@ -32,8 +32,8 @@
 			image: "pneumaticcraft:item/wip"
 			rotation: 0.0d
 			width: 2.0d
-			x: 13.0d
-			y: -1.0d
+			x: 12.5d
+			y: 0.5d
 		}
 		{
 			height: 1.0d
@@ -1073,6 +1073,103 @@
 			}]
 			x: 8.0d
 			y: -3.5d
+		}
+		{
+			description: [
+				"&nConstruction tips:"
+				""
+				" - The 4x4 base must be &9casing&r"
+				" - Layers must include a &9Controller&r"
+				" - Total height must be 3-18 blocks"
+				""
+				"&nOptional tips:"
+				""
+				" - Layers may have &9Valves&r for pipes"
+				" - &9Structural Glass&r may replace &9casing&r except for around the rim ⌊⌋"
+				" - Top corners may heat via &9Solar Gen.&r"
+				" - Valves may heat via &9Resistive Heater&r"
+				" - &9Heaters&r may use up to 1250FE/t"
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "15A2D50C784C2EEF"
+			subtitle: "Is it getting hot in here?"
+			tasks: [
+				{
+					id: "52D9DC47454CC0D0"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					id: "7DAABB540C1D409F"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+				{
+					id: "1D1944AB6745AFC9"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+				{
+					id: "73B23A870F5B01F3"
+					item: "mekanism:structural_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "745D7D6F0A088E02"
+					item: "mekanism:resistive_heater"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60C140BADAB0DCB9"
+					item: "mekanismgenerators:advanced_solar_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Thermal Evaporation Plant"
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2BD33E7C3DD5D1EF"
+				"15A2D50C784C2EEF"
+			]
+			description: [" Mitigates and heals radiation sickness"]
+			id: "6A75AED896E2D976"
+			subtitle: "Take your meds"
+			tasks: [{
+				id: "051EAE100F9F2E5C"
+				item: "mekanismscience:tablet_iodine"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			id: "6C1C96BAE90BFDEC"
+			subtitle: "Ocean biome required"
+			tasks: [{
+				id: "10D8A7358A1746F0"
+				item: "mekanismscience:seawater_pump"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C1C96BAE90BFDEC"]
+			id: "2BD33E7C3DD5D1EF"
+			subtitle: "Filtration"
+			tasks: [{
+				id: "66B963862DCA6781"
+				item: "mekanismscience:adsorption_separator"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
 		}
 	]
 	title: "Mekanism"
