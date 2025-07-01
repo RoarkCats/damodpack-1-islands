@@ -200,6 +200,19 @@ ServerEvents.recipes(event => {
             event.shaped(`2x ad_astra:${type}_rod`, ['P','P'], {P:`#forge:plates/${type}`});
         }
     }
+
+    // Doom Rocket Launcher recipe broken?
+    event.custom({
+        "type": "pointblank:default",
+        "ingredients": [
+            {"count": 50, "item": "pointblank:doom_argent_ingot"},
+            {"count": 24, "item": "pointblank:guninternals"},
+            {"count": 8, "item": "pointblank:doom_argent_compound"},
+            {"count": 4, "item": "minecraft:diamond"},
+            {"count": 10, "tag": "forge:ingots/gold"}
+        ],
+        "result": {"item": "pointblank:doom_rocketlauncher"}
+    });
 })
 
 ServerEvents.tags('item', event => {
