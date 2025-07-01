@@ -177,7 +177,6 @@ ServerEvents.recipes(event => {
 
 
     //-- Recipe removals
-    event.remove({ output: "pointblank:grenade20mm" }) // unused
     event.remove({ output: "pointblank:doom_50calrifle" }) // unused
     // removals in favor of custom recipes only
     event.remove({ id: "pointblank:processor" })
