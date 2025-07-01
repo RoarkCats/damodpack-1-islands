@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
 
     seqAssRecipe([Item.of("pointblank:ammolasercharge", 5)], "#forge:ingots/iron", [2,"#forge:ingots/copper",1,2,"#forge:dusts/redstone"], trans, 3) // 2 copper, 1 iron, 3 redstone
 
-    // seqAssRecipe(["pointblank:grenade20mm"], "minecraft:tnt", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1], trans)
+    seqAssRecipe(["pointblank:grenade20mm"], "minecraft:tnt", [2,"#forge:ingots/copper",1,2,"#forge:ingots/iron",1], trans)
     seqAssRecipe(["pointblank:grenade40mm"], "minecraft:tnt", [2,"#forge:ingots/iron",1,2,"#forge:ingots/copper",1], trans)
     // 1 copper, 1 iron, 1 tnt
 
