@@ -213,6 +213,20 @@ ServerEvents.recipes(event => {
         ],
         "result": {"item": "pointblank:doom_rocketlauncher"}
     });
+
+    // Dust oxidation compat recipes
+    for (const element of ['beryllium','strontium','yttrium']) {
+        event.custom({
+            "type":"mekanism:oxidizing",
+            "input": {"ingredient": {"tag": "forge:dusts/"+element}},
+            "output": {"amount": 100, "gas": "mekanismscience:"+element}
+        });
+    }
+    event.custom({
+        "type":"mekanism:oxidizing",
+        "input": {"ingredient": {"tag": "forge:dusts/sodium"}},
+        "output": {"amount": 100, "gas": "mekanism:sodium"}
+    });
 })
 
 ServerEvents.tags('item', event => {
