@@ -468,4 +468,15 @@ ServerEvents.recipes(event => {
         "result": {"item": "supplementaries:soap"}
     });
 
+    // Fluorite
+    event.custom({
+        "type": "alchemistry:combiner",
+        "group": "alchemistry:combiner",
+        "input": [
+            {"ingredient": {"item": "chemlib:calcium"},"count": 16},
+            {"ingredient": {"item": "chemlib:fluorine"},"count": 32}
+        ],
+        "result": {"item": "mekanism:dust_fluorite"}
+    });
+
 })
