@@ -215,19 +215,15 @@ ServerEvents.recipes(event => {
     });
 
     // Dust oxidation compat recipes
-    for (const element of ['beryllium','strontium','yttrium']) {
+    for (const element of ['beryllium','strontium','yttrium','sodium']) {
         let amount = element === 'beryllium' ? 1000 : 100 // beryl buff
+        let science = element === 'sodium' ? '' : 'science'
         event.custom({
             "type":"mekanism:oxidizing",
             "input": {"ingredient": {"tag": "forge:dusts/"+element}},
-            "output": {"amount": amount, "gas": "mekanismscience:"+element}
+            "output": {"amount": amount, "gas": "mekanism"+science+":"+element}
         });
     }
-    event.custom({
-        "type":"mekanism:oxidizing",
-        "input": {"ingredient": {"tag": "forge:dusts/sodium"}},
-        "output": {"amount": 100, "gas": "mekanism:sodium"}
-    });
 })
 
 ServerEvents.tags('item', event => {
