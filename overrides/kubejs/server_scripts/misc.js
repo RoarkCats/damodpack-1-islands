@@ -216,10 +216,11 @@ ServerEvents.recipes(event => {
 
     // Dust oxidation compat recipes
     for (const element of ['beryllium','strontium','yttrium']) {
+        let amount = element === 'beryllium' ? 1000 : 100 // beryl buff
         event.custom({
             "type":"mekanism:oxidizing",
             "input": {"ingredient": {"tag": "forge:dusts/"+element}},
-            "output": {"amount": 100, "gas": "mekanismscience:"+element}
+            "output": {"amount": amount, "gas": "mekanismscience:"+element}
         });
     }
     event.custom({
