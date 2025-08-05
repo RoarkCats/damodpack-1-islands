@@ -12,8 +12,8 @@
 			image: "minecraft:block/crafting_table_front"
 			rotation: 0.0d
 			width: 1.0d
-			x: 8.0d
-			y: 9.5d
+			x: 11.5d
+			y: 8.5d
 		}
 		{
 			alpha: 150
@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 1.5d
 			x: 14.25d
-			y: 6.5d
+			y: 6.0d
 		}
 	]
 	order_index: 3
@@ -527,7 +527,7 @@
 			}]
 			title: "Readers"
 			x: 7.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0B759CBC802C8493"]
@@ -546,7 +546,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["346BDA9553CF7EC3"]
@@ -594,7 +594,7 @@
 			}]
 			title: "Writers"
 			x: 10.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3A7C355385C7BD68"]
@@ -721,7 +721,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["251282EFCE464EB5"]
@@ -1004,22 +1004,7 @@
 			subtitle: "Expose those items!"
 			tasks: [{
 				id: "40AFDCFA814CFA38"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "integratedtunnels:part_interface_item"
-							}
-							{
-								Count: 1b
-								id: "integratedtunnels:part_interface_filter_item"
-							}
-						]
-					}
-				}
+				item: "integratedtunnels:part_interface_item"
 				type: "item"
 			}]
 			title: "Item Interface"
@@ -1048,8 +1033,8 @@
 				item: "integratedterminals:part_terminal_storage"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 8.5d
+			x: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["397B3C789E85A2E2"]
@@ -1067,8 +1052,8 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: 8.5d
+			x: 10.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6122F96E77F9FF8C"]
@@ -1080,7 +1065,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1198,7 +1183,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["346BDA9553CF7EC3"]
@@ -1210,7 +1195,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6122F96E77F9FF8C"]
@@ -1227,7 +1212,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6885B97581966A66"]
@@ -1252,7 +1237,7 @@
 			]
 			title: "Advanced Networking"
 			x: 11.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			description: [
@@ -1578,8 +1563,8 @@
 				item: "integratedcrafting:part_interface_crafting"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 9.5d
+			x: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3942228F8953CA42"]
@@ -1590,8 +1575,8 @@
 				item: "integratedcrafting:part_crafting_writer"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 9.5d
+			x: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["44A2DD914839D7F3"]
@@ -1618,7 +1603,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["44A2DD914839D7F3"]
@@ -1631,7 +1616,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6122F96E77F9FF8C"]
@@ -1644,7 +1629,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1675,7 +1660,7 @@
 			}]
 			title: "Variable Use"
 			x: 13.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["400361B93B0B7F44"]
@@ -1710,7 +1695,7 @@
 			}]
 			title: "Example Script"
 			x: 14.3d
-			y: 6.55d
+			y: 6.05d
 		}
 		{
 			dependencies: ["679049AB060A8DB8"]
@@ -1723,7 +1708,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["71ADD0210486C646"]
@@ -1742,6 +1727,38 @@
 			}]
 			x: 1.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["679049AB060A8DB8"]
+			id: "0B79416D358EACA0"
+			subtitle: "Stuff go here"
+			tasks: [{
+				id: "2B5F8F72B7C449C0"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^integratedtunnels:part_..porter"
+					}
+				}
+				title: "Importers \\& Exporters"
+				type: "item"
+			}]
+			title: "Integrated Automation"
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0B79416D358EACA0"]
+			id: "5067767A2D1E89E1"
+			subtitle: "Look ma, no hands!"
+			tasks: [{
+				id: "6154006516123E24"
+				item: "integratedtunnels:part_player_simulator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
 		}
 	]
 	title: "Storage"

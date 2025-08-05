@@ -28,14 +28,6 @@
 	id: "6E9B371BDD6188F5"
 	images: [
 		{
-			height: 2.0d
-			image: "pneumaticcraft:item/wip"
-			rotation: 0.0d
-			width: 2.0d
-			x: 12.5d
-			y: 0.5d
-		}
-		{
 			height: 1.0d
 			image: "pneumaticcraft:textures/gui/icon/gui_upgrade.png"
 			rotation: 0.0d
@@ -59,6 +51,15 @@
 			width: 1.5d
 			x: 5.0d
 			y: -4.5d
+		}
+		{
+			alpha: 150
+			height: 2.5d
+			image: "alexscaves:textures/mob_effect/irradiated.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 4.5d
+			y: 6.0d
 		}
 	]
 	order_index: 0
@@ -728,6 +729,7 @@
 		}
 		{
 			dependencies: ["51CA864050CBC6FF"]
+			icon: "mekanism:teleporter"
 			id: "0285FE0AA8D23668"
 			subtitle: "Open a portal"
 			tasks: [
@@ -845,8 +847,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 2.5d
+			x: 10.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["18F5ABBE0337108D"]
@@ -1016,7 +1018,7 @@
 				item: "mekanism:atomic_disassembler"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.0d
 			y: 2.5d
 		}
 		{
@@ -1075,6 +1077,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["5EA66364C167946A"]
 			description: [
 				"&nConstruction tips:"
 				""
@@ -1129,8 +1132,8 @@
 				}
 			]
 			title: "Thermal Evaporation Plant"
-			x: 11.5d
-			y: -2.5d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1145,8 +1148,8 @@
 				item: "mekanismscience:tablet_iodine"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.5d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			id: "6C1C96BAE90BFDEC"
@@ -1156,8 +1159,8 @@
 				item: "mekanismscience:seawater_pump"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6C1C96BAE90BFDEC"]
@@ -1168,8 +1171,504 @@
 				item: "mekanismscience:adsorption_separator"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.5d
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["15A2D50C784C2EEF"]
+			description: [
+				"Processes Fissile Fuel into Nuclear Waste, producing heat in the process"
+				""
+				"(meltdown = radioactive, not explosive)"
+			]
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "0859C4DB8E017607"
+			subtitle: "⚠ Radioactive ⚠"
+			tasks: [
+				{
+					id: "51632C23E6F0A67A"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+				{
+					id: "591BDADE81BDAB6C"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "0A75525F68E21FEB"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "7A3BEDA556667893"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					id: "04A760F9A1D35A29"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C63D8AAC11FCC88"
+					item: "mekanismgenerators:reactor_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A615FDBB38A49B7"]
+			description: [
+				"Produces heaps of power! Be wary of water cooling demands..."
+				""
+				"Fusion Reactors present no risk of meltdown unlike Fission Reactors"
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "1DB57A361994C493"
+			subtitle: "EXXTREEME POWAHH"
+			tasks: [
+				{
+					id: "18C2FFF1A28B5133"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					id: "279FCE1CE4E53740"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					id: "5B4DAE5D541BB86E"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+				{
+					id: "68EB66A03C9DB983"
+					item: "mekanismgenerators:fusion_reactor_logic_adapter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C3727D4D7125938"
+					item: "mekanismgenerators:reactor_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor"
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1DB57A361994C493"]
+			description: ["Fusion Reactors can be jump started with heat or via lasers! Place a Laser Focus Matrix in the reactor structure and fire a single beam of >400kFE from a series of Amplifiers and Lasers, setup with redstone to accumulate and fire on command"]
+			icon: "mekanism:laser_amplifier"
+			id: "771D8B6E508AD110"
+			subtitle: "Laser jump start!"
+			tasks: [
+				{
+					id: "6E23D050921E656D"
+					item: "mekanism:laser"
+					type: "item"
+				}
+				{
+					id: "07F0CC37A2711979"
+					item: "mekanism:laser_amplifier"
+					type: "item"
+				}
+				{
+					id: "63AF67DEE3D7649C"
+					item: "mekanismgenerators:laser_focus_matrix"
+					type: "item"
+				}
+			]
+			title: "Laser Focus Matrix"
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0A615FDBB38A49B7"]
+			description: ["Converts Polonium into Antimatter at the low low cost of 400MFE!"]
+			icon: "mekanism:sps_port"
+			id: "24DB39B6C6ED8110"
+			subtitle: "SPS for short"
+			tasks: [
+				{
+					id: "1EBC91417904E6E5"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					id: "73EB02D9A31735E6"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "65334E0342AEA982"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+				{
+					id: "28B327C7D88334A0"
+					item: "mekanism:structural_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Supercritical Phase Shifter"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0859C4DB8E017607"]
+			id: "0EB818274B541BB5"
+			subtitle: "CODE RED!"
+			tasks: [{
+				id: "317E60AF12411E7F"
+				item: "mekanism:industrial_alarm"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["15A2D50C784C2EEF"]
+			description: ["Construct a Turbine to generate power from Steam, normally made alongside a Fission/Fusion Reactor to generate power from boiled Water"]
+			icon: "mekanismgenerators:rotational_complex"
+			id: "55EEAE319F1EF14A"
+			subtitle: "Steam powered"
+			tasks: [
+				{
+					id: "4829246EF0027E38"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					id: "677007B8B38EBBA5"
+					item: "mekanismgenerators:turbine_valve"
+					type: "item"
+				}
+				{
+					id: "480338F844CD99A9"
+					item: "mekanismgenerators:turbine_vent"
+					type: "item"
+				}
+				{
+					id: "2CD0F8126555AF89"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					id: "0E2B9E8A6353CB64"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "374A07A19A49B1A2"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					id: "25053D388385FAD8"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					id: "5682EA644BBA3B3B"
+					item: "mekanismgenerators:electromagnetic_coil"
+					type: "item"
+				}
+				{
+					id: "0B2C828AE490FB23"
+					item: "mekanismgenerators:saturating_condenser"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "148EA000856E3BEE"
+					item: "mekanism:structural_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Industrial Turbine"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0859C4DB8E017607"]
+			description: [
+				"A large enough storage of these will solve your Nuclear Waste problems!"
+				""
+				"Just.. don't ever break one..."
+			]
+			id: "322CE2D2AE4735B4"
+			subtitle: "It's safe, I promise ☢"
+			tasks: [{
+				id: "2D0E43DC9EB74E3F"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2D58C006E8697AA0"]
+			id: "0A615FDBB38A49B7"
+			subtitle: "High tech here I come"
+			tasks: [{
+				id: "6D615F163F621758"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["24DB39B6C6ED8110"]
+			id: "32E746349EE96690"
+			subtitle: "1,000,000 Polonium"
+			tasks: [{
+				id: "7D6C42653ADA9B46"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["32E746349EE96690"]
+			id: "29950786F5A26AED"
+			subtitle: "this thing"
+			tasks: [{
+				id: "00916431C1E43355"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"32E746349EE96690"
+				"2BD33E7C3DD5D1EF"
+			]
+			id: "05FA1A7A3FF69C6A"
+			subtitle: "Seawater filtering"
+			tasks: [{
+				id: "67A614C09B0262F9"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^mekanismscience:high_performance_adsorbent_"
+					}
+				}
+				type: "item"
+			}]
+			title: "High Performance Absorbents"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A615FDBB38A49B7"]
+			id: "2A4D6EF7370FE984"
+			subtitle: "Modular equipment"
+			tasks: [{
+				id: "6153C2692E26C97C"
+				item: "mekanism:modification_station"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A4D6EF7370FE984"]
+			icon: "mekanism:mekasuit_bodyarmor"
+			id: "41F4CEB6276C05E3"
+			subtitle: "Energy armor"
+			tasks: [
+				{
+					id: "1754876E49B04A35"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "1C5AC25AF754A3CC"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "6A661898D66EE388"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "0E839BBCD0F3BEEE"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			title: "MekaSuit"
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2A4D6EF7370FE984"
+				"2D7E02777C0BEEFE"
+			]
+			description: ["  >   Disclaimer: Not a Configurator!   <"]
+			id: "4F672FB07934A979"
+			subtitle: "Energy multitool"
+			tasks: [{
+				id: "037D2777F6ABEBAA"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A615FDBB38A49B7"]
+			icon: "mekanism:qio_drive_array"
+			id: "6ECFB6C7C651F414"
+			subtitle: "QIO system for short"
+			tasks: [
+				{
+					id: "6E92EFF412DBF9B1"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "0FAF0BEBFCE58A0D"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "31FF7295CC54D75C"
+					item: "mekanism:qio_drive_base"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Quantum Item Orchestration System"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6ECFB6C7C651F414"]
+			id: "2C868069627C4911"
+			subtitle: "I can't believe it's not int limit!"
+			tasks: [{
+				id: "4854B42A92111D24"
+				item: "mekanism:qio_drive_supermassive"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6ECFB6C7C651F414"]
+			id: "3A622BF3FA357AC0"
+			subtitle: "Remote access"
+			tasks: [{
+				id: "6134C4EF7E38EFA3"
+				item: "mekanism:portable_qio_dashboard"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6ECFB6C7C651F414"]
+			id: "078439C86EB1EE8F"
+			subtitle: "Supply and demand"
+			tasks: [
+				{
+					id: "4D2C3006915E8D79"
+					item: "mekanism:qio_exporter"
+					type: "item"
+				}
+				{
+					id: "1B0DB2F3E2B3EE54"
+					item: "mekanism:qio_importer"
+					type: "item"
+				}
+				{
+					id: "707A0A40559311F4"
+					item: "mekanism:qio_redstone_adapter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "QIO Interfaces"
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1DB57A361994C493"]
+			description: [
+				"Required to start a Fusion Reactor!"
+				""
+				"Deuterium and Tritium can be injected separately into the reactor with a configurable set injection rate up to 98mB/t or pre-combined into D-T Fuel and injected directly, immediately being consumed by the reactor up to 1B/t"
+			]
+			id: "11B605253EF30483"
+			subtitle: "Nuclear car keys"
+			tasks: [{
+				id: "10BC893C4F181DEB"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0859C4DB8E017607"]
+			description: [
+				"Production rate factors:"
+				""
+				"- Colder the biome, the better"
+				"- Dryer the biome, the better"
+				"- Higher the altitude, slightly better"
+				"- Raining, much slower (-80%)"
+				"- Dusk/dawn (night), slower (offline)"
+				""
+				"Rate: &b64&rmB/t * (&b1&r + &3tempEff&r + &3humidEff&r)"
+				"   &3tempEff&r = &b0.3&r * (&b0.8&r - &3temperature&r)"
+				"   &3humidEff&r = &b-0.3&r * &3downfall&r"
+				""
+				"Altitude: Only begins to help above y 81, roughly +1mB/t per 40 blocks"
+			]
+			id: "2D58C006E8697AA0"
+			subtitle: "Sunlight required"
+			tasks: [{
+				id: "6D8D81BB01896EA2"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
 		}
 	]
 	title: "Mekanism"

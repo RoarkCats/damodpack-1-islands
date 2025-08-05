@@ -623,6 +623,19 @@
 			x: 0.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["0292FCB8DD0A0B0F"]
+			id: "4DDCB05EEEC35CE7"
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: "cataclysm:gauntlet_of_guard"
+				id: "6252DA053E415EF3"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
 	]
 	title: "Monster Hunter: Minecraft"
 }
